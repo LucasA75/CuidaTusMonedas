@@ -23,6 +23,10 @@ public class Usuario {
     private String region;
     private Integer telefono;
 
+    //Relacion one to one con Monedero
+    @OneToOne(mappedBy = "usuario")
+    private Monedero monedero;
+
     //Relacion one to one
     @OneToOne(mappedBy = "usuario")
     private Encuesta encuesta;
@@ -39,7 +43,7 @@ public class Usuario {
     }
 
     public Usuario(int id, String nombre, String apellido, Integer ano, String correo, String pais, String region,
-            Integer telefono, Encuesta encuesta, List<Leccion> leccion) {
+            Integer telefono, Monedero monedero, Encuesta encuesta, List<Leccion> leccion) {
         this.id = id;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -48,6 +52,7 @@ public class Usuario {
         this.pais = pais;
         this.region = region;
         this.telefono = telefono;
+        this.monedero = monedero;
         this.encuesta = encuesta;
         this.leccion = leccion;
     }
@@ -116,6 +121,14 @@ public class Usuario {
         this.telefono = telefono;
     }
 
+    public Monedero getMonedero() {
+        return monedero;
+    }
+
+    public void setMonedero(Monedero monedero) {
+        this.monedero = monedero;
+    }
+
     public Encuesta getEncuesta() {
         return encuesta;
     }
@@ -131,6 +144,8 @@ public class Usuario {
     public void setLeccion(List<Leccion> leccion) {
         this.leccion = leccion;
     }
+
+    
 
     
 }
