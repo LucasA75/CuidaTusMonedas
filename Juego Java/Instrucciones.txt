@@ -1,0 +1,8 @@
+Es probable que las imagenes no funcionen , 
+hay una parte en el codigo que hay que remplazar por la posicion en el que esta el archivo en TU computador.
+Es solo remplazar las primeras ubicaciones , hasta Juego Java lo demas esta bien.
+
+Ej:
+this.stay = ImageIO.read(new FileInputStream("/Generation/Juego Java/res/player/stay1.png")
+
+en este caso , solo cambiar Generation lo demas esta correcto.
