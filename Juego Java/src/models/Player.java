@@ -9,6 +9,7 @@ import javax.imageio.ImageIO;
 import main.GamePanel;
 import main.KeyHandler;
 
+
 public class Player extends Entity {
     
     GamePanel gp;
@@ -16,6 +17,7 @@ public class Player extends Entity {
 
     public final int screenX;
     public final int screenY;
+    public int hasKey = 0;
 
     //constructor
     public Player(GamePanel gp, KeyHandler keyH){
@@ -26,7 +28,15 @@ public class Player extends Entity {
         screenX = gp.screenHeigth/2 + 70 ;
         screenY = gp.screenWidth/3;
 
-        solidArea = new Rectangle(8,16,32,32);
+        solidArea = new Rectangle();
+        solidArea.x = 8;
+        solidArea.y = 16;
+        solidArea.width = 32;
+        solidArea.height = 32; 
+        //Esto de arriba es lo mismo que esto de abajo -> pero para ocupar estos parametros de mejor manera los dejamos separados
+        //solidArea = new Rectangle(8,16,32,32);
+        solidAreaDefaultX = solidArea.x;
+        solidAreaDefaultY = solidArea.y;
 
         setDefaultValues();
         getPlayerImage();
@@ -79,6 +89,10 @@ public class Player extends Entity {
         collisionOn = false;
         gp.checker.checkTile(this);
 
+        //chekear si colisiona con un objeto
+        int objIndex = gp.checker.checkObject(this, true);
+        pickUpObject(objIndex);
+
         // si la colision es falsa , el jugador se movera
         if(collisionOn == false){
             switch(direction){
@@ -115,6 +129,49 @@ public class Player extends Entity {
         else{
             spriteNum = 1;
         }
+    }
+
+    //Esta funcion ve el objeto en pantalla y ve si el jugador choca con el y hace algo
+    public void pickUpObject( int i){
+
+        if(i != 999){
+            
+            String objName = gp.obj[i].name;
+
+            switch(objName){
+                case "Key":
+                gp.playSE(1);
+                hasKey++;
+                gp.obj[i] = null;
+                gp.ui.showMessage("Obtuviste una LLave!");
+                break;
+                case "door":
+                if(hasKey > 0){
+                    gp.playSE(3);
+                    gp.obj[i] = null;
+                    hasKey--;
+                    gp.ui.showMessage("Abriste una Puerta!");
+                }
+                else{
+                    gp.ui.showMessage("Necesitas una llave!");
+                }
+                System.out.println("Key: "+hasKey);
+                break;
+                case "boots":
+                gp.playSE(2);
+                speed += 2;
+                gp.obj[i] = null;
+                gp.ui.showMessage("Obtuviste unas Botas!");
+                break;
+
+                case "chest":
+                gp.ui.gameFinished = true;
+                gp.stopMusic();
+                gp.playSE(4);
+                break;
+            }
+        }
+
     }
 
     public void draw(Graphics2D g2) {

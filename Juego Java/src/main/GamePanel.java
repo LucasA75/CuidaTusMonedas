@@ -28,14 +28,10 @@ public class GamePanel extends JPanel implements Runnable{ // esto llama a las f
     //World SETTINGS
     public final int maxWorldCol = 50;
     public final int maxWorldRow = 50;
-    public final int worldWidth = titlesize * maxWorldCol;
-    public final int worldHeigth = titlesize * maxSreenRow;
 
     //Collision checker
     public Collision checker = new Collision(this);
     
-    
-
     //FPS
     int  fps = 60;
 
@@ -43,17 +39,24 @@ public class GamePanel extends JPanel implements Runnable{ // esto llama a las f
     TileManager tileM = new TileManager(this);
     //Invocar a KeyHandler
     KeyHandler keyH = new KeyHandler();
-    //Esto se ocupa para hacer parar el tiempo del juego
-    Thread gameThread;
-    
+    //Invocamos al Audio
+    Sound sound = new Sound();
+    Sound se = new Sound();
     //Invocamos al Assetsetter
     public AssetSetter aSetter = new AssetSetter(this);
+    //Invocamos al UI
+    public UI ui = new UI(this);
+    //Esto se ocupa para hacer parar el tiempo del juego
+    Thread gameThread;
+
+
 
     //invocaremos al Player
     public Player player = new Player(this,keyH);
 
     //invocamos al objeto
     public SuperObject  obj[] = new SuperObject[10]; // Esto quiere decir que podemos mostrar en pantalla hasta 10 obj
+
 
 
 /*     //Setear la posicion por defecto del jugador
@@ -83,6 +86,9 @@ public class GamePanel extends JPanel implements Runnable{ // esto llama a las f
 
     public void setupGame(){
         aSetter.setObject();
+
+        //Aqui reproducimos la musica 
+        playMusic(0);
     }
 
     public void startGameThread(){
@@ -155,31 +161,10 @@ public class GamePanel extends JPanel implements Runnable{ // esto llama a las f
                 drawCount++;
             }
             if(timer >= 1000000000){
-                System.out.println("FPS"+ drawCount);
+                // System.out.println("FPS"+ drawCount); // Esto muestra los FPS
                 drawCount = 0;
                 timer = 0;
             }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         }
     }
 
@@ -191,7 +176,6 @@ public class GamePanel extends JPanel implements Runnable{ // esto llama a las f
     //Pintar componentes
     public void paintComponent(Graphics g){ //graphics es una clase que tiene funciones para diobujar objetos en la ventana
         //Este graphics es como un paintbrush
-
         super.paintComponent(g); // este super llama a JPanel
 
         Graphics2D g2 = (Graphics2D)g; // Esto nos da mas opciones para trabajar con la geometria del 2D
@@ -207,8 +191,23 @@ public class GamePanel extends JPanel implements Runnable{ // esto llama a las f
 
         //dibujamos al player
         player.draw(g2);
-
+        //UI
+        ui.draw(g2);
         g2.dispose(); // dispone de estos graficos contexto y libera cualquier recurso del sistema que se este ocupando
     
     }
+
+public void playMusic(int i){
+    sound.setFile(i);
+    sound.play();
+    sound.loop();
+}
+public void stopMusic(){
+    sound.stop();
+}
+public void playSE(int i){
+    se.setFile(i);
+    se.play();
+
+}
 }
