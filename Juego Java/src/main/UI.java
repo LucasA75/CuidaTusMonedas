@@ -1,6 +1,7 @@
 package main;
 import java.awt.*;
 import java.awt.image.BufferedImage;
+import java.text.DecimalFormat;
 
 import object.OBJ_key;
 
@@ -9,19 +10,21 @@ public class UI {
 
     GamePanel gp;
     // Por temas de optimizacion lo haremos fuera del loop esta declaracion
-    Font arial_40, arial_80B;
+    Font arial_40, arial_80B,arial_20;
     BufferedImage keyImage;
     public boolean messageOn = false;
     public String message = "";
     int messageCounter = 0 ;
     //Para terminar el juego
     public boolean gameFinished = false;
-    //Para hacer un timer -> Esto esta en proceso :)
+    //Para hacer un timer 
     double playTime;
+    DecimalFormat dFormat = new DecimalFormat("#0.00");
 
     public UI(GamePanel gp){
         this.gp = gp;
-        //Como se mostrara en el GP  
+        //Como se mostrara en el GP
+        arial_20 = new Font("Arial", Font.PLAIN,20);  
         arial_40 = new Font("Arial", Font.PLAIN,40);
         arial_80B = new Font("Arial", Font.BOLD,80);
         OBJ_key key = new OBJ_key();
@@ -52,6 +55,12 @@ public class UI {
             y = gp.screenHeigth/2 - (gp.titlesize*3);
             g2.drawString(text, x, y);
 
+            text = "Tu tiempo fue: "+ dFormat.format(playTime) + " !";
+            textLength = (int)g2.getFontMetrics().getStringBounds(text, g2).getWidth();
+            x = gp.screenWidth/2 - textLength/2;
+            y = gp.screenHeigth/2 + (gp.titlesize*4);
+            g2.drawString(text, x, y);
+
             g2.setFont(arial_80B);
             g2.setColor(Color.yellow);
             text = "Felicidades!";
@@ -72,6 +81,13 @@ public class UI {
         g2.setColor(Color.white);
         g2.drawImage(keyImage, gp.titlesize/2, gp.titlesize/2,gp.titlesize,gp.titlesize,null);
         g2.drawString("x "+ gp.player.hasKey, 74, 65);
+        
+        //Tiempo
+        playTime +=(double)1/60;
+        g2.setFont(arial_20);
+        g2.drawString("Tiempo: "+ dFormat.format(playTime), gp.titlesize*13,gp.titlesize*1);
+
+
 
         //Mensaje
         if(messageOn == true){

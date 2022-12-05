@@ -179,6 +179,14 @@ public class GamePanel extends JPanel implements Runnable{ // esto llama a las f
         super.paintComponent(g); // este super llama a JPanel
 
         Graphics2D g2 = (Graphics2D)g; // Esto nos da mas opciones para trabajar con la geometria del 2D
+
+        //Debug
+        long drawStart = 0;
+        if(keyH.checkdrawTime == true){
+            drawStart = System.nanoTime();
+        }
+        
+
         //Primero dibujamos los tiles y luego el personaje
         tileM.draw(g2);
 
@@ -191,8 +199,20 @@ public class GamePanel extends JPanel implements Runnable{ // esto llama a las f
 
         //dibujamos al player
         player.draw(g2);
+        
         //UI
         ui.draw(g2);
+
+
+        //DEBUG -> Tiene una funcion modo on and off
+        if(keyH.checkdrawTime == true){
+        long drawEnd = System.nanoTime();
+        long passed = drawEnd - drawStart;
+        g2.setColor(Color.white);
+        g2.drawString("Draw Time: " + passed , 10, 400);
+        System.out.println("Draw Time "+ passed);
+        }
+
         g2.dispose(); // dispone de estos graficos contexto y libera cualquier recurso del sistema que se este ocupando
     
     }

@@ -1,6 +1,5 @@
 package tile;
 
-
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -34,7 +33,7 @@ public class TileManager {
 
             tile[0] = new Tile();// hierba 
             tile[0].image = ImageIO.read(new FileInputStream("/Generation/Juego Java/res/tiles/002.png"));
-            
+
             tile[1] = new Tile();//pared
             tile[1].image = ImageIO.read(new FileInputStream("/Generation/Juego Java/res/tiles/032.png"));
             tile[1].collision = true;
@@ -59,6 +58,10 @@ public class TileManager {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public void setup(int index){
+        //AQUI QUEDE EN EL DEBUG
     }
 
     public void loadMap(String filePath){
@@ -98,7 +101,7 @@ public class TileManager {
         int row = 0;
         
 
-        // Esto hara el proceso de manera auto
+        // Esto hara el proceso de dibujado de casillas de manera auto
         while(col< gp.maxWorldCol && row < gp.maxWorldRow){
 
             int tileNum = mapTileNum[col][row];
