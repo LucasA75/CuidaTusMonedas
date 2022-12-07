@@ -8,6 +8,7 @@ import javax.imageio.ImageIO;
 
 import main.GamePanel;
 import main.KeyHandler;
+import main.UtilityTool;
 
 
 public class Player extends Entity {
@@ -51,20 +52,37 @@ public class Player extends Entity {
     }
 
     public void getPlayerImage(){
-        try {
-            System.out.println("Image loading started");
-            this.stay = ImageIO.read(new FileInputStream("/Generation/Juego Java/res/player/stay1.png")); // Esto guarda la imagen
-            this.iz = ImageIO.read(new FileInputStream("/Generation/Juego Java/res/player/iz.png"));
-            this.iz1 = ImageIO.read(new FileInputStream("/Generation/Juego Java/res/player/iz1.png"));
-            this.iz2 = ImageIO.read(new FileInputStream("/Generation/Juego Java/res/player/iz2.png"));
-            this.der = ImageIO.read(new FileInputStream("/Generation/Juego Java/res/player/der.png"));
-            this.der1 = ImageIO.read(new FileInputStream("/Generation/Juego Java/res/player/der1.png"));
-            this.der2 = ImageIO.read(new FileInputStream("/Generation/Juego Java/res/player/der2.png")); 
-            System.out.println("Image loading ended");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+           /*  //Antes traia la imagen del jugador asi
+            this.stay = ImageIO.read(new FileInputStream("/Generation/Juego Java/res/player/stay1.png")); */ // Esto guarda la imagen
+            
+            this.stay = setup("stay1");
+            this.iz = setup("iz");
+            this.iz1= setup("iz1");
+            this.iz2= setup("iz2");
+            this.der= setup("der");
+            this.der1= setup("der1");
+            this.der2= setup("der2");
+
     }
+
+    public BufferedImage setup(String imageName){
+        UtilityTool uTool = new UtilityTool();
+
+        BufferedImage image = null;
+
+        try {
+
+            image = ImageIO.read(new FileInputStream("/Generation/Juego Java/res/player/"+ imageName +".png"));
+            image = uTool.scaleImage(image, gp.titlesize, gp.titlesize);
+
+
+        } catch (IOException e) {
+            // TODO: handle exception
+        }
+        return image;
+    }
+
+
 
     public void update(){
 
@@ -217,6 +235,6 @@ public class Player extends Entity {
         break;
 
     }
-    g2.drawImage(image, screenX,screenY, gp.titlesize,gp.titlesize,null); // dibuja una imagen en pantalla
+    g2.drawImage(image, screenX,screenY,null); // dibuja una imagen en pantalla
     }
 }

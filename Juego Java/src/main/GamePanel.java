@@ -11,7 +11,7 @@ import tile.TileManager;
 
 public class GamePanel extends JPanel implements Runnable{ // esto llama a las funciones de Panel 
     //Esto funciona como el panel de juego
-
+    Font arial_20;
     //Screen Settings
     final int originalTileSize = 16; // 16 px del arte
     //Ya que ahora ocupamos pantallas mas grandes o si no se veria muy pequeño
@@ -38,7 +38,7 @@ public class GamePanel extends JPanel implements Runnable{ // esto llama a las f
     //Invocar a TileManager
     TileManager tileM = new TileManager(this);
     //Invocar a KeyHandler
-    KeyHandler keyH = new KeyHandler();
+    KeyHandler keyH = new KeyHandler(this);
     //Invocamos al Audio
     Sound sound = new Sound();
     Sound se = new Sound();
@@ -56,6 +56,13 @@ public class GamePanel extends JPanel implements Runnable{ // esto llama a las f
 
     //invocamos al objeto
     public SuperObject  obj[] = new SuperObject[10]; // Esto quiere decir que podemos mostrar en pantalla hasta 10 obj
+
+
+    //Estado del Juego
+    public int gameState;
+    public final int playState = 1;
+    public final int pauseState = 2;
+
 
 
 
@@ -89,6 +96,8 @@ public class GamePanel extends JPanel implements Runnable{ // esto llama a las f
 
         //Aqui reproducimos la musica 
         playMusic(0);
+        stopMusic();
+        gameState = playState;
     }
 
     public void startGameThread(){
@@ -170,7 +179,12 @@ public class GamePanel extends JPanel implements Runnable{ // esto llama a las f
 
     public void update(){
     
-        player.update();
+        if(gameState == playState){
+            player.update();
+        }
+        if(gameState == pauseState){
+            //nothing
+        }
     }
 
     //Pintar componentes
@@ -209,6 +223,7 @@ public class GamePanel extends JPanel implements Runnable{ // esto llama a las f
         long drawEnd = System.nanoTime();
         long passed = drawEnd - drawStart;
         g2.setColor(Color.white);
+        g2.setFont(arial_20);
         g2.drawString("Draw Time: " + passed , 10, 400);
         System.out.println("Draw Time "+ passed);
         }
