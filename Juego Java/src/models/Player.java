@@ -1,19 +1,12 @@
 package models;
 import java.awt.*;
 import java.awt.image.BufferedImage;
-import java.io.FileInputStream;
-import java.io.IOException;
-
-import javax.imageio.ImageIO;
-
 import main.GamePanel;
 import main.KeyHandler;
-import main.UtilityTool;
 
 
 public class Player extends Entity {
     
-    GamePanel gp;
     KeyHandler keyH;
 
     public final int screenX;
@@ -23,17 +16,18 @@ public class Player extends Entity {
     //constructor
     public Player(GamePanel gp, KeyHandler keyH){
 
-        this.gp = gp;
+
+        super(gp); // Esto significa que llamamos al constructor de nuestro extend
         this.keyH = keyH;
         // Aqui modificamos la camara del jugador
         screenX = gp.screenHeigth/2 + 70 ;
         screenY = gp.screenWidth/3;
 
-        solidArea = new Rectangle();
+        //solidArea = new Rectangle();
         solidArea.x = 8;
         solidArea.y = 16;
-        solidArea.width = 32;
-        solidArea.height = 32; 
+        solidArea.width = 24;
+        solidArea.height = 24; 
         //Esto de arriba es lo mismo que esto de abajo -> pero para ocupar estos parametros de mejor manera los dejamos separados
         //solidArea = new Rectangle(8,16,32,32);
         solidAreaDefaultX = solidArea.x;
@@ -48,41 +42,25 @@ public class Player extends Entity {
         worldX = gp.titlesize * 23;
         worldY = gp.titlesize * 21;
         speed = 4;
-        direction = "stay";
+        direction = "down";
     }
 
     public void getPlayerImage(){
            /*  //Antes traia la imagen del jugador asi
             this.stay = ImageIO.read(new FileInputStream("/Generation/Juego Java/res/player/stay1.png")); */ // Esto guarda la imagen
             
-            this.stay = setup("stay1");
-            this.iz = setup("iz");
-            this.iz1= setup("iz1");
-            this.iz2= setup("iz2");
-            this.der= setup("der");
-            this.der1= setup("der1");
-            this.der2= setup("der2");
-
+            this.up1 = setup("././././res/player/stay1");
+            this.up2 = setup("././././res/player/stay1");
+            this.stay = setup("././././res/player/stay1");
+            this.iz = setup("././././res/player/iz");
+            this.iz1= setup("././././res/player/iz1");
+            this.iz2= setup("././././res/player/iz2");
+            this.der= setup("././././res/player/der");
+            this.der1= setup("././././res/player/der1");
+            this.der2= setup("././././res/player/der2");
+            this.down1 = setup("././././res/player/stay1");
+            this.down2 = setup("././././res/player/stay1");
     }
-
-    public BufferedImage setup(String imageName){
-        UtilityTool uTool = new UtilityTool();
-
-        BufferedImage image = null;
-
-        try {
-
-            image = ImageIO.read(new FileInputStream("/Generation/Juego Java/res/player/"+ imageName +".png"));
-            image = uTool.scaleImage(image, gp.titlesize, gp.titlesize);
-
-
-        } catch (IOException e) {
-            // TODO: handle exception
-        }
-        return image;
-    }
-
-
 
     public void update(){
 
@@ -110,6 +88,17 @@ public class Player extends Entity {
         //chekear si colisiona con un objeto
         int objIndex = gp.checker.checkObject(this, true);
         pickUpObject(objIndex);
+
+
+        //Me tira un error aqui si activo esto
+        //Checkear la colision con un NPC
+        //int npcIndex = gp.checker.checkEntity(this, gp.npc);
+        //interactNPC(npcIndex); 
+
+        //Prueba hecha por mi
+        gp.checker.verificador1(this, true);
+
+
 
         // si la colision es falsa , el jugador se movera
         if(collisionOn == false){
@@ -190,6 +179,12 @@ public class Player extends Entity {
             }
         }
 
+    }
+
+    public void interactNPC(int i){
+        if(i != 999){
+            System.out.println("Chocaste con un NPC");
+        }
     }
 
     public void draw(Graphics2D g2) {

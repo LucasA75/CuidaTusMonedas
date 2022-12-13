@@ -15,7 +15,7 @@ public class OBJ_key extends SuperObject{
         this.gp = gp;
         name = "Key";
         try {
-            image = ImageIO.read(new FileInputStream("/Generation/Juego Java/res/object/key.png"));
+            image = ImageIO.read(new FileInputStream("././././res/object/key.png"));
             uTool.scaleImage(image, gp.titlesize, gp.titlesize);
 
         } catch (IOException e) {

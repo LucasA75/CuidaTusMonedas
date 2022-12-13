@@ -2,7 +2,6 @@ package main;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.text.DecimalFormat;
-
 import object.OBJ_key;
 
 public class UI {
@@ -15,6 +14,9 @@ public class UI {
     public boolean messageOn = false;
     public String message = "";
     int messageCounter = 0 ;
+
+    Graphics2D g2;
+
     //Para terminar el juego
     public boolean gameFinished = false;
     //Para hacer un timer 
@@ -37,6 +39,8 @@ public class UI {
     }
 
     public void draw(Graphics2D g2){
+
+        this.g2 = g2;
 
         //Verificamos si terminamos el juego 
         if (gameFinished == true){
@@ -74,7 +78,7 @@ public class UI {
             
 
 
-        }else{
+        }else{ //Si no hemos terminado el juego
 
         //Aqui damos la fuente 
         g2.setFont(arial_40);
@@ -102,6 +106,46 @@ public class UI {
             }
         }
 
+        g2.setFont(arial_40);
+        g2.setColor(Color.white);
+        
+        if(gp.gameState == gp.playState){
+        
+        }
+        if(gp.gameState == gp.pauseState){
+            drawPauseScreen();
+        }
+        
+        
+
+
+
+
+
+
+
+
+
     }
+    }
+
+    public void drawPauseScreen(){
+        String text= "Pausa";
+        int x = getXforCenteredText(text);
+        int y = gp.screenHeigth/2;
+    
+        g2.drawString(text,x,y);
+    }
+    
+    public int getXforCenteredText(String text){
+    
+        int length = (int)g2.getFontMetrics().getStringBounds(text, g2).getWidth();
+        int x = gp.screenWidth/2 - length/2;
+    
+        return x;
     }
 }
+
+
+
+

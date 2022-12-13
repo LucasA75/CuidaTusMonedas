@@ -1,5 +1,6 @@
 package main;
 
+import models.NPC_Viejo;
 import object.OBJ_Boots;
 import object.OBJ_chest;
 import object.OBJ_door;
@@ -51,4 +52,11 @@ public class AssetSetter {
 
 
     }
+
+    public void setNPC(){
+        gp.npc.add(new NPC_Viejo(gp));
+        gp.npc.get(0).worldX = 21 *gp.titlesize;
+        gp.npc.get(0).worldY = 21 * gp.titlesize;
+    }
+
 }
