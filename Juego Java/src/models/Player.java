@@ -72,7 +72,7 @@ public class Player extends Entity {
 
         try {
 
-            image = ImageIO.read(new FileInputStream("/Generation/Juego Java/res/player/"+ imageName +".png"));
+            image = ImageIO.read(new FileInputStream("/Generation/CuidaTusMonedas/Juego Java/res/player/"+ imageName +".png"));
             image = uTool.scaleImage(image, gp.titlesize, gp.titlesize);
 
 

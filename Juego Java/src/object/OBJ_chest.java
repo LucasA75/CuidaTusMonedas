@@ -15,7 +15,7 @@ public class OBJ_chest extends SuperObject {
         this.gp = gp;
         name = "chest";
         try {
-            image = ImageIO.read(new FileInputStream("/Generation/Juego Java/res/object/chest.png"));
+            image = ImageIO.read(new FileInputStream("/Generation/CuidaTusMonedas/Juego Java/res/object/chest.png"));
             uTool.scaleImage(image, gp.titlesize, gp.titlesize);
         } catch (IOException e) {
             e.printStackTrace();

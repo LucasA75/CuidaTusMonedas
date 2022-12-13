@@ -15,7 +15,7 @@ public class OBJ_door extends SuperObject {
         this.gp = gp;
         name = "door";
         try {
-            image = ImageIO.read(new FileInputStream("/Generation/Juego Java/res/object/door.png"));
+            image = ImageIO.read(new FileInputStream("/Generation/CuidaTusMonedas/Juego Java/res/object/door.png"));
             uTool.scaleImage(image, gp.titlesize, gp.titlesize);
         } catch (IOException e) {
             e.printStackTrace();

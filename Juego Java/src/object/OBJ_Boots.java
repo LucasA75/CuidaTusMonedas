@@ -16,7 +16,7 @@ public class OBJ_Boots extends SuperObject {
         this.gp = gp;
         name = "boots";
         try {
-            image = ImageIO.read(new FileInputStream("/Generation/Juego Java/res/object/boots.png"));
+            image = ImageIO.read(new FileInputStream("/Generation/CuidaTusMonedas/Juego Java/res/object/boots.png"));
             uTool.scaleImage(image, gp.titlesize, gp.titlesize);
 
         } catch (IOException e) {

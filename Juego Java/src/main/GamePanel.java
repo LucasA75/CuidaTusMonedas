@@ -96,7 +96,6 @@ public class GamePanel extends JPanel implements Runnable{ // esto llama a las f
 
         //Aqui reproducimos la musica 
         playMusic(0);
-        stopMusic();
         gameState = playState;
     }
 
@@ -116,7 +115,7 @@ public class GamePanel extends JPanel implements Runnable{ // esto llama a las f
         long currentTime;
         long timer = 0;
         int drawCount = 0;
-
+        
         
         //Mientras gamethread existe se repite lo siguiente
         while(gameThread != null){
