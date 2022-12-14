@@ -30,7 +30,7 @@ public class UsuarioService {
     public List<Usuario> allUsuarios(){
         return usuarioRepository.findAll();
     }
-    public void eliminarUsuario(Integer id){
+    public void eliminarUsuario(Long id){
         usuarioRepository.deleteById(id);
     }
 }
