@@ -207,7 +207,7 @@ public class Collision {
            //Esto tira el mensaje cada vez que me muevo
         }
     }
-    public void verificador1(Entity entity, boolean player){
+   /*  public void verificador1(Entity entity, boolean player){
         for(int i=0;i< gp.obj.length;i++){
             if(gp.obj[i] != null){
         if(entity.solidArea.intersects(gp.obj[i].solidArea)){
@@ -216,5 +216,5 @@ public class Collision {
         }
     }
 }
-}
+} */
 }

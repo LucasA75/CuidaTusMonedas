@@ -96,7 +96,7 @@ public class Player extends Entity {
         //interactNPC(npcIndex); 
 
         //Prueba hecha por mi
-        gp.checker.verificador1(this, true);
+        /* gp.checker.verificador1(this, true); */
 
 
 

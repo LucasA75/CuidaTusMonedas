@@ -23,6 +23,39 @@ public class KeyHandler implements KeyListener {
     @Override
     public void keyPressed(KeyEvent e) {
         int code = e.getKeyCode(); //retorna un entero keycode con la llave en este evento
+
+        // Pulsador del Menu
+        if(gp.gameState == gp.titleState){
+            if(code == KeyEvent.VK_W){ // al precionar una tecla si esta es la W
+                gp.ui.commandNum--;
+                if(gp.ui.commandNum < 0){
+                    gp.ui.commandNum = 1;
+                }
+            }
+
+            if(code == KeyEvent.VK_S){
+                gp.ui.commandNum++;
+                //Esto no deja que se salga el cursor de las 2 opciones
+                if(gp.ui.commandNum < 1){
+                    gp.ui.commandNum = 0;
+                }
+            }
+
+            if(code == KeyEvent.VK_ENTER){
+                if(gp.ui.commandNum == 0){
+                gp.gameState = gp.playState;
+
+                }
+                if(gp.ui.commandNum == 1){
+                    //Saldra del juego
+                    System.exit(0);
+                }
+            }
+
+            
+        }
+
+
         
         if(code == KeyEvent.VK_W){ // al precionar una tecla si esta es la W
             upPressed = true; // dile a uppressed que es true , es false por defecto

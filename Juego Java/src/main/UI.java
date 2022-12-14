@@ -14,6 +14,8 @@ public class UI {
     public boolean messageOn = false;
     public String message = "";
     int messageCounter = 0 ;
+    public int commandNum = 0;
+
 
     Graphics2D g2;
 
@@ -109,6 +111,13 @@ public class UI {
         g2.setFont(arial_40);
         g2.setColor(Color.white);
         
+
+        //Title state
+        if(gp.gameState == gp.titleState){
+            drawTitleScreen();
+        }
+
+
         if(gp.gameState == gp.playState){
         
         }
@@ -144,6 +153,55 @@ public class UI {
     
         return x;
     }
+
+    public void drawTitleScreen(){
+
+        //Title name
+        g2.setFont(g2.getFont().deriveFont(Font.BOLD,50F));
+        String text = "Cuida Tus Monedas";
+        int x = getXforCenteredText(text);
+        int y = gp.titlesize * 3;
+
+        //Sombra
+        g2.setColor(Color.BLACK);
+        g2.drawString(text, x+2, y+2);
+        //Main color
+        g2.setColor(Color.orange);
+        g2.drawString(text,x,y);
+
+        //Imagen 
+        x= gp.screenWidth/2 - (gp.titlesize*2)/2;
+        y += gp.titlesize*2;
+        g2.drawImage(gp.player.down1,x, y, gp.titlesize*2,gp.titlesize*2,null);
+
+
+        //Menu
+        
+        
+        //New Game
+        g2.setColor(Color.BLACK);
+        g2.setFont(g2.getFont().deriveFont(Font.BOLD,36F));
+        text = "Nuevo Juego";
+         x = getXforCenteredText(text);
+         y += gp.titlesize * 3.5;
+         g2.drawString(text, x, y);
+         if(commandNum == 0){
+            g2.drawString(">", x-gp.titlesize, y);
+         }
+
+
+        //quit
+         g2.setFont(g2.getFont().deriveFont(Font.BOLD,36F));
+        text = "Salir";
+         x = getXforCenteredText(text);
+         y += gp.titlesize;
+         g2.drawString(text, x, y);
+         if(commandNum == 1){
+            g2.drawString(">", x-gp.titlesize, y);
+         }
+
+    }
+
 }
 
 
