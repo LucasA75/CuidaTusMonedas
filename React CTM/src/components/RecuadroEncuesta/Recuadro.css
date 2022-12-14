@@ -1,0 +1,32 @@
+.recuadro {
+position: absolute;
+width: 681px;
+height: 317px;
+left: 577px;
+top: 330px;
+
+background: #FCBF49;
+border-radius: 85px; 
+}
+
+.texto {
+
+font-family: 'Maven Pro';
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+line-height: 47px;
+
+color: #911cfe;
+}
+
+.botom {
+position: absolute;
+width: 225px;
+height: 52px;
+left: 1010px;
+top: 568px;
+
+background: #F77F00;
+border-radius: 90px;
+}
