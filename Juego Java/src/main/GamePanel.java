@@ -64,6 +64,7 @@ public class GamePanel extends JPanel implements Runnable{ // esto llama a las f
 
     //Estado del Juego
     public int gameState;
+    public final int titleState = 0;
     public final int playState = 1;
     public final int pauseState = 2;
 
@@ -100,7 +101,7 @@ public class GamePanel extends JPanel implements Runnable{ // esto llama a las f
         aSetter.setNPC();
         //Aqui reproducimos la musica 
         playMusic(0);
-        gameState = playState;
+        gameState = titleState;
     }
 
     public void startGameThread(){
@@ -211,7 +212,12 @@ public class GamePanel extends JPanel implements Runnable{ // esto llama a las f
         }
         
 
-        //Primero dibujamos los tiles y luego el personaje
+        //Title screen
+        if(gameState == titleState){
+            ui.draw(g2);
+        }
+        else{
+                    //Primero dibujamos los tiles y luego el personaje
         tileM.draw(g2);
 
         //dibujamos al objeto
@@ -246,7 +252,7 @@ public class GamePanel extends JPanel implements Runnable{ // esto llama a las f
         }
 
         g2.dispose(); // dispone de estos graficos contexto y libera cualquier recurso del sistema que se este ocupando
-    
+        }
     }
 
 public void playMusic(int i){
