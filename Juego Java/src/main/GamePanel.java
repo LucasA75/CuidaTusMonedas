@@ -1,10 +1,12 @@
 package main;
 
 import java.awt.*;
+import java.util.ArrayList;
 
 import javax.swing.JPanel;
 import javax.swing.plaf.DimensionUIResource;
 
+import models.Entity;
 import models.Player;
 import object.SuperObject;
 import tile.TileManager;
@@ -57,6 +59,8 @@ public class GamePanel extends JPanel implements Runnable{ // esto llama a las f
     //invocamos al objeto
     public SuperObject  obj[] = new SuperObject[10]; // Esto quiere decir que podemos mostrar en pantalla hasta 10 obj
 
+    //Invocamos al NPC
+    public ArrayList<Entity> npc = new ArrayList<Entity>();
 
     //Estado del Juego
     public int gameState;
@@ -93,7 +97,7 @@ public class GamePanel extends JPanel implements Runnable{ // esto llama a las f
 
     public void setupGame(){
         aSetter.setObject();
-
+        aSetter.setNPC();
         //Aqui reproducimos la musica 
         playMusic(0);
         gameState = playState;
@@ -179,7 +183,14 @@ public class GamePanel extends JPanel implements Runnable{ // esto llama a las f
     public void update(){
     
         if(gameState == playState){
+            //Player
             player.update();
+            //NPC
+            for(int i = 0 ; i< npc.size() ; i++){
+                if(npc.get(i) != null){
+                    npc.get(i).update();
+                }
+            }
         }
         if(gameState == pauseState){
             //nothing
@@ -207,6 +218,13 @@ public class GamePanel extends JPanel implements Runnable{ // esto llama a las f
         for(int i = 0; i < obj.length; i++){
             if(obj[i] != null){
                 obj[i].draw(g2,this);
+            }
+        }
+
+        //NPC
+        for(int i = 0; i<npc.size();i++){
+            if(npc.get(i) != null){
+                npc.get(i).draw(g2);
             }
         }
 
