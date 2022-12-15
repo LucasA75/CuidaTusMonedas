@@ -1,6 +1,6 @@
 import React from "react";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import { AdminPage, IniciarSesion, LoginPage,Encuesta1,Encuesta2} from "./pages";
+import { AdminPage, IniciarSesion, LoginPage,Encuesta1,Encuesta2, Conocenos} from "./pages";
 import Home from "./pages/Home"
 import PagePerso from "./pages/PagePerso";
 

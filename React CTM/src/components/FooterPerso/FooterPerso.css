@@ -1,10 +1,40 @@
 .consejo{
+    
     background-color: rgba(254, 214, 113, 1);
     height: 120px;
-    width: 600px;
+    width: 1500px;
+    border-radius: 15px;
 }
-.recuadro{
+.recuadro1{
+    display: flex;
+    align-content: center;
+    padding-top: 40px;
     background-color: aliceblue;
-    height: 150px;
+    height: 160px;
     
+    
+}
+.contacto1{
+    
+    background-color: rgba(240, 239, 229, 1);
+    height: 120px;
+    width: 1500px;
+    
+       
+}
+.recuadro2{
+    display: flex;
+    align-content: center;
+    padding-top: 40px;
+    background-color: aliceblue;
+    height: 200px;
+
+}
+/* .footerperso{
+    display: flex;
+    flex-direction: row;
+} */
+.ws1{
+    display: flex;
+    flex-direction: row;
 }

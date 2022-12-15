@@ -53,8 +53,7 @@ const HeaderPerso =()=>{
                     <div> <img src={flecha}/></div>
                 
             </div>
-
-           
+        
 
         </div>
          </center>
