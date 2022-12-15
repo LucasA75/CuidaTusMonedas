@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {FormularioLogin} from "../components";
+import {FormularioLogin, FondoLogin} from "../components";
 
 const usuario1 = [
   {
@@ -48,7 +48,7 @@ const LoginPage = () => {
   return(
 
       <main>
-      {/* <FondoLogin/> */}
+      <FondoLogin/>
       <div><FormularioLogin userAdd = {userAdd}/></div>
       </main>
   )

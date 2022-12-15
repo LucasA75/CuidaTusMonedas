@@ -5,6 +5,9 @@ import "./FondoLogin.css";
 const FondoLogin = () => {
   return (
     <main>
+      <div class="rectangulo">
+
+      </div>
       <img
         className="FondoLogin"
         src={background}
