@@ -1,8 +1,15 @@
-import React from "react";
+import React,{useCallback} from "react";
+import { useNavigate } from "react-router-dom";
 import logo from '../../assets/logo.png';
 import "./Headermain.css"
 
 const Headermain = () => {
+            /* Palabra reservada para navegar */
+            const navigate = useNavigate();
+
+            /* Aqui hago una arrow funcion y le digo primero : donde quiero ir */
+        const handleOnClick = useCallback(()=> navigate("/IniciarSesion",{},[navigate]));
+    
     return (
         <div className="header">
             <nav class="navbar navbar-expand-lg bg-light" >
@@ -18,7 +25,9 @@ const Headermain = () => {
                             <a class="nav-link active" aria-current="page" href="/#">Home</a>
                             <a class="nav-link" href="/#">Conocenos</a>
                             <a class="nav-link" href="/#">Ayuda</a>
-                            <a class="nav-link" href="/#">Iniciar sesion</a>
+                            <div className="iniciarsesion">
+                            <a class="nav-link" href="/IniciarSesion" handleOnClick={handleOnClick}>Iniciar sesion</a>   
+                            </div>
                         </div>
                     </div>
                 </div>
