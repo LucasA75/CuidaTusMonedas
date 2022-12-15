@@ -11,7 +11,7 @@ const Login = () =>{
               <img src={gatito} alt="nuestro logo" />
             </div> 
             <div className="titulo">
-            <h1>Iniciar Sesion</h1>
+            <h1>Iniciar Sesión</h1>
             </div>
             <form>
             <label for="name"> Nombre : </label>
@@ -28,13 +28,13 @@ const Login = () =>{
               id="contraseña"
             />
             </form>
-            <h6>Olvidaste tu contraseña?</h6>
+            <h6>¿Olvidaste tu contraseña?</h6>
 
             <div>
-            <button type="button" class="btn btn-primary">Iniciar Sesion</button>
+            <button type="button" class="btn btn-primary">Iniciar Sesión</button>
             </div>
             <div>
-              no tienes una cuenta?  Registrate
+              ¿No tienes una cuenta?  Regístrate
             </div>
 
             </div>
