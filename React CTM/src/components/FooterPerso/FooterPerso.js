@@ -28,7 +28,7 @@ const FooterPerso =()=>{
                     </div>
                     <div class="ws1"> 
                         <img src={mailsend}/>
-                        <h6> Mail</h6>
+                        <h6> Correo</h6>
                     </div>
                 </div>
                 
