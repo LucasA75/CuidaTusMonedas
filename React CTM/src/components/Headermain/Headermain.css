@@ -11,12 +11,11 @@
 /* Las media query sirven para cambiar el estilo de un elemento si cumple ciertas condiciones
 en este caso el ancho de la pantalla */
 
-.iniciarsesion{
-    position: relative;
-    
+/* .iniciarsesion{
     background-color: rgba(252, 191, 73, 1);
     border-radius: 30px;
-}
+
+} */
 
 @media screen and (max-width:800px) {
     .container-fluid{
