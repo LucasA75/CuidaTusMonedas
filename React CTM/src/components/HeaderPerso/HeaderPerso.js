@@ -48,9 +48,9 @@ const HeaderPerso =()=>{
             <div class="container-lg d-flex justify-content-around  avance">
 
                 
-                    <div> <img src={gatolente} /> </div>
+                    <div> <img src={gatolente} alt="Gato con Lentes" /> </div>
                     <div> <h3>Protege tus <br/> modedas</h3></div>
-                    <div> <img src={flecha}/></div>
+                    <div> <img src={flecha} alt="Flechita"/></div>
                 
             </div>
         
