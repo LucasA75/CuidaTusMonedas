@@ -1,0 +1,55 @@
+.logo{
+    width: 110px;
+    height: 100px;
+    margin-top: -20px;
+}
+
+@media screen and (max-width:800px) {
+    .container-fluid{
+        background-color: rgb(62, 104, 104);
+    }
+
+}
+.saludo{
+    background-color: rgba(253, 190, 57, 1);
+    display: flex;
+    margin-top: 10px;
+    
+    flex-direction: row;
+   
+    
+}
+/* .hola{
+position: relative;
+width: 200px;
+height: 50px;
+left: 110px;
+top: 40px;
+
+
+font-family: 'Inter';
+font-style: normal;
+} */
+.progreso{
+
+top: 20px;
+
+font-family: 'Inter';
+font-style: normal;
+
+}
+.modulos{
+    background-color: aliceblue;
+}
+.avance{
+    background-color:rgba(255, 233, 78, 1);
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    padding-bottom: 10px;
+    flex-direction: row;
+    align-items: center;
+    height: 150px;
+    width: 800px;
+    border-radius: 15px;
+}
