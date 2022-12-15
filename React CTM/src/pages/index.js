@@ -1,4 +1,6 @@
-import Home from "./Home";
-import LoginPage from "./LoginPage";
+import Home from "./Home"
+import Conocenos from "./Conocenos"
+import LoginPage from "./LoginPage"
+import AdminPage from "./AdminPage"
 
-export {Home,LoginPage};
+export {Home,Conocenos, LoginPage, AdminPage}

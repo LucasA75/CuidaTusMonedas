@@ -5,6 +5,9 @@ import MenuModulos from "./MenuModulos/MenuModulos";
 import FooterMain from "./FooterMain/FooterMain";
 import FondoLogin from "./FondoLogin/FondoLogin";
 import Login from "./Login/Login";
+import Equipo from "./Equipo/Equipo";
+import FormularioLogin from "./FormularioLogin/FormularioLogin";
+import TablaUsuario from "./TablaUsuario/TablaUsuario";
 
 export{
     Headermain,
@@ -12,5 +15,8 @@ export{
     MenuModulos,
     FooterMain,
     FondoLogin,
-    Login
+    Login,
+    Equipo,
+    FormularioLogin,
+    TablaUsuario
 };
