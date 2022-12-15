@@ -11,6 +11,7 @@ import TablaUsuario from "./TablaUsuario/TablaUsuario";
 import Recuadro from "./RecuadroEncuesta/Recuadro";
 import HeaderPerso from "./HeaderPerso/HeaderPerso";
 import FooterPerso from "./FooterPerso/FooterPerso";
+import ModuloProtege from "./ModulosIndex/ModuloProtege";
 
 export{
     Headermain,
@@ -24,5 +25,6 @@ export{
     TablaUsuario,
     Recuadro,
     HeaderPerso,
-    FooterPerso
+    FooterPerso,
+    ModuloProtege
 };
