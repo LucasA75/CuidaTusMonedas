@@ -12,6 +12,7 @@ import Recuadro from "./RecuadroEncuesta/Recuadro";
 import HeaderPerso from "./HeaderPerso/HeaderPerso";
 import FooterPerso from "./FooterPerso/FooterPerso";
 
+
 export{
     Headermain,
     Main,

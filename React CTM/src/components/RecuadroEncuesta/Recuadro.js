@@ -9,7 +9,7 @@ const Recuadro = () => {
     return (
 
 
-    <div class="container-lg recuadro">
+    <div class="container-lg encuesta">
       
     </div>
 
