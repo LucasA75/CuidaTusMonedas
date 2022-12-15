@@ -13,8 +13,7 @@
 .saludo{
     background-color: rgba(253, 190, 57, 1);
     display: flex;
-    margin-top: 10px;
-    
+       
     flex-direction: row;
    
     
@@ -40,12 +39,13 @@ font-style: normal;
 }
 .modulos{
     background-color: aliceblue;
+    padding-top: 5px;
 }
 .avance{
     background-color:rgba(255, 233, 78, 1);
     display: flex;
     justify-content: center;
-    margin: 5px;
+    
     padding-bottom: 10px;
     flex-direction: row;
     align-items: center;
