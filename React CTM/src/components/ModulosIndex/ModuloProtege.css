@@ -1,0 +1,10 @@
+.Encabezado{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.Encabezado h2{
+    
+    background-color: aqua;
+}
