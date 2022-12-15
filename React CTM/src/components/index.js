@@ -4,11 +4,13 @@ import Main from "./Main/Main";
 import MenuModulos from "./MenuModulos/MenuModulos";
 import FooterMain from "./FooterMain/FooterMain";
 import FondoLogin from "./FondoLogin/FondoLogin";
+import Login from "./Login/Login";
 
 export{
     Headermain,
     Main,
     MenuModulos,
     FooterMain,
-    FondoLogin
+    FondoLogin,
+    Login
 };
