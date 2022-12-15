@@ -1,7 +1,7 @@
 .recuadro {
     box-sizing: border-box;
 
-    position: absolute;
+    position: flex;
     width: 709px;
     height: 311px;
     left: 556px;
