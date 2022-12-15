@@ -3,6 +3,7 @@ import "./Recuadro.css";
 import "./BotonSiguiente";
 
 
+
 const Recuadro = () => {     
 
     return (
