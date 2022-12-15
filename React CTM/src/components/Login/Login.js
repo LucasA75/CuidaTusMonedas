@@ -1,23 +1,46 @@
 import React from "react";
-import Box from '@mui/material/Box';
-import Caja from "./Login.css";
-
+import "./Login.css" 
+import gatito from '../../assets/logo.png';
 
 const Login = () =>{
     return (
-        <Box
-        sx={{
-    
-          width: 300,
-          height: 300,
-          backgroundColor: 'primary.dark',
-          '&:hover': {
-            backgroundColor: 'primary.main',
-            opacity: [0.9, 0.8, 0.7],
-          },
-        }}
-      />
-            
+        <div>
+          <div class="container-md login">
+            <div>
+            <div className="gato">
+              <img src={gatito} alt="nuestro logo" />
+            </div> 
+            <div className="titulo">
+            <h1>Iniciar Sesion</h1>
+            </div>
+            <form>
+            <label for="name"> Nombre : </label>
+            <input
+              type="text"
+              name="nombre"
+              id="name"
+            />
+            <br />
+            <label for="name"> Contraseña : </label>
+            <input
+              type="text"
+              name="contraseña"
+              id="contraseña"
+            />
+            </form>
+            <h6>Olvidaste tu contraseña?</h6>
+
+            <div>
+            <button type="button" class="btn btn-primary">Iniciar Sesion</button>
+            </div>
+            <div>
+              no tienes una cuenta?  Registrate
+            </div>
+
+            </div>
+
+          </div>
+        </div>
     );
 
 }
