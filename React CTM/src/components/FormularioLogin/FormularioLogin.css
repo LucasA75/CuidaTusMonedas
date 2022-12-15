@@ -1,19 +1,21 @@
 .formulario{
 
-    background-color:aliceblue;
+    
     display: flex;
     justify-content: center;
     margin: 50px;
-    padding-bottom: 300px;
+    padding-bottom: 100px;
     flex-direction: column;
     align-items: center;
-    
+    height: 660px;
+    width: 510px;
+    position:absolute; left:370px;
 
 
 }
-body, footer, header{
-    background-image: url("../../assets/img/Tran.gif"); 
-    background-repeat: no-repeat;
+/* body{
+    background-image: url("../../assets/FondoLogin.png"); 
+    background-repeat: repeat;
     background-position: center;
     background-size: 100% 100%;
-}
+} */
