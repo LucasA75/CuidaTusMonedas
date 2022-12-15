@@ -3,10 +3,12 @@ import Headermain from "./Headermain/Headermain";
 import Main from "./Main/Main";
 import MenuModulos from "./MenuModulos/MenuModulos";
 import FooterMain from "./FooterMain/FooterMain";
+import HeaderPerso from "./HeaderPerso/HeaderPerso";
 
 export{
     Headermain,
     Main,
     MenuModulos,
-    FooterMain
+    FooterMain,
+    HeaderPerso
 };

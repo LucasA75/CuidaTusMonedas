@@ -1,0 +1,48 @@
+.logo{
+    width: 110px;
+    height: 100px;
+    margin-top: -20px;
+}
+
+@media screen and (max-width:800px) {
+    .container-fluid{
+        background-color: rgb(62, 104, 104);
+    }
+
+}
+.saludo{
+    background-color: rgba(253, 190, 57, 1);
+}
+.hola{
+position: relative;
+width: 200px;
+height: 50px;
+left: 110px;
+top: 40px;
+
+
+font-family: 'Inter';
+font-style: normal;
+}
+.progreso{
+position: relative;
+width: 300px;
+height: 50px;
+left: 680px;
+top: 5px;
+
+font-family: 'Inter';
+font-style: normal;
+
+}
+.saludo2{
+    position: relative;
+    width: 300px;
+    height: 50px;
+    left: 750px;
+    top: 5px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+
+}
