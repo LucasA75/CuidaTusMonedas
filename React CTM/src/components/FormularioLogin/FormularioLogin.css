@@ -1,0 +1,21 @@
+.formulario{
+
+    
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    padding-bottom: 100px;
+    flex-direction: column;
+    align-items: center;
+    height: 660px;
+    width: 510px;
+    position:absolute; left:370px;
+
+
+}
+/* body{
+    background-image: url("../../assets/FondoLogin.png"); 
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 100% 100%;
+} */

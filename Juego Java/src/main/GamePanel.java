@@ -1,17 +1,19 @@
 package main;
 
 import java.awt.*;
+import java.util.ArrayList;
 
 import javax.swing.JPanel;
 import javax.swing.plaf.DimensionUIResource;
 
+import models.Entity;
 import models.Player;
 import object.SuperObject;
 import tile.TileManager;
 
 public class GamePanel extends JPanel implements Runnable{ // esto llama a las funciones de Panel 
     //Esto funciona como el panel de juego
-
+    Font arial_20;
     //Screen Settings
     final int originalTileSize = 16; // 16 px del arte
     //Ya que ahora ocupamos pantallas mas grandes o si no se veria muy pequeño
@@ -28,32 +30,45 @@ public class GamePanel extends JPanel implements Runnable{ // esto llama a las f
     //World SETTINGS
     public final int maxWorldCol = 50;
     public final int maxWorldRow = 50;
-    public final int worldWidth = titlesize * maxWorldCol;
-    public final int worldHeigth = titlesize * maxSreenRow;
 
     //Collision checker
     public Collision checker = new Collision(this);
     
-    
-
     //FPS
     int  fps = 60;
 
     //Invocar a TileManager
     TileManager tileM = new TileManager(this);
     //Invocar a KeyHandler
-    KeyHandler keyH = new KeyHandler();
-    //Esto se ocupa para hacer parar el tiempo del juego
-    Thread gameThread;
-    
+    KeyHandler keyH = new KeyHandler(this);
+    //Invocamos al Audio
+    Sound sound = new Sound();
+    Sound se = new Sound();
     //Invocamos al Assetsetter
     public AssetSetter aSetter = new AssetSetter(this);
+    //Invocamos al UI
+    public UI ui = new UI(this);
+    //Esto se ocupa para hacer parar el tiempo del juego
+    Thread gameThread;
+
+
 
     //invocaremos al Player
     public Player player = new Player(this,keyH);
 
     //invocamos al objeto
     public SuperObject  obj[] = new SuperObject[10]; // Esto quiere decir que podemos mostrar en pantalla hasta 10 obj
+
+    //Invocamos al NPC
+    public ArrayList<Entity> npc = new ArrayList<Entity>();
+
+    //Estado del Juego
+    public int gameState;
+    public final int titleState = 0;
+    public final int playState = 1;
+    public final int pauseState = 2;
+
+
 
 
 /*     //Setear la posicion por defecto del jugador
@@ -83,6 +98,10 @@ public class GamePanel extends JPanel implements Runnable{ // esto llama a las f
 
     public void setupGame(){
         aSetter.setObject();
+        aSetter.setNPC();
+        //Aqui reproducimos la musica 
+        playMusic(0);
+        gameState = titleState;
     }
 
     public void startGameThread(){
@@ -101,7 +120,7 @@ public class GamePanel extends JPanel implements Runnable{ // esto llama a las f
         long currentTime;
         long timer = 0;
         int drawCount = 0;
-
+        
         
         //Mientras gamethread existe se repite lo siguiente
         while(gameThread != null){
@@ -155,47 +174,50 @@ public class GamePanel extends JPanel implements Runnable{ // esto llama a las f
                 drawCount++;
             }
             if(timer >= 1000000000){
-                System.out.println("FPS"+ drawCount);
+                // System.out.println("FPS"+ drawCount); // Esto muestra los FPS
                 drawCount = 0;
                 timer = 0;
             }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         }
     }
 
     public void update(){
     
-        player.update();
+        if(gameState == playState){
+            //Player
+            player.update();
+            //NPC
+            for(int i = 0 ; i< npc.size() ; i++){
+                if(npc.get(i) != null){
+                    npc.get(i).update();
+                }
+            }
+        }
+        if(gameState == pauseState){
+            //nothing
+        }
     }
 
     //Pintar componentes
     public void paintComponent(Graphics g){ //graphics es una clase que tiene funciones para diobujar objetos en la ventana
         //Este graphics es como un paintbrush
-
         super.paintComponent(g); // este super llama a JPanel
 
         Graphics2D g2 = (Graphics2D)g; // Esto nos da mas opciones para trabajar con la geometria del 2D
-        //Primero dibujamos los tiles y luego el personaje
+
+        //Debug
+        long drawStart = 0;
+        if(keyH.checkdrawTime == true){
+            drawStart = System.nanoTime();
+        }
+        
+
+        //Title screen
+        if(gameState == titleState){
+            ui.draw(g2);
+        }
+        else{
+                    //Primero dibujamos los tiles y luego el personaje
         tileM.draw(g2);
 
         //dibujamos al objeto
@@ -205,10 +227,45 @@ public class GamePanel extends JPanel implements Runnable{ // esto llama a las f
             }
         }
 
+        //NPC
+        for(int i = 0; i<npc.size();i++){
+            if(npc.get(i) != null){
+                npc.get(i).draw(g2);
+            }
+        }
+
         //dibujamos al player
         player.draw(g2);
+        
+        //UI
+        ui.draw(g2);
+
+
+        //DEBUG -> Tiene una funcion modo on and off
+        if(keyH.checkdrawTime == true){
+        long drawEnd = System.nanoTime();
+        long passed = drawEnd - drawStart;
+        g2.setColor(Color.white);
+        g2.setFont(arial_20);
+        g2.drawString("Draw Time: " + passed , 10, 400);
+        System.out.println("Draw Time "+ passed);
+        }
 
         g2.dispose(); // dispone de estos graficos contexto y libera cualquier recurso del sistema que se este ocupando
-    
+        }
     }
+
+public void playMusic(int i){
+    sound.setFile(i);
+    sound.play();
+    sound.loop();
+}
+public void stopMusic(){
+    sound.stop();
+}
+public void playSE(int i){
+    se.setFile(i);
+    se.play();
+
+}
 }

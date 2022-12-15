@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 import React from "react";
+=======
+/* import React from "react";
+import "./botom.css" 
+>>>>>>> main
 
 const Siguiente = ({infoBoton, handleOnClick}) => {     
 
@@ -16,3 +21,7 @@ const Siguiente = ({infoBoton, handleOnClick}) => {
 
 
 export default Siguiente;
+<<<<<<< HEAD
+=======
+ */
+>>>>>>> main

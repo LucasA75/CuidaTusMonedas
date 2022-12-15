@@ -1,0 +1,19 @@
+.FondoLogin{
+    transform: rotate(-35deg) scale(1.7);
+}
+
+.rectangulo{
+    background: #F9F9FB;
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    padding-bottom: 100px;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.4) ;
+    height: 680px;
+    width: 520px;
+    position:absolute; left:370px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    filter: blur(2px);
+}

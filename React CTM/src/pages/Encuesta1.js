@@ -10,7 +10,7 @@ const Encuesta1 =() =>{
         <h1 class = "texto">Comencemos tu registro</h1>
         </center>
 
-        <Recuadro />
+        <Recuadro/>
          </>
     )
 }

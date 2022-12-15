@@ -1,6 +1,5 @@
 package tile;
 
-
 import java.io.BufferedReader;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -10,6 +9,7 @@ import java.awt.*;
 import javax.imageio.ImageIO;
 
 import main.GamePanel;
+import main.UtilityTool;
 
 public class TileManager {
     
@@ -21,43 +21,87 @@ public class TileManager {
     public TileManager(GamePanel gp){
         this.gp = gp;
 
-        tile = new Tile[37];
+        tile = new Tile[50];
         mapTileNum = new int [gp.maxWorldCol][gp.maxWorldRow];
         getTileImage();
-        loadMap("/Generation/Juego Java/res/maps/world01.txt");
-
+        loadMap("/Generation/CuidaTusMonedas/Juego Java/res/maps/worldV2.txt");
     }
 
     public void getTileImage(){
+            
+            //Todo esto ocupa la funcion setup para importar las imagenes y darle el atributo de colision y meterlos al array
+
+            //Todo lo que hace el place holder es que como no ocuparemos el el mapa numeros del 0 al 9 , 
+            //solo numeros de 2 digitos evitaremos asi algun error y el txt de mapa es mas legible
+            //PlaceHolder 
+            setup(0, "grass00", false);
+            setup(1, "grass00", false);
+            setup(2, "grass00", false);
+            setup(3, "grass00", false);
+            setup(4, "grass00", false);
+            setup(5, "grass00", false);
+            setup(6, "grass00", false);
+            setup(7, "grass00", false);
+            setup(8, "grass00", false);
+            setup(9, "grass00", false);
+
+            //Fin Place holder 1 - 9
+
+            setup(10, "grass00", false);
+            setup(11, "grass01", false);
+            setup(12, "water00", false);
+            setup(13, "water01", true);
+            setup(14, "water02", true);
+            setup(15, "water03", true);
+            setup(16, "water04", true);
+            setup(17, "water05", true);
+            setup(18, "water06", true);
+            setup(19, "water07", true);
+            setup(20, "water08", true);
+            setup(21, "water09", true);
+            setup(22, "water10", true);
+            setup(23, "water11", true);
+            setup(24, "water12", true);
+            setup(25, "water13", true);
+            setup(26, "road00", false);
+            setup(27, "road01", false);
+            setup(28, "road02", false);
+            setup(29, "road03", false);
+            setup(30, "road04", false);
+            setup(31, "road05", false);
+            setup(32, "road06", false);
+            setup(33, "road07", false);
+            setup(34, "road08", false);
+            setup(35, "road09", false);
+            setup(36, "road10", false);
+            setup(37, "road11", false);
+            setup(38, "road12", false);
+            setup(39, "earth", false);
+            setup(40, "wall", true);
+            setup(41, "tree", true);
+
+
+
+
+            //tierra
+            //Antes se hacia asi
+            /* tile[1] = new Tile();//pared
+            tile[1].image = ImageIO.read(new FileInputStream("/Generation/Juego Java/res/tiles/032.png"));
+            tile[1].collision = true; */
+    }
+
+    public void setup(int index, String imageName, boolean collision){
+        //Aqui trataremos todo el duplicado de lineas( instanciacion, importar la imagen , scala y la colision)
+        UtilityTool uTool = new UtilityTool();
 
         try {
-
-            tile[0] = new Tile();// hierba 
-            tile[0].image = ImageIO.read(new FileInputStream("/Generation/Juego Java/res/tiles/002.png"));
-            
-            tile[1] = new Tile();//pared
-            tile[1].image = ImageIO.read(new FileInputStream("/Generation/Juego Java/res/tiles/032.png"));
-            tile[1].collision = true;
-
-            tile[2] = new Tile();//agua
-            tile[2].image = ImageIO.read(new FileInputStream("/Generation/Juego Java/res/tiles/019.png"));
-            tile[2].collision = true;
-
-            tile[6] = new Tile();//escalera
-            tile[6].image = ImageIO.read(new FileInputStream("/Generation/Juego Java/res/tiles/036.png"));
-
-            tile[5] = new Tile();//desierto -> en el video es 5
-            tile[5].image = ImageIO.read(new FileInputStream("/Generation/Juego Java/res/tiles/003.png"));
-
-            tile[4] = new Tile();//arbol -> en el video es 4
-            tile[4].image = ImageIO.read(new FileInputStream("/Generation/Juego Java/res/tiles/016.png"));
-            tile[4].collision = true;
-
-            tile[3] = new Tile();//tierra -> en el video es 3
-            tile[3].image = ImageIO.read(new FileInputStream("/Generation/Juego Java/res/tiles/017.png"));
-
+            tile[index] = new Tile();
+            tile[index].image = ImageIO.read(new FileInputStream("/Generation/CuidaTusMonedas/Juego Java/res/tiles/"+ imageName +".png"));
+            tile[index].image = uTool.scaleImage(tile[index].image, gp.titlesize, gp.titlesize);
+            tile[index].collision = collision;
         } catch (IOException e) {
             e.printStackTrace();
+            // TODO: handle exception
         }
     }
 
@@ -98,7 +142,7 @@ public class TileManager {
         int row = 0;
         
 
-        // Esto hara el proceso de manera auto
+        // Esto hara el proceso de dibujado de casillas de manera auto
         while(col< gp.maxWorldCol && row < gp.maxWorldRow){
 
             int tileNum = mapTileNum[col][row];
@@ -114,7 +158,7 @@ public class TileManager {
                 worldY + gp.titlesize > gp.player.worldY - gp.player.screenY &&
                 worldY - gp.titlesize - 500 < gp.player.worldY + gp.player.screenY){
             
-                g2.drawImage(tile[tileNum].image, screenX, screenY, gp.titlesize,gp.titlesize,null);
+                g2.drawImage(tile[tileNum].image, screenX, screenY,null);
             }
             
             col++;

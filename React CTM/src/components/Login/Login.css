@@ -1,0 +1,22 @@
+.login{
+  display: flex;
+  justify-content: center;
+  background-color:rgba(248, 248, 250, 1);
+  margin-top: 50px;
+/*   margin: 100px; */
+  padding-bottom: 500px;
+  margin-bottom: 100px;
+}
+
+.titulo{
+  position: absolute;
+  top: 480px;
+  transform: translate(54%, -50%);
+}
+
+.gato{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  top: -40px;
+}
