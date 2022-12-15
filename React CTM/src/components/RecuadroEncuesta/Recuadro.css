@@ -1,0 +1,35 @@
+.recuadro {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 709px;
+    height: 311px;
+    left: 556px;
+    top: 342px;
+
+    background: #FCBF49;
+    border: 1px solid #000000;
+    border-radius: 85px;
+}
+
+.texto {
+
+    font-family: 'Maven Pro';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 47px;
+
+    color: #040007;
+}
+
+/* .botom {
+    position: absolute;
+    width: 225px;
+    height: 52px;
+    left: 1010px;
+    top: 568px;
+
+    background: #F77F00;
+    border-radius: 90px;
+} */

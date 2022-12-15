@@ -1,5 +1,6 @@
-import PagePerso from "./PagePerso";
-import Home from "./Home";
+import Home from "./Home"
+import Conocenos from "./Conocenos"
+import LoginPage from "./LoginPage"
+import AdminPage from "./AdminPage"
 
-export {PagePerso, Home};
-
+export {Home,Conocenos, LoginPage, AdminPage}
