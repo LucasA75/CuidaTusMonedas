@@ -2,6 +2,7 @@ import React from "react";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import { AdminPage, IniciarSesion, LoginPage,Encuesta1,Encuesta2} from "./pages";
 import Home from "./pages/Home"
+import PagePerso from "./pages/PagePerso";
 
 const App =() => {
     return(
@@ -13,6 +14,8 @@ const App =() => {
                 <Route path="/IniciarSesion" element={<IniciarSesion/>}></Route>
                 <Route path="/Encuesta1" element={<Encuesta1/>}></Route>
                 <Route path="/Encuesta2" element={<Encuesta2/>}></Route>
+                <Route path="/Perso" element={<PagePerso/>}></Route>
+                <Route path="/Conocenos" element={<Conocenos/>}></Route>
             </Routes>
         </BrowserRouter>
     )
