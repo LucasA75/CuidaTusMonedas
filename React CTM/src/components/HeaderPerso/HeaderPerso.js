@@ -2,6 +2,10 @@ import React from "react";
 import logo from '../../assets/logo.png';
 import gatopage from '../../assets/gatopage.png'
 import './HeaderPerso.css'
+import catluna from '../../assets/catluna.png'
+import gatolente from '../../assets/gatolente.png'
+import flecha from '../../assets/flecha.png'
+
 
 
 const HeaderPerso =()=>{
@@ -27,12 +31,34 @@ const HeaderPerso =()=>{
                 </div>
             </div>
         </nav>
-        <div class="saludo ">
-            <h2 class="hola">¡Hola Alín!</h2>
-            <h4 class="progreso">Tu progreso actual es de: </h4>
-
-            <h4 class="saludo2">¡Sigue así!</h4>
+        <div class=" d-flex justify-content-around saludo">
+            <div class="d-flex align-content-center flex-wrap"> <h2 class="hola">¡Hola Alín!</h2> </div>
+            <div class="d-flex align-content-center flex-wrap progreso">
+                <div><h4>Tu progreso actual es de: <br/> <br/>
+                    ¡Sigue así!</h4> </div>
+            </div>
+            <div class="d-flex align-content-center flex-wrap"> <img src={catluna} alt="Logo" width="100" /> </div>
         </div>
+        <center>
+        <div class="container-fluid modulos">
+            <div class="d-flex justify-content-around align-content-center flex-wrap"> 
+            <div class="d-flex align-content-center flex-wrap"> <h3> Mis modulos</h3> </div>
+            <div class="d-flex align-content-center flex-wrap"> <button type="button" class="btn btn-success"> + Nuevo módulo</button></div>
+            </div>
+            <div class="container-lg d-flex justify-content-around  avance">
+
+                
+                    <div> <img src={gatolente} /> </div>
+                    <div> <h3>Protege tus <br/> modedas</h3></div>
+                    <div> <img src={flecha}/></div>
+                
+            </div>
+
+           
+
+        </div>
+         </center>
+
     </div>
 
     )

@@ -1,9 +1,12 @@
 import React from "react";
-import { HeaderPerso } from "../components/";
+import { FooterPerso, HeaderPerso } from "../components/";
 
 const PagePerso =()=>{
     return(
+        <div>
         <HeaderPerso/>
+        <FooterPerso/>
+        </div>
 
     )
 }

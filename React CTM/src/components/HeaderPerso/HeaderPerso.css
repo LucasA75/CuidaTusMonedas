@@ -12,8 +12,14 @@
 }
 .saludo{
     background-color: rgba(253, 190, 57, 1);
+    display: flex;
+    margin-top: 10px;
+    
+    flex-direction: row;
+   
+    
 }
-.hola{
+/* .hola{
 position: relative;
 width: 200px;
 height: 50px;
@@ -23,26 +29,27 @@ top: 40px;
 
 font-family: 'Inter';
 font-style: normal;
-}
+} */
 .progreso{
-position: relative;
-width: 300px;
-height: 50px;
-left: 680px;
-top: 5px;
+
+top: 20px;
 
 font-family: 'Inter';
 font-style: normal;
 
 }
-.saludo2{
-    position: relative;
-    width: 300px;
-    height: 50px;
-    left: 750px;
-    top: 5px;
-    
-    font-family: 'Inter';
-    font-style: normal;
-
+.modulos{
+    background-color: aliceblue;
+}
+.avance{
+    background-color:rgba(255, 233, 78, 1);
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    padding-bottom: 10px;
+    flex-direction: row;
+    align-items: center;
+    height: 150px;
+    width: 800px;
+    border-radius: 15px;
 }

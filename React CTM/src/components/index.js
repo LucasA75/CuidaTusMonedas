@@ -8,6 +8,8 @@ import Login from "./Login/Login";
 import Equipo from "./Equipo/Equipo";
 import FormularioLogin from "./FormularioLogin/FormularioLogin";
 import TablaUsuario from "./TablaUsuario/TablaUsuario";
+import HeaderPerso from "./HeaderPerso/HeaderPerso";
+import FooterPerso from "./FooterPerso/FooterPerso";
 
 export{
     Headermain,
@@ -18,5 +20,7 @@ export{
     Login,
     Equipo,
     FormularioLogin,
-    TablaUsuario
+    TablaUsuario,
+    HeaderPerso,
+    FooterPerso
 };

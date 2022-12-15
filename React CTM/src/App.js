@@ -1,6 +1,6 @@
 import React from "react";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import { AdminPage, LoginPage } from "./pages";
+import { AdminPage, Conocenos, LoginPage } from "./pages";
 import Home from "./pages/Home"
 import PagePerso from "./pages/PagePerso";
 
@@ -11,6 +11,8 @@ const App =() => {
                 <Route path="/" element={<Home/>}></Route>
                 <Route path="/Login" element={<LoginPage/>}></Route>
                 <Route path="/Admin" element={<AdminPage/>}></Route>
+                <Route path="/Perso" element={<PagePerso/>}></Route>
+                <Route path="/Conocenos" element={<Conocenos/>}></Route>
             </Routes>
         </BrowserRouter>
     )
