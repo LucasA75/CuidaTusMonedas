@@ -77,7 +77,7 @@ const FormularioLogin = ({ userAdd }) => {
             <br />
             <label class="name4" for="confirmarContraseña">
               {" "}
-              Confirmar constraseña :{" "}
+              Confirmar constraseña{" "}
             </label>
             <input
               class="cuadro4"
@@ -91,7 +91,7 @@ const FormularioLogin = ({ userAdd }) => {
 
             <label class="name5" for="edad">
               {" "}
-              Edad :{" "}
+              Edad{" "}
             </label>
             <input
               class="cuadro5"
@@ -105,7 +105,7 @@ const FormularioLogin = ({ userAdd }) => {
 
             <label class="name6" for="telefono">
               {" "}
-              Telefono :{" "}
+              Telefono{" "}
             </label>
             <input
               class="cuadro6"
@@ -118,13 +118,13 @@ const FormularioLogin = ({ userAdd }) => {
             <br />
           </form>
           <br />
-          <center>
+          <center class="botonConfirmar1">
             <button
               type="button"
-              class="btn btn-warning"
+              class="btn btn-warning btn-lg"
               onClick={() => userAdd(usuario)}
             >
-              Agregar usuario
+              Confirmar
             </button>
           </center>
         </div>

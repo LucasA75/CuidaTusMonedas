@@ -16,10 +16,10 @@ const Headermain = () => {
                     </button>
                     <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
                         <div class="navbar-nav">
-                            <a class="nav-link" href="/Conocenos">Conocenos</a>
+                            <a class="nav-link" href="/Conocenos">Conócenos</a>
                             <a class="nav-link" href="/#">Ayuda</a>
                             <div className="iniciarsesion">
-                            <a class="nav-link" href="/IniciarSesion">Iniciar sesion</a>   
+                            <a class="nav-link" href="/IniciarSesion">Iniciar sesión</a>   
                             </div>
                         </div>
                     </div>

@@ -15,7 +15,7 @@ const MenuModulos = () => {
             <br></br>
             <div className="Subtitulo">
                 <center>
-                <h5>Escoge el tema que mas te llame la atencion</h5>
+                <h5>Escoge el tema que más te llame la atención</h5>
                 </center>
             </div>
         
@@ -26,7 +26,7 @@ const MenuModulos = () => {
                 <img src={moneda1} class="card-img-top" alt="moneda1" />
                 <div class="card-body">
                 <center>
-                    <h5 class="card-title">Protege tus Monedas</h5>
+                    <h5 class="card-title">Administra tus Monedas</h5>
                     </center>
                 </div>
             </div>
