@@ -3,8 +3,10 @@ import "./Login.css"
 import gatito from '../../assets/logo.png';
 
 const Login = () =>{
+
+
     return (
-        <div>
+        <div className="divPrincipal">
           <div class="container-md login">
             <div>
             <div className="gato">

@@ -14,7 +14,7 @@ const Main = () =>{
                 </div>
             </div>
             <div>
-                <button type="btn" class="btn" > Comenzar a aprender</button>
+                <button type="btn" class="btn botonMain" > Comenzar a aprender</button>
             </div>
         </div>
 

@@ -22,3 +22,17 @@
   text-align: center;
   top: -40px;
 }
+
+.Iniciarsesion{
+
+  background-image: url('../../assets/FondoLogin.png');
+  
+  background-position: 0% 0%;
+  animation: mover-fondo 1s linear forwards;
+
+  @keyframes mover-fondo {
+    100% {
+      background-position: 100% 0%;
+    }
+}
+}

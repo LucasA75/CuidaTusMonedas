@@ -1,11 +1,7 @@
-<<<<<<< HEAD
-=======
 .col1{
     color: rgb(0, 0, 0);
     margin-top: 100px;
 }
-
->>>>>>> e3d813c1af717c6bfd643b47bb3fd559867e8d14
 .h1{
     margin-top: 40px;
     font-family: 'Maven Pro';
@@ -33,11 +29,8 @@ margin-left: 150px;
     background-size: 100% 100%;
 }  */
 
-.principal{
-    
-}
 
-.btn{
+.botonMain{
     background-color: rgb(255, 202, 67);
     font-size: 30px;
     border-radius: 30px;
