@@ -1,9 +1,5 @@
-.col1{
-    color: rgb(0, 0, 0);
-    margin-top: 200px;
-}
-
 .h1{
+    margin-top: 40px;
     font-family: 'Maven Pro';
 font-style: normal;
 font-weight: 400;
@@ -27,3 +23,16 @@ margin-left: 150px;
     background-position: center;
     background-size: 100% 100%;
 }  */
+
+.principal{
+    
+}
+
+.btn{
+    background-color: rgb(255, 202, 67);
+    font-size: 30px;
+    border-radius: 30px;
+    padding: 20px;
+    font-weight: bold;
+    margin-top: 100px;
+}
