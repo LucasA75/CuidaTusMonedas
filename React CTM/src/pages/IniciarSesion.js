@@ -1,12 +1,13 @@
 import React from "react";
-import { Login } from "../components";
+import { FondoLogin, Login } from "../components";
 import "../components/Login/Login.css"
 
 const IniciarSesion = () =>{
     return(
-        <div className="Iniciarsesion">
+        <main>
+        <FondoLogin/>
         <Login/>
-        </div>
+        </main>
 
     )
 }

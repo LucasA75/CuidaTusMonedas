@@ -1,13 +1,14 @@
+
 .login{
   display: flex;
   justify-content: center;
   background-color:rgba(248, 248, 250, 1);
-  margin-top: 50px;
+  margin-top: 51px;
 /*   margin: 100px; */
-  padding-bottom: 500px;
-  margin-bottom: 100px;
+  padding-bottom: 400px;
+  margin-bottom: 110px;
   width: 600px;
-  height: 700px;
+  height: 750px;
 }
 
 .titulo{
@@ -21,18 +22,4 @@
   display: inline-block;
   text-align: center;
   top: -40px;
-}
-
-.Iniciarsesion{
-
-  background-image: url('../../assets/FondoLogin.png');
-  
-  background-position: 0% 0%;
-  animation: mover-fondo 1s linear forwards;
-
-  @keyframes mover-fondo {
-    100% {
-      background-position: 100% 0%;
-    }
-}
 }
