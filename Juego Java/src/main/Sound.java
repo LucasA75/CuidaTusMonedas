@@ -17,19 +17,11 @@ public class Sound {
     ArrayList<String> sounds = new ArrayList<String>();
 
     public Sound(){
-<<<<<<< HEAD
-        sounds.add("/Generation/CuidaTusMonedas/Juego Java/res/sound/musicmain.wav"); //0
-        sounds.add("/Generation/CuidaTusMonedas/Juego Java/res/sound/coin.wav");//1
-        sounds.add("/Generation/CuidaTusMonedas/Juego Java/res/sound/powerup.wav");//2
-        sounds.add("/Generation/CuidaTusMonedas/Juego Java/res/sound/unlock.wav");//3
-        sounds.add("/Generation/CuidaTusMonedas/Juego Java/res/sound/fanfare.wav");//4
-=======
         sounds.add("././././res/sound/musicmain.wav"); //0
         sounds.add("././././res/sound/coin.wav");//1
         sounds.add("././././res/sound/powerup.wav");//2
         sounds.add("././././res/sound/unlock.wav");//3
         sounds.add("././././res/sound/fanfare.wav");//4
->>>>>>> ea0d3be5e250b55ad8757bf60b029b5f1cecb27b
     }
 /*     public Sound(){
             
