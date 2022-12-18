@@ -1,8 +1,14 @@
 package models;
 import java.awt.*;
 import java.awt.image.BufferedImage;
+import java.io.FileInputStream;
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+
 import main.GamePanel;
 import main.KeyHandler;
+import main.UtilityTool;
 
 
 public class Player extends Entity {
@@ -62,7 +68,6 @@ public class Player extends Entity {
             this.down2 = setup("././././res/player/stay1");
     }
 
-<<<<<<< HEAD
     public BufferedImage setup(String imageName){
         UtilityTool uTool = new UtilityTool();
 
@@ -82,8 +87,6 @@ public class Player extends Entity {
 
 
 
-=======
->>>>>>> ea0d3be5e250b55ad8757bf60b029b5f1cecb27b
     public void update(){
 
         if(keyH.upPressed == true || keyH.downPressed == true || keyH.leftPressed == true || keyH.rightPressed == true){
