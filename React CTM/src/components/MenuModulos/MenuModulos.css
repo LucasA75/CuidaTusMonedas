@@ -1,15 +1,24 @@
 .card{
     background-color: rgba(252, 191, 73, 1);
-    margin: 100px;
-
+    margin: 80px;
 }
 .img3{
     height: 80%;
-    width: 90%;
+    width: 70%;
     margin-left: 16px;
     margin-top: 10px;
 }
-h5{
+
+
+.Titulo h2{
+    font-family: 'Maven Pro';
+font-style: normal;
+font-weight: 800;
+font-size: 60px;
+line-height: 70px;
+}
+
+.Subtitulo h5{
     font-family: 'Maven Pro';
     font-style: normal;
 font-weight: 500;
@@ -18,10 +27,20 @@ line-height: 56px;
 text-align: center;
 }
 
-h2{
-    font-family: 'Maven Pro';
-font-style: normal;
-font-weight: 800;
-font-size: 60px;
-line-height: 70px;
+
+
+.cardModulos{
+    background-color: rgb(242, 226, 9);
+    margin: 50px;
+    border-radius: 60px;
+    box-shadow: 3px 20px 25px rgba(0, 0, 0, 0.25);
+
+}
+
+.card-title{
+    margin-bottom: 20px;
+}
+
+.card1{
+    margin-top: 15px;
 }

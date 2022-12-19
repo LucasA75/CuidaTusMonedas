@@ -1,0 +1,270 @@
+.formulario {
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+  padding-bottom: 100px;
+  flex-direction: column;
+  align-items: center;
+  height: 660px;
+  width: 510px;
+  position: absolute;
+  left: 410px;
+}
+
+.txtUsuario {
+  position: absolute;
+  width: 153px;
+  height: 47px;
+  left: 190px;
+  top: 210px;
+
+  font-family: "Maven Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.017em;
+
+  color: #000000;
+}
+.name1 {
+  position: absolute;
+  width: 74px;
+  height: 24px;
+  left: 80px;
+  top: 250px;
+
+  font-family: "Maven Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.017em;
+
+  color: #000000;
+}
+
+.name2 {
+  position: absolute;
+  width: 74px;
+  height: 24px;
+  left: 80px;
+  top: 315px;
+
+  font-family: "Maven Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.017em;
+  color: #000000;
+}
+
+.name3 {
+  position: absolute;
+  width: 74px;
+  height: 24px;
+  left: 80px;
+  top: 390px;
+
+  font-family: "Maven Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.017em;
+  color: #000000;
+}
+
+.name4 {
+  position: absolute;
+  width: 204px;
+  height: 24px;
+  left: 80px;
+  top: 436px;
+
+  font-family: "Maven Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.017em;
+
+  color: #000000;
+}
+
+.name5 {
+  position: absolute;
+  width: 74px;
+  height: 24px;
+  left: 80px;
+  top: 498px;
+
+  font-family: "Maven Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.017em;
+  color: #000000;
+}
+
+.name6 {
+  position: absolute;
+  width: 74px;
+  height: 24px;
+  left: 190px;
+  top: 498px;
+
+  font-family: "Maven Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.017em;
+  color: #000000;
+}
+
+.gato2 {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  top: -60px;
+}
+
+.cuadro1 {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 370px;
+  height: 30px;
+  right: 70px;
+  top: 275px;
+
+  background: #ffffff;
+  mix-blend-mode: normal;
+  border: 1px solid #000000;
+  /* filter: blur(2px); */
+  border-radius: 38px;
+}
+
+.cuadro2 {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 370px;
+  height: 30px;
+  right: 70px;
+  top: 340px;
+
+  background: #ffffff;
+  mix-blend-mode: normal;
+  border: 1px solid #000000;
+  /* filter: blur(2px); */
+  border-radius: 38px;
+}
+
+.cuadro3 {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 370px;
+  height: 30px;
+  right: 70px;
+  top: 400px;
+
+  background: #ffffff;
+  mix-blend-mode: normal;
+  border: 1px solid #000000;
+  /* filter: blur(2px); */
+  border-radius: 38px;
+}
+
+.cuadro4 {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 370px;
+  height: 30px;
+  right: 70px;
+  top: 460px;
+
+  background: #ffffff;
+  mix-blend-mode: normal;
+  border: 1px solid #000000;
+  /* filter: blur(2px); */
+  border-radius: 38px;
+}
+
+.cuadro5 {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 83px;
+  height: 30px;
+  right: 355px;
+  top: 520px;
+
+  background: #ffffff;
+  mix-blend-mode: normal;
+  border: 1px solid #000000;
+
+  border-radius: 38px;
+}
+
+.cuadro6 {
+  box-sizing: border-box;
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 258px;
+  height: 30px;
+  right: 70px;
+  top: 520px;
+
+  background: #ffffff;
+  mix-blend-mode: normal;
+  border: 1px solid #000000;
+  border-radius: 38px;
+}
+
+.botonConfirmar1 {
+  box-sizing: border-box;
+  position: absolute;
+  width: 258px;
+  height: 41px;
+  right: 2px;
+  top: 580px;
+}
+/* body{
+    background-image: url("../../assets/FondoLogin.png"); 
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 100% 100%;
+} */

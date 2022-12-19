@@ -44,4 +44,11 @@ public class UsuarioController {
     public void eliminarUsuario(@PathVariable Long id){
         usuarioService.eliminarUsuario(id);
     }
+
+    @GetMapping("/UsuarioEncontrar/{id}")
+    public void encontrarUsuario(@PathVariable Long id){
+        usuarioService.encontrarUsuario(id);
+    }
+
+
 }

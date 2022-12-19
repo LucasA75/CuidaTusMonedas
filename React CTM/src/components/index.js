@@ -3,11 +3,22 @@ import Headermain from "./Headermain/Headermain";
 import Main from "./Main/Main";
 import MenuModulos from "./MenuModulos/MenuModulos";
 import FooterMain from "./FooterMain/FooterMain";
-import FondoLogin from "./FondoLogin/FondoLogin";
 import Login from "./Login/Login";
 import Equipo from "./Equipo/Equipo";
-import FormularioLogin from "./FormularioLogin/FormularioLogin";
+import FormularioRegistrarse from "./FormularioRegistrarse/FormularioRegistrarse";
 import TablaUsuario from "./TablaUsuario/TablaUsuario";
+import Recuadro from "./RecuadroEncuesta/BotonEncuesta";
+import HeaderPerso from "./HeaderPerso/HeaderPerso";
+import FooterPerso from "./FooterPerso/FooterPerso";
+import ModuloProtege from "./ModulosIndex/ModuloProtege";
+import { Rectangulo,FondoLogin } from "./FondoLogin/FondoLogin";
+import FondoVideo from "./FondoLogin/FondoVideo";
+import FraudesPiramidales from "./FraudesPiramidales/FraudesPiramidales";
+import FooetrClases from "./FooterClases/FooetrClases";
+import LeccionesIndex from "./LeccionesIndex/LeccionesIndex";
+import HeaderIndex from "./LeccionesIndex/HeaderIndex";
+import OrigenEstafas from "./OrigenEstafas/OrigenEstafas";
+
 
 export{
     Headermain,
@@ -17,6 +28,17 @@ export{
     FondoLogin,
     Login,
     Equipo,
-    FormularioLogin,
-    TablaUsuario
+    FormularioRegistrarse,
+    TablaUsuario,
+    Recuadro,
+    HeaderPerso,
+    FooterPerso,
+    ModuloProtege,
+    Rectangulo,
+    FondoVideo,
+    FraudesPiramidales,
+    FooetrClases,
+    LeccionesIndex,
+    HeaderIndex,
+    OrigenEstafas
 };

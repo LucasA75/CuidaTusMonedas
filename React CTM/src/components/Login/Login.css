@@ -1,5 +1,65 @@
-.Caja{
+
+.login{
+  position: absolute;
+  display: flex;
   justify-content: center;
-  align-items: center;
-  
+  background-color:rgba(248, 248, 250, 1);
+  margin-top: 51px;
+/*   margin: 100px; */
+  padding-bottom: 330px;
+  margin-bottom: 110px;
+  width: 600px;
+  height: 750px;
+  top: 10%;
+  right: 25%;
+  left: 25%;
 }
+
+.tituloLogin{
+  position: absolute;
+  top: 418px;
+  transform: translate(6%, -50%);
+
+}
+
+.gato{
+  position: relative;
+  text-align: center;
+  top: -40px;
+}
+
+.SubtituloLogin{
+  position: absolute;
+  top: 440px;
+  width: max-content;
+  display: flex;
+  transform: translate(20%, -5%);
+}
+
+.SubtituloLogin h2{
+  font-size: large;
+  font-weight: lighter;
+}
+
+.Credenciales{
+  position: relative;
+  top: -30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Credenciales form{
+  margin: 5px;
+  padding: 10px;
+}
+
+.nombre,.contraseña{
+  margin: 10px;
+}
+
+.contraseña{
+  position: relative;
+  transform: translate(-23%, -5%);
+}
+
