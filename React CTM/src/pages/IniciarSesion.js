@@ -7,7 +7,6 @@ const IniciarSesion = () =>{
     return(
         <main>
        <FondoVideo/>
-        <FondoLogin/>
         <Login/>
         </main>
 
