@@ -1,5 +1,5 @@
 import React from "react";
-import { FondoLogin, Login,FondoVideo } from "../components";
+import {Login,FondoVideo } from "../components";
 import "../components/Login/Login.css"
 
 const IniciarSesion = () =>{
