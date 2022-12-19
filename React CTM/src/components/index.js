@@ -40,6 +40,5 @@ export{
     FooetrClases,
     LeccionesIndex,
     HeaderIndex,
-    FooetrClases, 
     OrigenEstafas
 };
