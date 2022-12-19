@@ -52,6 +52,7 @@ const LoginPage = () => {
       <Rectangulo/>
       <div><FormularioLogin userAdd = {userAdd}/></div>
       </main>
+     
   )
 }
 
