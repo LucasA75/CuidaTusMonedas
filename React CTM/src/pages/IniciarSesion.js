@@ -1,11 +1,11 @@
 import React from "react";
-import {Login,FondoVideo } from "../components";
+import {Login,FondoVideo, FondoLogin } from "../components";
 import "../components/Login/Login.css"
 
 const IniciarSesion = () =>{
     return(
         <main>
-        <FondoVideo/>
+        <FondoLogin/>
         <Login/>
         </main>
 

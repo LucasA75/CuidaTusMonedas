@@ -30,5 +30,5 @@ export{
     FooterPerso,
     ModuloProtege,
     Rectangulo,
-    FondoVideo,
+    FondoVideo
 };
