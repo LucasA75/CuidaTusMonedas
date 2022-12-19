@@ -15,7 +15,8 @@ import { Rectangulo,FondoLogin } from "./FondoLogin/FondoLogin";
 import FondoVideo from "./FondoLogin/FondoVideo";
 import FraudesPiramidales from "./FraudesPiramidales/FraudesPiramidales";
 import FooetrClases from "./FooterClases/FooetrClases";
-
+import LeccionesIndex from "./LeccionesIndex/LeccionesIndex";
+import HeaderIndex from "./LeccionesIndex/HeaderIndex";
 
 export{
     Headermain,
@@ -34,5 +35,7 @@ export{
     Rectangulo,
     FondoVideo,
     FraudesPiramidales,
-    FooetrClases
+    FooetrClases,
+    LeccionesIndex,
+    HeaderIndex
 };

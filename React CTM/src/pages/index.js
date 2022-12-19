@@ -8,6 +8,7 @@ import Encuesta2 from "./Encuesta2"
 import Encuesta3 from "./Encuesta3"
 import Encuesta4 from "./Encuesta4"
 import ModuloP from "./ModuloP"
-export {Home, Conocenos, Registrarse, AdminPage, IniciarSesion, Encuesta1, Encuesta2, Encuesta3, Encuesta4, ModuloP}
+import IndexFraudesPiramidales from "./IndexFraudesPiramidales"
+export {Home, Conocenos, Registrarse, AdminPage, IniciarSesion, Encuesta1, Encuesta2, Encuesta3, Encuesta4, ModuloP,IndexFraudesPiramidales}
 
 
