@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {FormularioLogin, FondoLogin, Rectangulo} from "../components";
+import {FormularioRegistrarse, FondoLogin, Rectangulo} from "../components";
 
 const usuario1 = [
   {
@@ -30,7 +30,7 @@ const usuario1 = [
 
 
 
-const LoginPage = () => {
+const Registrarse = () => {
 
 
   const [user, setUser] = useState(usuario1);
@@ -50,10 +50,10 @@ const LoginPage = () => {
       <main>
       <FondoLogin/>
       <Rectangulo/>
-      <div><FormularioLogin userAdd = {userAdd}/></div>
+      <div><FormularioRegistrarse userAdd = {userAdd}/></div>
       </main>
      
   )
 }
 
-export default LoginPage;
+export default Registrarse;

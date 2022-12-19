@@ -1,6 +1,6 @@
 import React from "react";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import { AdminPage, IniciarSesion, LoginPage,Encuesta1,Encuesta2,Conocenos, Encuesta3, Encuesta4, ModuloP} from "./pages";
+import { AdminPage, IniciarSesion, Registrarse,Encuesta1,Encuesta2,Conocenos, Encuesta3, Encuesta4, ModuloP} from "./pages";
 import Home from "./pages/Home"
 import PagePerso from "./pages/PagePerso";
 
@@ -9,7 +9,7 @@ const App =() => {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home/>}></Route>
-                <Route path="/Login" element={<LoginPage/>}></Route>
+                <Route path="/Registrarse" element={<Registrarse/>}></Route>
                 <Route path="/Admin" element={<AdminPage/>}></Route>
                 <Route path="/IniciarSesion" element={<IniciarSesion/>}></Route>
                 <Route path="/Encuesta1" element={<Encuesta1/>}></Route>
