@@ -7,6 +7,7 @@ const Main = () => {
     const navigate = useNavigate();
     const handleOnClick = useCallback(
         () => navigate("/Encuesta1", {}, [navigate]))
+        
     return (
         <div class="container text-center principal" >
             <div class="row align-items-start row1">
