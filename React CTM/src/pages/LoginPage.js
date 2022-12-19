@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {FormularioLogin, FondoLogin} from "../components";
+import {FormularioLogin, FondoLogin, Rectangulo} from "../components";
 
 const usuario1 = [
   {
@@ -49,8 +49,10 @@ const LoginPage = () => {
 
       <main>
       <FondoLogin/>
+      <Rectangulo/>
       <div><FormularioLogin userAdd = {userAdd}/></div>
       </main>
+     
   )
 }
 

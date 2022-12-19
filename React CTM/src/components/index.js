@@ -3,7 +3,6 @@ import Headermain from "./Headermain/Headermain";
 import Main from "./Main/Main";
 import MenuModulos from "./MenuModulos/MenuModulos";
 import FooterMain from "./FooterMain/FooterMain";
-import FondoLogin from "./FondoLogin/FondoLogin";
 import Login from "./Login/Login";
 import Equipo from "./Equipo/Equipo";
 import FormularioLogin from "./FormularioLogin/FormularioLogin";
@@ -11,6 +10,9 @@ import TablaUsuario from "./TablaUsuario/TablaUsuario";
 import Recuadro from "./RecuadroEncuesta/Recuadro";
 import HeaderPerso from "./HeaderPerso/HeaderPerso";
 import FooterPerso from "./FooterPerso/FooterPerso";
+import ModuloProtege from "./ModulosIndex/ModuloProtege";
+import { Rectangulo,FondoLogin } from "./FondoLogin/FondoLogin";
+import FondoVideo from "./FondoLogin/FondoVideo";
 
 
 export{
@@ -25,5 +27,8 @@ export{
     TablaUsuario,
     Recuadro,
     HeaderPerso,
-    FooterPerso
+    FooterPerso,
+    ModuloProtege,
+    Rectangulo,
+    FondoVideo
 };

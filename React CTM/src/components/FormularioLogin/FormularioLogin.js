@@ -1,5 +1,6 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./FormularioLogin.css";
+import gatito from "../../assets/logo.png";
 
 const initialUsuario = {
   nombre: "",
@@ -10,32 +11,37 @@ const initialUsuario = {
   telefono: "",
 };
 
-const FormularioLogin = ({userAdd}) => {
-    const [usuario, setUsuario] = useState(initialUsuario);
-    const { nombre, apellido, contraseña, confirmarContraseña, edad, telefono } = usuario;
-    const handleInputChange = (e) => {
-        //Esta funcion se llama cada vez que nosotros escribimos algo en algun input de nuestra pagina
-        const changedFormValue = {
-            //va a mantener los datos que tiene usuario
-            ...usuario,
-            //Esto mete el atributo que cambie por su nuevo valor
-            [e.target.name]: e.target.value
-        }
-        setUsuario(changedFormValue);
-    }
-
+const FormularioLogin = ({ userAdd }) => {
+  const [usuario, setUsuario] = useState(initialUsuario);
+  const { nombre, apellido, contraseña, confirmarContraseña, edad, telefono } =
+    usuario;
+  const handleInputChange = (e) => {
+    //Esta funcion se llama cada vez que nosotros escribimos algo en algun input de nuestra pagina
+    const changedFormValue = {
+      //va a mantener los datos que tiene usuario
+      ...usuario,
+      //Esto mete el atributo que cambie por su nuevo valor
+      [e.target.name]: e.target.value,
+    };
+    setUsuario(changedFormValue);
+  };
 
   return (
     <div>
-      <div>
-        
-      </div>
+      <div></div>
       <div class="container-lg formulario">
-        <h1>Hola LUCAS </h1>
+        <div class="gato2">
+          <img src={gatito} alt="nuestro logo" width={"250px"} />
+        </div>
+        <h1 class="txtUsuario">Crea tu usuario</h1>
         <div>
           <form>
-            <label for="name"> Nombre : </label>
+            <label class="name1" for="name">
+              {" "}
+              Nombre{" "}
+            </label>
             <input
+              class="cuadro1"
               type="text"
               name="nombre"
               id="name"
@@ -44,8 +50,11 @@ const FormularioLogin = ({userAdd}) => {
             />
             <br />
 
-            <label for="apellido"> Apellido : </label>
+            <label class="name2" for="apellido">
+              Apellido
+            </label>
             <input
+              class="cuadro2"
               type="text"
               name="apellido"
               id="apellido"
@@ -53,8 +62,12 @@ const FormularioLogin = ({userAdd}) => {
               onChange={handleInputChange}
             />
             <br />
-            <label for="contraseña"> Contraseña : </label>
+            <label class="name3" for="contraseña">
+              {" "}
+              Contraseña :{" "}
+            </label>
             <input
+              class="cuadro3"
               type="text"
               name="contraseña"
               id="contraseña"
@@ -62,8 +75,12 @@ const FormularioLogin = ({userAdd}) => {
               onChange={handleInputChange}
             />
             <br />
-            <label for="confirmarContraseña"> Confirmar constraseña : </label>
+            <label class="name4" for="confirmarContraseña">
+              {" "}
+              Confirmar constraseña{" "}
+            </label>
             <input
+              class="cuadro4"
               type="text"
               name="confirmarContraseña"
               id="confirmarContraseña"
@@ -72,8 +89,12 @@ const FormularioLogin = ({userAdd}) => {
             />
             <br />
 
-            <label for="edad"> Edad : </label>
+            <label class="name5" for="edad">
+              {" "}
+              Edad{" "}
+            </label>
             <input
+              class="cuadro5"
               type="text"
               name="edad"
               id="edad"
@@ -82,8 +103,12 @@ const FormularioLogin = ({userAdd}) => {
             />
             <br />
 
-            <label for="telefono"> Telefono : </label>
+            <label class="name6" for="telefono">
+              {" "}
+              Telefono{" "}
+            </label>
             <input
+              class="cuadro6"
               type="text"
               name="telefono"
               id="telefono"
@@ -93,9 +118,13 @@ const FormularioLogin = ({userAdd}) => {
             <br />
           </form>
           <br />
-          <center>
-            <button type="button" class="btn btn-warning" onClick={() => userAdd(usuario)}>
-              Agregar usuario
+          <center class="botonConfirmar1">
+            <button
+              type="button"
+              class="btn btn-warning btn-lg"
+              onClick={() => userAdd(usuario)}
+            >
+              Confirmar
             </button>
           </center>
         </div>

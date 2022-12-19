@@ -5,9 +5,6 @@ import "./FondoLogin.css";
 const FondoLogin = () => {
   return (
     <main>
-      <div class="rectangulo">
-
-      </div>
       <img
         className="FondoLogin"
         src={background}
@@ -17,8 +14,6 @@ const FondoLogin = () => {
           zIndex: -1,
           width: "100%",
           height: "100%",
-          margin: 0,
-          padding: 0,
           // backgroundPosition:
           // backgroundRepeat:
           // backgroundSize:
@@ -30,4 +25,12 @@ const FondoLogin = () => {
   );
 };
 
-export default FondoLogin;
+const Rectangulo = () => {
+  return(
+    <div 
+    class="rectangulo">
+    </div>
+  )
+}
+
+export {FondoLogin , Rectangulo};
