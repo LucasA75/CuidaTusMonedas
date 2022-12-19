@@ -7,7 +7,7 @@ import Login from "./Login/Login";
 import Equipo from "./Equipo/Equipo";
 import FormularioLogin from "./FormularioLogin/FormularioLogin";
 import TablaUsuario from "./TablaUsuario/TablaUsuario";
-import Recuadro from "./RecuadroEncuesta/Recuadro";
+import Recuadro from "./RecuadroEncuesta/BotonEncuesta";
 import HeaderPerso from "./HeaderPerso/HeaderPerso";
 import FooterPerso from "./FooterPerso/FooterPerso";
 import ModuloProtege from "./ModulosIndex/ModuloProtege";
