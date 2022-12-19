@@ -1,6 +1,6 @@
 import React from "react";
 import { Headermain } from "../components";
-import Recuadro from "../components/RecuadroEncuesta/Recuadro";
+import Pregunta2 from "../components/RecuadroEncuesta/Pregunta2";
 import encuesta2 from "../assets/encuesta2.png"
 
 const Encuesta2 = () => {
@@ -17,8 +17,8 @@ const Encuesta2 = () => {
 
                     float="left"
                     margin-top="50px" />
-                <Recuadro>
-                </Recuadro>
+                <Pregunta2>
+                </Pregunta2>
             </div>
 
         </>
