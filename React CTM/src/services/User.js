@@ -38,7 +38,7 @@ const eliminarUsuario = async (id) => {
 };
 
 const todosUsuarios= async()=>{
-    const res = await axios.get(url+"/allUser");
+    const res = await axios.get(url+"/findAll");
     console.log(res)
     return res.data;
 }

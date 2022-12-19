@@ -17,33 +17,42 @@
 
 .tituloLogin{
   position: absolute;
-  top: 418px;
+  top: 300px;
+  right: 500px;
   transform: translate(6%, -50%);
+}
+
+.diseñoLogin{
+ font-weight: 700;
 
 }
 
 .gato{
   position: relative;
   text-align: center;
-  top: -40px;
+  top: 30px;
+  right: -10px;
 }
 
 .SubtituloLogin{
   position: absolute;
-  top: 440px;
+  top: 320px;
+  left: 425px;
   width: max-content;
   display: flex;
   transform: translate(20%, -5%);
 }
 
 .SubtituloLogin h2{
-  font-size: large;
-  font-weight: lighter;
+  font-size: 20px;
+  font-weight: 450;
+  
+  
 }
 
 .Credenciales{
   position: relative;
-  top: -30px;
+  top: 100px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -58,8 +67,145 @@
   margin: 10px;
 }
 
+.cuadroNameLogin1{
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 400px;
+  height: 35px;
+  right: 510px;
+  top: 10px;
+
+  background: #ffffff;
+  mix-blend-mode: normal;
+  border: 1px solid #000000;
+  /* filter: blur(2px); */
+  border-radius: 38px;
+
+}
+
+.nameLogin1{
+  position: absolute;
+  width: 200px;
+  height: 20px;
+  left: 520px;
+  top: -13px;
+  
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.017em;
+  
+  color: #000000;
+}
+
+.cuadroContraseñaLogin1{
+
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 400px;
+  height: 35px;
+  right: 510px;
+  top: 90px;
+
+  background: #ffffff;
+  mix-blend-mode: normal;
+  border: 1px solid #000000;
+  /* filter: blur(2px); */
+  border-radius: 38px;
+
+}
+
+.contraseñaLogin1{
+  position: absolute;
+  width: 200px;
+  height: 20px;
+  left: 520px;
+  top: 66px;
+  
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.017em;
+  
+  color: #000000;
+
+}
+
+.diseñoH6{
+  position: absolute;
+width: 301px;
+height: 19px;
+left: 685px;
+top: 133px;
+
+font-family: 'Maven Pro';
+font-style: normal;
+font-weight: 700;
+font-size: 21px;
+line-height: 26px;
+display: flex;
+align-items: center;
+letter-spacing: -0.017em;
+
+color: #00A3FF;
+
+}
+
+.botonIniciarSesion{
+  box-sizing: border-box;
+  position: absolute;
+  width: 258px;
+  height: 41px;
+  right: 580px;
+  top: 200px;
+
+}
+.h7{
+  
+  font-family: 'Maven Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.017em;
+
+  
+  color: #000000;
+}
 .contraseña{
   position: relative;
   transform: translate(-23%, -5%);
+}
+
+.diseñoH8{
+  position: absolute;
+width: 309px;
+height: 28px;
+left: 560px;
+top: 300px;
+
+font-family: 'Inter';
+font-style: italic;
+font-weight: 200;
+font-size: 22px;
+line-height: 27px;
+display: flex;
+align-items: center;
+letter-spacing: 0.003em;
+
+color: #000000;
+
 }
 

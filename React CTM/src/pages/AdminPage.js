@@ -1,6 +1,8 @@
 import React, {useState,useEffect} from "react";
 import { TablaUsuario,Headermain } from "../components";
 
+import { todosUsuarios } from "../services/User";
+
 const usuario1 = [
     {
       nombre: "Joseph",
@@ -37,35 +39,28 @@ const usuario1 = [
 
 const AdminPage = () =>{
 
-
-/*  
+    const [state, setUser] = useState(usuario1);
     //Esto Hook de efecto te permite llevar a cabo efectos secundarios en componentes funcionales:
     //En este caso actualiza la tabla mientras estamos en el navegador
     useEffect(()=>{
-    getUsers();
+    todoslosUsuarios();
     },[])
-    
-*/
+
     //Trae todos los usuarios de la base de Usuarios
     //Esta funcion se llama igual a como esta en la conexion de las APIs
-/*     
-    const getUsers = async()=>{
-    const usuarioBD = await getAllUsers();
-    setState(usuarioBD);
+
+    const todoslosUsuarios = async()=>{
+    const usuarioBD = await todosUsuarios();
+    setUser(usuarioBD);
   } 
 
-  */
-
-
-
-
-    const [user, setUser] = useState(usuario1);
     return(
         <div>
         <Headermain/>
-        <TablaUsuario usuarios={user}/>
+        <TablaUsuario usuarios={state}/>
         </div>
     )
+    
 }
 
 export default AdminPage;
