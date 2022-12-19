@@ -55,17 +55,17 @@ public class Player extends Entity {
            /*  //Antes traia la imagen del jugador asi
             this.stay = ImageIO.read(new FileInputStream("/Generation/Juego Java/res/player/stay1.png")); */ // Esto guarda la imagen
             
-            this.up1 = setup("././././res/player/stay1");
-            this.up2 = setup("././././res/player/stay1");
-            this.stay = setup("././././res/player/stay1");
-            this.iz = setup("././././res/player/iz");
-            this.iz1= setup("././././res/player/iz1");
-            this.iz2= setup("././././res/player/iz2");
-            this.der= setup("././././res/player/der");
-            this.der1= setup("././././res/player/der1");
-            this.der2= setup("././././res/player/der2");
-            this.down1 = setup("././././res/player/stay1");
-            this.down2 = setup("././././res/player/stay1");
+            this.up1 = setup("stay1");
+            this.up2 = setup("stay1");
+            this.stay = setup("stay1");
+            this.iz = setup("iz");
+            this.iz1= setup("iz1");
+            this.iz2= setup("iz2");
+            this.der= setup("der");
+            this.der1= setup("der1");
+            this.der2= setup("der2");
+            this.down1 = setup("stay1");
+            this.down2 = setup("stay1");
     }
 
     public BufferedImage setup(String imageName){
@@ -75,7 +75,7 @@ public class Player extends Entity {
 
         try {
 
-            image = ImageIO.read(new FileInputStream("/Generation/CuidaTusMonedas/Juego Java/res/player/"+ imageName +".png"));
+            image = ImageIO.read(new FileInputStream("././././res/player/"+ imageName +".png"));
             image = uTool.scaleImage(image, gp.titlesize, gp.titlesize);
 
 
