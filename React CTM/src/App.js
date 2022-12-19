@@ -2,6 +2,7 @@ import React from "react";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import { AdminPage, IniciarSesion, Registrarse,Encuesta1,Encuesta2,Conocenos, Encuesta3, Encuesta4, ModuloP} from "./pages";
 import Home from "./pages/Home"
+import OrigenEstafasPage from "./pages/OrigenEstafasPage";
 import PagePerso from "./pages/PagePerso";
 
 const App =() => {
@@ -19,6 +20,7 @@ const App =() => {
                 <Route path="/Perso" element={<PagePerso/>}></Route>
                 <Route path="/Conocenos" element={<Conocenos/>}></Route>
                 <Route path="/ModuloP" element={<ModuloP/>}></Route>
+                <Route path="/OrigenEstafas" element={<OrigenEstafasPage/>}></Route>
             </Routes>
         </BrowserRouter>
     )

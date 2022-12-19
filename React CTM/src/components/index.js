@@ -15,6 +15,7 @@ import { Rectangulo,FondoLogin } from "./FondoLogin/FondoLogin";
 import FondoVideo from "./FondoLogin/FondoVideo";
 import FraudesPiramidales from "./FraudesPiramidales/FraudesPiramidales";
 import FooetrClases from "./FooterClases/FooetrClases";
+import OrigenEstafas from "./OrigenEstafas/OrigenEstafas";
 
 
 export{
@@ -34,5 +35,6 @@ export{
     Rectangulo,
     FondoVideo,
     FraudesPiramidales,
-    FooetrClases
+    FooetrClases, 
+    OrigenEstafas
 };
