@@ -1,0 +1,30 @@
+.tituloClases{
+    background-color: rgba(252, 191, 73, 1);
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    
+    
+    align-items: center;
+    height: 120px;
+    width: 1400px;
+    border-radius: 15px;
+}
+.subtituloClases{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+   
+    width: 1000px;
+    height: 80px;
+    
+}
+.contenidoClase{
+    display: flex;
+    justify-content: center;
+    
+    width: 1000px;
+    text-align: justify;
+    
+}
+

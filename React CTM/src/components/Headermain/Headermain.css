@@ -1,9 +1,9 @@
 .logo{
-    width: 110px;
+    width: 140px;
     height: 100px;
     margin-top: -20px;
 }
-.header{
+.headerMain{
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -11,8 +11,14 @@
 /* Las media query sirven para cambiar el estilo de un elemento si cumple ciertas condiciones
 en este caso el ancho de la pantalla */
 
+/* .iniciarsesion{
+    background-color: rgba(252, 191, 73, 1);
+    border-radius: 30px;
+
+} */
+
 @media screen and (max-width:800px) {
-    .container-fluid{
+    .headerMain{
         background-color: rgb(62, 104, 104);
     }
 

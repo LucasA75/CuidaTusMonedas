@@ -24,7 +24,7 @@ public class TileManager {
         tile = new Tile[50];
         mapTileNum = new int [gp.maxWorldCol][gp.maxWorldRow];
         getTileImage();
-        loadMap("/Generation/CuidaTusMonedas/Juego Java/res/maps/worldV2.txt");
+        loadMap("././././res/maps/worldV2.txt");
     }
 
     public void getTileImage(){
@@ -96,7 +96,7 @@ public class TileManager {
 
         try {
             tile[index] = new Tile();
-            tile[index].image = ImageIO.read(new FileInputStream("/Generation/CuidaTusMonedas/Juego Java/res/tiles/"+ imageName +".png"));
+            tile[index].image = ImageIO.read(new FileInputStream("././././res/tiles/"+ imageName +".png"));
             tile[index].image = uTool.scaleImage(tile[index].image, gp.titlesize, gp.titlesize);
             tile[index].collision = collision;
         } catch (IOException e) {

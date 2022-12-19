@@ -31,7 +31,7 @@ public class AssetSetter {
 
         gp.obj[3] = new OBJ_door(gp);
         gp.obj[3].worldX = 10 *gp.titlesize;
-        gp.obj[3].worldY = 11 * gp.titlesize;
+        gp.obj[3].worldY = 12 * gp.titlesize;
 
         gp.obj[4] = new OBJ_door(gp);
         gp.obj[4].worldX = 8 *gp.titlesize;
@@ -39,11 +39,11 @@ public class AssetSetter {
 
         gp.obj[5] = new OBJ_door(gp);
         gp.obj[5].worldX = 12 *gp.titlesize;
-        gp.obj[5].worldY = 22 * gp.titlesize;
+        gp.obj[5].worldY = 23 * gp.titlesize;
 
         gp.obj[6] = new OBJ_chest(gp);
         gp.obj[6].worldX = 10 *gp.titlesize;
-        gp.obj[6].worldY = 7 * gp.titlesize;
+        gp.obj[6].worldY = 8 * gp.titlesize;
 
         gp.obj[7] = new OBJ_Boots(gp);
         gp.obj[7].worldX = 37 *gp.titlesize;

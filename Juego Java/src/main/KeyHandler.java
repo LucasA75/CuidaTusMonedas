@@ -39,6 +39,9 @@ public class KeyHandler implements KeyListener {
                 if(gp.ui.commandNum < 1){
                     gp.ui.commandNum = 0;
                 }
+                else if(gp.ui.commandNum >= 2){
+                    gp.ui.commandNum= 0;
+                }
             }
 
             if(code == KeyEvent.VK_ENTER){

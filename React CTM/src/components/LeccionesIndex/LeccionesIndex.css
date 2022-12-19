@@ -1,0 +1,69 @@
+.HeaderNombre{
+    background-color: rgba(0, 48, 73, 0.6);
+    width: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 30px;
+    
+}
+
+.Introduccion{
+
+
+font-family: 'Maven Pro';
+font-style: normal;
+font-weight: 50;
+font-size: 20px;
+line-height: 117%;
+/* or 75px */
+
+text-align: center;
+letter-spacing: 0.04em;
+}
+
+.rowindex{
+    position: relative;
+    height: 500px;
+}
+
+.rowindex div{
+    margin: 30px;
+}
+
+.rowindex p{
+    background: #FCBF49;
+border: 1px solid #000000;
+box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.25);
+border-radius: 85px;
+width: 300px;
+height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.LeccionesTit{
+    background-color: blanchedalmond;
+    width: fit-content;
+    padding-right: 30px;
+
+}
+
+
+.colum1I{
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+.colum3I{
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
