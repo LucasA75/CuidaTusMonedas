@@ -11,9 +11,9 @@ const initialUsuario = {
   telefono: "",
 };
 
-const FormularioLogin = ({ userAdd }) => {
+const FormularioLogin = ({ userAdd}) => {
   const [usuario, setUsuario] = useState(initialUsuario);
-  const { nombre, apellido, contraseña, confirmarContraseña, edad, telefono } =
+  const { id, nombre, apellido, contraseña, confirmarContraseña, edad, telefono } =
     usuario;
   const handleInputChange = (e) => {
     //Esta funcion se llama cada vez que nosotros escribimos algo en algun input de nuestra pagina
