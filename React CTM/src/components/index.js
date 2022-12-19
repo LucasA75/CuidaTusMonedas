@@ -13,6 +13,8 @@ import FooterPerso from "./FooterPerso/FooterPerso";
 import ModuloProtege from "./ModulosIndex/ModuloProtege";
 import { Rectangulo,FondoLogin } from "./FondoLogin/FondoLogin";
 import FondoVideo from "./FondoLogin/FondoVideo";
+import FraudesPiramidales from "./FraudesPiramidales/FraudesPiramidales";
+import FooetrClases from "./FooterClases/FooetrClases";
 
 export{
     Headermain,
@@ -29,5 +31,7 @@ export{
     FooterPerso,
     ModuloProtege,
     Rectangulo,
-    FondoVideo
+    FondoVideo,
+    FraudesPiramidales,
+    FooetrClases
 };

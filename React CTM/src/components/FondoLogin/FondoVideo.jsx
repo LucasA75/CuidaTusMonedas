@@ -12,4 +12,4 @@ const FondoVideo = () => {
   )
 }
 
-export default FondoVideo
+export default FondoVideo;

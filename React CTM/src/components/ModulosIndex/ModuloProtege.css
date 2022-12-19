@@ -4,7 +4,35 @@
     
 }
 
-.Encabezado h2{
+.temas{
+    background-color: rgba(0, 48, 73, 0.8);
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    flex-direction: row;
+    align-items: center;
+    height: 120px;
+    width: 800px;
+    border-radius: 15px;
     
-    background-color: aqua;
+    
+    
 }
+.subti1{
+    display: flex;
+    justify-content: center;
+}
+
+.tituloProteje{
+    color: white;
+}
+.Porcentaje{
+    color: white;
+}
+.billetera{
+    display: flex;
+    justify-content: right;
+    margin-top: 150px;
+}
+
