@@ -1,11 +1,11 @@
-.recuadro {
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 709px;
-    height: 311px;
+.encuesta {
+    position: flex;
+    width: 798px;
+    height: 400px;
     left: 556px;
     top: 342px;
+    float: right;
+    margin-top: 50px;
 
     background: #FCBF49;
     border: 1px solid #000000;
@@ -23,13 +23,40 @@
     color: #040007;
 }
 
-/* .botom {
-    position: absolute;
+.botom {
+    position: flex;
     width: 225px;
     height: 52px;
     left: 1010px;
     top: 568px;
-
+    float: right;
     background: #F77F00;
     border-radius: 90px;
-} */
+}
+
+.pregunta {
+    position: flex;
+   
+    font-family: 'Maven Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+
+    color: #000000;
+}
+
+.pregunta1 {
+    box-sizing: border-box;
+
+    position: flex;
+    width: 601px;
+    height: 75px;
+    right: 62px;
+    top: 488px;
+
+    background: #FFFFFF;
+    mix-blend-mode: normal;
+    border: 1px solid #000000;
+    border-radius: 38px;
+}

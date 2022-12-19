@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./FormularioLogin.css";
+import "./FormularioRegistrarse.css";
 import gatito from "../../assets/logo.png";
 
 const initialUsuario = {
@@ -11,9 +11,9 @@ const initialUsuario = {
   telefono: "",
 };
 
-const FormularioLogin = ({ userAdd }) => {
+const FormularioLogin = ({ userAdd}) => {
   const [usuario, setUsuario] = useState(initialUsuario);
-  const { nombre, apellido, contraseña, confirmarContraseña, edad, telefono } =
+  const { id, nombre, apellido, contraseña, confirmarContraseña, edad, telefono } =
     usuario;
   const handleInputChange = (e) => {
     //Esta funcion se llama cada vez que nosotros escribimos algo en algun input de nuestra pagina
@@ -68,7 +68,7 @@ const FormularioLogin = ({ userAdd }) => {
             </label>
             <input
               class="cuadro3"
-              type="text"
+              type="password"
               name="contraseña"
               id="contraseña"
               value={contraseña}
@@ -81,7 +81,7 @@ const FormularioLogin = ({ userAdd }) => {
             </label>
             <input
               class="cuadro4"
-              type="text"
+              type="password"
               name="confirmarContraseña"
               id="confirmarContraseña"
               value={confirmarContraseña}
