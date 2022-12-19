@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./FormularioLogin.css";
+import "./FormularioRegistrarse.css";
 import gatito from "../../assets/logo.png";
 
 const initialUsuario = {
@@ -68,7 +68,7 @@ const FormularioLogin = ({ userAdd}) => {
             </label>
             <input
               class="cuadro3"
-              type="text"
+              type="password"
               name="contraseña"
               id="contraseña"
               value={contraseña}
@@ -81,7 +81,7 @@ const FormularioLogin = ({ userAdd}) => {
             </label>
             <input
               class="cuadro4"
-              type="text"
+              type="password"
               name="confirmarContraseña"
               id="confirmarContraseña"
               value={confirmarContraseña}

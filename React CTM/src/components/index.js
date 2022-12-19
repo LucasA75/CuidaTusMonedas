@@ -5,7 +5,7 @@ import MenuModulos from "./MenuModulos/MenuModulos";
 import FooterMain from "./FooterMain/FooterMain";
 import Login from "./Login/Login";
 import Equipo from "./Equipo/Equipo";
-import FormularioLogin from "./FormularioLogin/FormularioLogin";
+import FormularioRegistrarse from "./FormularioRegistrarse/FormularioRegistrarse";
 import TablaUsuario from "./TablaUsuario/TablaUsuario";
 import Recuadro from "./RecuadroEncuesta/Recuadro";
 import HeaderPerso from "./HeaderPerso/HeaderPerso";
@@ -23,12 +23,12 @@ export{
     FondoLogin,
     Login,
     Equipo,
-    FormularioLogin,
+    FormularioRegistrarse,
     TablaUsuario,
     Recuadro,
     HeaderPerso,
     FooterPerso,
     ModuloProtege,
     Rectangulo,
-    FondoVideo
+    FondoVideo,
 };
