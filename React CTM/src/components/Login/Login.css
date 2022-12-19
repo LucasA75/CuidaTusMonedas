@@ -1,5 +1,6 @@
 
 .login{
+  position: absolute;
   display: flex;
   justify-content: center;
   background-color:rgba(248, 248, 250, 1);
@@ -9,6 +10,9 @@
   margin-bottom: 110px;
   width: 600px;
   height: 750px;
+  top: 10%;
+  right: 25%;
+  left: 25%;
 }
 
 .titulo{
