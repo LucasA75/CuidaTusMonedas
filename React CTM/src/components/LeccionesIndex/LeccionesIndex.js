@@ -9,7 +9,9 @@ const LeccionesIndex = () => {
         <br></br>
         <div class="row rowindex">
             <div class="col colum1I">
-                <p>Origen de las estafas piramidales</p>
+            <a href='/'>
+            <p>Origen de las estafas piramidales</p>
+            </a>
                 <p>¿Que es un esquema ponzi?</p>
                 <p>Cómo evitar una estafa piramidal</p>
                 <p>Evaluación</p>
