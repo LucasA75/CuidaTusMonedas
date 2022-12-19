@@ -28,4 +28,4 @@ const LeccionesIndex = () => {
   )
 }
 
-export default LeccionesIndex
+export default LeccionesIndex;

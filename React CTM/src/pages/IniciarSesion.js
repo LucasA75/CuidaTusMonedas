@@ -1,5 +1,5 @@
 import React from "react";
-import {Login,FondoVideo } from "../components";
+import {Login,FondoVideo, FondoLogin } from "../components";
 import "../components/Login/Login.css"
 /* import FondoVideo from "../components"; */
 
