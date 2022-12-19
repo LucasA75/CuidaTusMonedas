@@ -25,7 +25,14 @@ const usuario1 = [
       confirmarContraseña: "admin",
       edad:"23",
       telefono:"964834123"
-    },
+    },  {
+      nombre: "asdasd",
+      apellido: "Papa",
+      contraseña: "admin",
+      confirmarContraseña: "papa",
+      edad:"23",
+      telefono:"964834123"
+    }
   ];
 
 const AdminPage = () =>{
