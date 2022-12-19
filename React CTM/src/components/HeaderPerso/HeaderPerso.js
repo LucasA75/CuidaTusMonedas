@@ -34,8 +34,9 @@ const HeaderPerso =()=>{
         <div class=" d-flex justify-content-around saludo">
             <div class="d-flex align-content-center flex-wrap"> <h2 class="hola">¡Hola Alín!</h2> </div>
             <div class="d-flex align-content-center flex-wrap progreso">
+                <center>
                 <div><h4>Tu progreso actual es de: <br/> <br/>
-                    ¡Sigue así!</h4> </div>
+                    ¡Sigue así!</h4> </div></center>
             </div>
             <div class="d-flex align-content-center flex-wrap"> <img src={catluna} alt="Logo" width="100" /> </div>
         </div>
@@ -43,7 +44,7 @@ const HeaderPerso =()=>{
         <div class="container-fluid modulos">
             <div class="d-flex justify-content-around align-content-center flex-wrap"> 
             <div class="d-flex align-content-center flex-wrap"> <h3> Mis modulos</h3> </div>
-            <div class="d-flex align-content-center flex-wrap"> <button type="button" class="btn btn-success"> + Nuevo módulo</button></div>
+            <div class="d-flex align-content-center flex-wrap"> <button type="button" class="btn-sm btn-outline-dark"> + Nuevo módulo</button></div>
             </div>
             <div class="container-lg d-flex justify-content-around  avance">
 
