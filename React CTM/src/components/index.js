@@ -14,6 +14,7 @@ import ModuloProtege from "./ModulosIndex/ModuloProtege";
 import { Rectangulo,FondoLogin } from "./FondoLogin/FondoLogin";
 import FondoVideo from "./FondoLogin/FondoVideo";
 
+
 export{
     Headermain,
     Main,
@@ -29,5 +30,5 @@ export{
     FooterPerso,
     ModuloProtege,
     Rectangulo,
-    FondoVideo
+    FondoVideo,
 };

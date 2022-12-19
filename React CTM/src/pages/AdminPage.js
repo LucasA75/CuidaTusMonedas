@@ -31,8 +31,9 @@ const usuario1 = [
 const AdminPage = () =>{
     const [user, setUser] = useState(usuario1);
     return(
-
-        <div><TablaUsuario usuarios={user}/></div>
+        <div>
+        <TablaUsuario usuarios={user}/>
+        </div>
     )
 }
 
