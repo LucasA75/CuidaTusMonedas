@@ -28,7 +28,7 @@ const FondoLogin = () => {
 const Rectangulo = () => {
   return(
     <div 
-    class="rectangulo">
+    class="rectangulo23">
     </div>
   )
 }

@@ -3,8 +3,14 @@ import "./Login.css"
 import { useNavigate } from "react-router-dom";
 import gatito from '../../assets/logo.png';
 import { Rectangulo } from "../FondoLogin/FondoLogin";
+import BotonRegistrarse from "../BotonRegistrarse/BotonRegistrarse";
+
+
+
+
 
 const Login = () => {
+  const handleOnClickR = useCallback(() => navigate("/Registrarse", {}, [navigate]));
 
   const navigate = useNavigate();
 
@@ -46,7 +52,7 @@ const Login = () => {
             <button type="button" class="btn btn-warning btn-lg" onClick={()=>{ handleOnClick();}} > <h7 class="h7">Ingresar</h7></button>
           </center>
           <div class="diseñoH8">
-            ¿No tienes una cuenta?  Regístrate
+            ¿No tienes una cuenta?<BotonRegistrarse infoBoton={"Registrate"} handleOnClick={handleOnClickR}/>
           </div>
 
           </div>

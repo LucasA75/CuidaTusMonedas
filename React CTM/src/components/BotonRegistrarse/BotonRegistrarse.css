@@ -1,0 +1,14 @@
+.botonRegistro{
+
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 200;
+    font-size: 22px;
+    line-height: 27px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.003em;
+
+color: #00A3FF;
+
+}

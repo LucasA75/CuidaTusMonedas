@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ctm.demo.model.Usuario;
@@ -35,9 +36,10 @@ public class UsuarioController {
         usuarioService.updateUsuario(usuario);
     }
 
-    @GetMapping("/Usuario/findAll")
+    @GetMapping("/findAll")
     public List<Usuario> todoslosUsuarios(){
-        return usuarioService.allUsuarios();
+        List<Usuario> listaUsuario = usuarioService.allUsuarios();
+        return listaUsuario;
     }
 
     @DeleteMapping("/Usuario/{id}")
