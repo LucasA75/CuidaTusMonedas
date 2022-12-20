@@ -8,7 +8,7 @@ export const Pregunta4 = () => {
 
     const navigate = useNavigate();    
     const handleOnClick = useCallback(
-    () => navigate ("/", {}, [navigate]))
+    () => navigate ("/Registrarse", {}, [navigate]))
 
     const navigate2 = useNavigate();
     const handleOnClick2 = useCallback(
@@ -20,8 +20,8 @@ export const Pregunta4 = () => {
             <br></br>
             <br></br>
             <center><h3 class="pregunta">
-                Te llegará un mail para que termines
-                de llenar tu información para así
+                Haz clic en el botón de finalizar para que termines
+                de llenar tu información y así
                 disfrutar de una experiencia personalizada.
             </h3></center>
             <br></br>
