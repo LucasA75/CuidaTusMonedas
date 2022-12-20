@@ -18,7 +18,7 @@ const ModuloProtege = () => {
                 <p class="fw-light fs-4"> Cómo proteger el dinero</p>
             </div>
             <div className="temas1">
-                <a id="link1" href=""> 
+                <a id="link1" href="http://localhost:3000/InPira" style={{textDecoration:"none"}}> 
                 <div class="container-lg temas">
                     <img src={piramide1} alt="Logo" width="130"/>
                     <h4 className="tituloProteje">Fraudes piramidales</h4>
@@ -26,7 +26,7 @@ const ModuloProtege = () => {
                 </div >
                 </a>
 
-                <a id="link2" href="">
+                <a id="link2" href="" style={{textDecoration:"none"}}>
                 <div class="container-lg temas">
                     <img src={telf2} width="180" />
                     <h4 className="tituloProteje">Estafas</h4>
@@ -34,7 +34,7 @@ const ModuloProtege = () => {
                 </div>
                 </a>
                 
-                <a id="link3" href="">
+                <a id="link3" href="" style={{textDecoration:"none"}}>
                 <div class="container-lg temas">
                     <img src={telfblock} width="180"/>
                     <h4 className="tituloProteje">Cuida tus datos</h4>
@@ -42,7 +42,7 @@ const ModuloProtege = () => {
                 </div>
                 </a>
 
-                <a id="link3" href="">
+                <a id="link3" href="" style={{textDecoration:"none"}}>
                 <div class="container-lg temas">
                     {/* <img src={telfblock} width="180"/> */}
                     <img></img>

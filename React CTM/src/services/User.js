@@ -26,19 +26,19 @@ const encontrarUsuario = async (id) => {
 };
 
 const editarUsuario = async (usuario) => {
-  const res = await axios.put(url + "/user", usuario);
+  const res = await axios.put(url + "/Usuario/update", usuario);
   console.log(res);
   return res.data;
 };
 
 const eliminarUsuario = async (id) => {
-  const res = await axios.delete(url + "/deleteUser/" + id);
+  const res = await axios.delete(url + "/Usuario/" + id);
   console.log(res);
   return res.data;
 };
 
 const todosUsuarios= async()=>{
-    const res = await axios.get(url+"/allUser");
+    const res = await axios.get(url+"/Usuario/allUser");
     console.log(res)
     return res.data;
 }

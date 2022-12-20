@@ -67,3 +67,16 @@ height: 50px;
     align-items: flex-start;
     justify-content: space-around;
 }
+
+.Linea1{
+    width: fit-content;
+    position: absolute;
+    right: 49.1%;
+    top: 30%;
+}
+
+.Linea1 img{
+    object-fit: cover;
+    width:2vh ;
+    height: 30vh;
+}

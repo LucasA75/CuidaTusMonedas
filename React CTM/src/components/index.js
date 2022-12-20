@@ -17,6 +17,8 @@ import FraudesPiramidales from "./FraudesPiramidales/FraudesPiramidales";
 import FooetrClases from "./FooterClases/FooetrClases";
 import LeccionesIndex from "./LeccionesIndex/LeccionesIndex";
 import HeaderIndex from "./LeccionesIndex/HeaderIndex";
+import OrigenEstafas from "./OrigenEstafas/OrigenEstafas";
+
 
 export{
     Headermain,
@@ -37,5 +39,6 @@ export{
     FraudesPiramidales,
     FooetrClases,
     LeccionesIndex,
-    HeaderIndex
+    HeaderIndex,
+    OrigenEstafas
 };
