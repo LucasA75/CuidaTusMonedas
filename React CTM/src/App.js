@@ -10,7 +10,8 @@ import {AdminPage,
      Encuesta4, 
      ModuloP, 
      IndexFraudesPiramidales,
-    PerfilPage
+    PerfilPage,
+    EsquemaPiramidalPage
     } from "./pages";
 import ConfirmacionRegistro from "./pages/ConfirmacionRegistro";
 import Home from "./pages/Home"
@@ -36,6 +37,7 @@ const App =() => {
                 <Route path="/OrigenEstafas" element={<OrigenEstafasPage/>}></Route>
                 <Route path="/ConfirmacionRegistro" element={<ConfirmacionRegistro/>}></Route>
                 <Route path="/Perfil" element={<PerfilPage/>}></Route>
+                <Route path="/EsquemaPiramidal" element={<EsquemaPiramidalPage/>}></Route>
             </Routes>
         </BrowserRouter>
     )

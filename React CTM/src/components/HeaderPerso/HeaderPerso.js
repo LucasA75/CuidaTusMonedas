@@ -24,7 +24,7 @@ const HeaderPerso =()=>{
                         <a class="nav-link active p-2" aria-current="page" href="/#">Home</a>
                         <a class="nav-link p-2" href="/#">Conócenos</a>
                         <a class="nav-link p-2" href="/#">Ayuda</a>
-                        <a class="nav-link p-2" href="/#">Perfil</a>
+                        <a class="nav-link p-2" href="/Perfil">Perfil</a>
                         <img src={gatopage} alt="Logo" width="100" height="100" class="d-inline-block align-text-top logo" />
 
                     </div>
