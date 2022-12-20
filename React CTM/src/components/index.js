@@ -20,6 +20,7 @@ import HeaderIndex from "./LeccionesIndex/HeaderIndex";
 import OrigenEstafas from "./OrigenEstafas/OrigenEstafas";
 import BotonRegistrarse from "./BotonRegistrarse/BotonRegistrarse";
 import ConfirmacionExitosa from "./ConfirmacionExitosa/ConfirmacionExitosa";
+import Perfil from "./Perfil/Perfil";
 
 
 export{
@@ -44,5 +45,6 @@ export{
     HeaderIndex,
     OrigenEstafas,
     ConfirmacionExitosa,
-    BotonRegistrarse
+    BotonRegistrarse,
+    Perfil
 };

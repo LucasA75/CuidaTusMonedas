@@ -1,6 +1,17 @@
 import React from "react";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
-import {AdminPage, IniciarSesion, Registrarse,Encuesta1,Encuesta2,Conocenos, Encuesta3, Encuesta4, ModuloP, IndexFraudesPiramidales} from "./pages";
+import {AdminPage, 
+    IniciarSesion,
+     Registrarse,
+     Encuesta1,
+     Encuesta2,
+     Conocenos, 
+     Encuesta3, 
+     Encuesta4, 
+     ModuloP, 
+     IndexFraudesPiramidales,
+    PerfilPage
+    } from "./pages";
 import ConfirmacionRegistro from "./pages/ConfirmacionRegistro";
 import Home from "./pages/Home"
 import OrigenEstafasPage from "./pages/OrigenEstafasPage";
@@ -24,6 +35,7 @@ const App =() => {
                 <Route path="/InPira" element={<IndexFraudesPiramidales/>}></Route>
                 <Route path="/OrigenEstafas" element={<OrigenEstafasPage/>}></Route>
                 <Route path="/ConfirmacionRegistro" element={<ConfirmacionRegistro/>}></Route>
+                <Route path="/Perfil" element={<PerfilPage/>}></Route>
             </Routes>
         </BrowserRouter>
     )
