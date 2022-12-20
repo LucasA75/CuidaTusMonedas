@@ -7,6 +7,7 @@ import billetera from '../../assets/billetera.png'
 import footerimg from '../../assets/footerimg.png'
 
 const ModuloProtege = () => {
+
     return (
 
         <div >

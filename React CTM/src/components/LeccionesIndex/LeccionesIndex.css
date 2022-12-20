@@ -4,6 +4,7 @@
     display: flex;
     justify-content: flex-start;
     padding-right: 30px;
+    margin-top: 108px;
     
 }
 
@@ -53,10 +54,12 @@ height: 50px;
 
 .colum1I{
 
+
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-around;
+    
 }
 
 .colum3I{
@@ -72,7 +75,7 @@ height: 50px;
     width: fit-content;
     position: absolute;
     right: 49.1%;
-    top: 30%;
+    top: 70%;
 }
 
 .Linea1 img{

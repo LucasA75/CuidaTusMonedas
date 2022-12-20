@@ -7,7 +7,7 @@ const LeccionesIndex = () => {
   return (
     <div>
         <div className='container-md Introduccion'>
-        En estas lecciones aprenderas que son las estafas piramidales , cuales son las estafas mas famosas , como identificar una estafa y consejos sobre como evitar caer en una de estas estafas, al finalizar se hara una pequeña evaluacion para verificar todo lo aprendido. Que disfrutes aprendiendo!
+        En estas lecciones aprenderás qué son las estafas piramidales, cuáles son las estafas más famosas, cómo identificar una estafa y consejos sobre cómo evitar caer en una de estas estafas, al finalizar se hará una pequeña evaluación para verificar todo lo aprendido. Que disfrutes aprendiendo!
         </div>
         <br></br>
         <div class="container-md">
@@ -16,13 +16,13 @@ const LeccionesIndex = () => {
             <a style={{textDecoration: "none"}} href='/OrigenEstafas'>
             <p>Origen de las estafas piramidales</p>
             </a>
-                <p>¿Que es un esquema ponzi?</p>
+                <p>¿Qué es un esquema ponzi?</p>
                 <p>Cómo evitar una estafa piramidal</p>
                 <p>Evaluación</p>
             </div>
             <div class="col colum3I">
-                <p>¿Que es un esquema piramidal?</p>
-                <p>¿Como identificar una estafa piramidal?</p>
+                <p>¿Qué es un esquema piramidal?</p>
+                <p>¿Cómo identificar una estafa piramidal?</p>
                 <p>Casos famosos de estafas piramidales</p>
                 <p>Profundiza</p>
             </div>
