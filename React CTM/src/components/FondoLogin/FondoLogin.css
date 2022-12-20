@@ -18,6 +18,22 @@
     filter: blur(2px);
 }
 
+.rectangulo32{
+    background: #F9F9FB;
+    display: flex;
+    justify-content: center;
+    margin: 50px;
+    padding-bottom: 100px;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.4) ;
+    height: 580px;
+    width: 800px;
+    position:absolute; left:280px; top: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    filter: blur(2px);
+}
+
 
 
 

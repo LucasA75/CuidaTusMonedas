@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
+import { useNavigate } from "react-router-dom";
 import "./FormularioRegistrarse.css";
 import gatito from "../../assets/logo.png";
 
@@ -11,6 +12,10 @@ const initialUsuario = {
 };
 
 const FormularioLogin = ({ agregarUsuario }) => {
+  const handleOnClick = useCallback(() => navigate("/ConfirmacionRegistro", {}, [navigate]));
+
+  const navigate = useNavigate();
+
   const [usuario, setUsuario] = useState(initialUsuario);
   const { nombre, apellido, password, ano, telefono } = usuario;
 

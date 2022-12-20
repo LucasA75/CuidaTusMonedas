@@ -1,0 +1,37 @@
+.tituloConfirmacionH1{
+    position: absolute;
+width: 796px;
+height: 112px;
+left: 362px;
+top: 125px;
+
+font-family: 'Maven Pro';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 42px;
+display: flex;
+align-items: center;
+letter-spacing: -0.017em;
+
+color: #000000;
+
+}
+
+.gatitoCorazon23{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    top: 180px;
+    left: 545px;
+
+}
+
+.botonIniciarSesionConfirm{
+    box-sizing: border-box;
+    position: absolute;
+    width: 258px;
+    height: 40px;
+    right: 540px;
+    top: 540px;  
+}

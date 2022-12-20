@@ -12,4 +12,5 @@ const BotonRegistrarse = ({infoBoton, handleOnClick}) =>{
         </div>
     )
 }
+
 export default BotonRegistrarse;
