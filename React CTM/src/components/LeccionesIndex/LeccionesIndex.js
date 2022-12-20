@@ -13,7 +13,7 @@ const LeccionesIndex = () => {
         <div class="container-md">
         <div class="row rowindex">
             <div class="col colum1I">
-            <a href='/OrigenEstafas'>
+            <a style={{textDecoration: "none"}} href='/OrigenEstafas'>
             <p>Origen de las estafas piramidales</p>
             </a>
                 <p>¿Que es un esquema ponzi?</p>

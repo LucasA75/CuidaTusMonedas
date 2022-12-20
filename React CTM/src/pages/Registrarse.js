@@ -6,7 +6,7 @@ const usuario1 = [];
 
 const Registrarse = () => {
 
-  const userAdd = async(usuarioAgregado) =>{
+  const agregarUsuario = async(usuarioAgregado) =>{
     //En esta linea agregamos un usuario a la base de datos
     const usuarioBD = await guardarUsuario(usuarioAgregado);
     //Aqui haremos que la tabla se actualice
@@ -29,7 +29,7 @@ const Registrarse = () => {
       <main>
       <FondoLogin/>
       <Rectangulo/>
-      <div><FormularioRegistrarse userAdd = {userAdd}/></div>
+      <div><FormularioRegistrarse agregarUsuario = {agregarUsuario}/></div>
       </main>
      
   )

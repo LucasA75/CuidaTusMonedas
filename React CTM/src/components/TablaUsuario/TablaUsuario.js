@@ -10,8 +10,7 @@ const TablaUsuario = ({usuarios}) => {
             <th>Nombre</th>
             <th>Apellido</th>
             <th>Contraseña</th>
-            <th>Contraseña confirmada</th>
-            <th>Edad</th>
+            <th>Año de nacimiento</th>
             <th>Telefono</th>
           </tr>
         </thead>
@@ -23,9 +22,8 @@ const TablaUsuario = ({usuarios}) => {
             <tr>
               <td>{usuario.nombre}</td>
               <td>{usuario.apellido}</td>
-              <td>{usuario.contraseña}</td>
-              <td>{usuario.confirmarContraseña}</td>
-              <td>{usuario.edad}</td>
+              <td>{usuario.password}</td>
+              <td>{usuario.ano}</td>
               <td>{usuario.telefono}</td>
 {/*               <td>
               <button

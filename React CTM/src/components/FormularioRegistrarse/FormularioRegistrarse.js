@@ -5,16 +5,15 @@ import gatito from "../../assets/logo.png";
 const initialUsuario = {
   nombre: "",
   apellido: "",
-  contraseña: "",
-  confirmarContraseña: "",
-  edad: "",
+  password: "",
+  ano: "",
   telefono: "",
 };
 
-const FormularioLogin = ({ userAdd}) => {
+const FormularioLogin = ({ agregarUsuario }) => {
   const [usuario, setUsuario] = useState(initialUsuario);
-  const { id, nombre, apellido, contraseña, confirmarContraseña, edad, telefono } =
-    usuario;
+  const { nombre, apellido, password, ano, telefono } = usuario;
+
   const handleInputChange = (e) => {
     //Esta funcion se llama cada vez que nosotros escribimos algo en algun input de nuestra pagina
     const changedFormValue = {
@@ -69,9 +68,9 @@ const FormularioLogin = ({ userAdd}) => {
             <input
               class="cuadro3"
               type="password"
-              name="contraseña"
-              id="contraseña"
-              value={contraseña}
+              name="password"
+              id="password"
+              value={password}
               onChange={handleInputChange}
             />
             <br />
@@ -84,8 +83,6 @@ const FormularioLogin = ({ userAdd}) => {
               type="password"
               name="confirmarContraseña"
               id="confirmarContraseña"
-              value={confirmarContraseña}
-              onChange={handleInputChange}
             />
             <br />
 
@@ -96,9 +93,9 @@ const FormularioLogin = ({ userAdd}) => {
             <input
               class="cuadro5"
               type="text"
-              name="edad"
-              id="edad"
-              value={edad}
+              name="ano"
+              id="ano"
+              value={ano}
               onChange={handleInputChange}
             />
             <br />
@@ -122,7 +119,7 @@ const FormularioLogin = ({ userAdd}) => {
             <button
               type="button"
               class="btn btn-warning btn-lg"
-              onClick={() => userAdd(usuario)}
+              onClick={() => agregarUsuario(usuario)}
             >
               Confirmar
             </button>

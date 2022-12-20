@@ -31,7 +31,7 @@ const MenuModulos = () => {
                 </div>
             </div>
             <div class="col cardModulos">
-                <a href="ModuloP">
+                <a style={{textDecoration: "none"}} href="ModuloP">
                 <img src={moneda2} class="card-img-top img2" alt="moneda2" />
                 <div class="card-body">
                 <center>
