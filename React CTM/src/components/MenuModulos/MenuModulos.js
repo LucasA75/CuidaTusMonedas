@@ -20,8 +20,8 @@ const MenuModulos = () => {
             </div>
         
 
-
-        <div class="row">
+        <div className="container-xl">
+        <div class="row rowCards">
             <div class="col cardModulos">
                 <img src={moneda1} class="card-img-top" alt="moneda1" />
                 <div class="card-body">
@@ -31,12 +31,14 @@ const MenuModulos = () => {
                 </div>
             </div>
             <div class="col cardModulos">
-                <img src={moneda2} class="card-img-top" alt="moneda2" />
+                <a href="ModuloP">
+                <img src={moneda2} class="card-img-top img2" alt="moneda2" />
                 <div class="card-body">
                 <center>
                     <h5 class="card-title card2">Protege tus Monedas</h5>
                     </center>
                 </div>
+                </a>
             </div>
             <div class="col cardModulos">
                 <center>
@@ -49,6 +51,8 @@ const MenuModulos = () => {
                 </div>
             </div>
         </div>
+        </div>
+
         </div>
 
     )

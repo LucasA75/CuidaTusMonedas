@@ -1,16 +1,25 @@
-import React from "react";
+import React , {useCallback}from "react";
 import "./Login.css"
+import { useNavigate } from "react-router-dom";
 import gatito from '../../assets/logo.png';
 import { Rectangulo } from "../FondoLogin/FondoLogin";
 
 const Login = () => {
+
+  const navigate = useNavigate();
+
+  const handleOnClick = useCallback(()=> navigate("/Perso",{},[navigate]));
+
+
   return (
     <div className="divPrincipal">
       <Rectangulo/>
       <div>
         <div >
           <div className="gato">
-            <img src={gatito} alt="nuestro logo" width={"280px"} />
+            <a href="/">
+            <img src={gatito}  alt="nuestro logo" width={"280px"} />
+            </a>
           </div>
           <div className="tituloLogin">
             <h1 class="diseñoLogin">Bienvenido Nuevamente!</h1>
@@ -34,7 +43,7 @@ const Login = () => {
           <h6 class="diseñoH6">¿Olvidaste tu contraseña?</h6>
 
           <center class="botonIniciarSesion">
-            <button type="button" class="btn btn-warning btn-lg"> <h7 class="h7">Ingresar</h7></button>
+            <button type="button" class="btn btn-warning btn-lg" onClick={()=>{ handleOnClick();}} > <h7 class="h7">Ingresar</h7></button>
           </center>
           <div class="diseñoH8">
             ¿No tienes una cuenta?  Regístrate

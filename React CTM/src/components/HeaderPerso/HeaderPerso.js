@@ -46,6 +46,7 @@ const HeaderPerso =()=>{
             <div class="d-flex align-content-center flex-wrap"> <h3> Mis modulos</h3> </div>
             <div class="d-flex align-content-center flex-wrap"> <button type="button" class="btn-sm btn-outline-dark"> + Nuevo módulo</button></div>
             </div>
+            <a href="/ModuloP">
             <div class="container-lg d-flex justify-content-around  avance">
 
                 
@@ -54,6 +55,7 @@ const HeaderPerso =()=>{
                     <div> <img src={flecha} alt="Flechita"/></div>
                 
             </div>
+            </a>
         
 
         </div>

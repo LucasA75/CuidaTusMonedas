@@ -6,7 +6,7 @@ import "../components/Login/Login.css"
 const IniciarSesion = () =>{
     return(
         <main>
-       <FondoVideo/>
+       <FondoLogin/>
         <Login/>
         </main>
 
