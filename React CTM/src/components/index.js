@@ -19,6 +19,7 @@ import LeccionesIndex from "./LeccionesIndex/LeccionesIndex";
 import HeaderIndex from "./LeccionesIndex/HeaderIndex";
 import OrigenEstafas from "./OrigenEstafas/OrigenEstafas";
 import BotonRegistrarse from "./BotonRegistrarse/BotonRegistrarse";
+import ConfirmacionExitosa from "./ConfirmacionExitosa/ConfirmacionExitosa";
 
 
 export{
@@ -42,5 +43,6 @@ export{
     LeccionesIndex,
     HeaderIndex,
     OrigenEstafas,
+    ConfirmacionExitosa,
     BotonRegistrarse
 };

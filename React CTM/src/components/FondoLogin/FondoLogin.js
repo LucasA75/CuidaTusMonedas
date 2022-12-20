@@ -33,4 +33,13 @@ const Rectangulo = () => {
   )
 }
 
-export {FondoLogin , Rectangulo};
+const RectanguloRegistro = () =>{
+  return(
+    <div 
+    class="rectangulo32">
+    </div>
+  )
+
+}
+
+export {FondoLogin , Rectangulo, RectanguloRegistro};
