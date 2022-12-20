@@ -27,6 +27,8 @@ export const Pregunta3 = () => {
                     <input type="" class="form-control pregunta1" id="correoEnc" placeholder="Tu correo" /></label>
             </form>
             <br></br>
+            <br></br>
+      
             <BotonAtras infoBoton2={"Atrás"} handleOnClick2={handleOnClick2}></BotonAtras>
             <BotonSiguiente infoBoton={"Siguiente"} handleOnClick={handleOnClick}></BotonSiguiente>
         </div>

@@ -25,6 +25,8 @@ export const Pregunta4 = () => {
                 disfrutar de una experiencia personalizada.
             </h3></center>
             <br></br>
+            <br></br>
+            <br></br>
             <BotonAtras infoBoton2={"Atrás"} handleOnClick2={handleOnClick2}></BotonAtras>
             <BotonSiguiente infoBoton={"Finalizar"} handleOnClick = {handleOnClick}></BotonSiguiente>
         </div>

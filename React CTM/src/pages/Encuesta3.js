@@ -8,6 +8,7 @@ const Encuesta3 = () => {
         <>
             <Headermain />
             <center>
+            &nbsp;
                 <h1 class="texto">Ya casi terminamos...</h1>
             </center>
             <div>

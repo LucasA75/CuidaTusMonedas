@@ -1,7 +1,8 @@
 import React from "react";
-import { Headermain} from "../components";
+import { FooetrClases, Headermain} from "../components";
 import encuesta1 from "../assets/encuesta1.png";
 import Pregunta1 from "../components/RecuadroEncuesta/Pregunta1";
+
 
 
 const Encuesta1 = () => {
@@ -9,6 +10,7 @@ const Encuesta1 = () => {
         <>
             <Headermain />
             <center>
+            &nbsp;
                 <h1 class="texto">Comencemos tu registro</h1>
             </center>
             <div>
@@ -19,7 +21,8 @@ const Encuesta1 = () => {
                     float="left"
                     margin-top="50px" />
                
-                <Pregunta1></Pregunta1>
+                <Pregunta1/>
+                
             </div>
         
         </>
