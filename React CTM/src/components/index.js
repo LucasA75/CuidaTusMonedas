@@ -47,7 +47,6 @@ export{
     OrigenEstafas,
     ConfirmacionExitosa,
     BotonRegistrarse,
-    Perfil,
-    BotonRegistrarse, 
+    Perfil, 
     HeaderGenerico
 };
