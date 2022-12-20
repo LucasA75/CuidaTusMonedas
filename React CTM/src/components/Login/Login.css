@@ -191,7 +191,7 @@ color: #00A3FF;
 
 .diseñoH8{
   position: absolute;
-width: 309px;
+width: 320px;
 height: 28px;
 left: 560px;
 top: 300px;
@@ -203,7 +203,8 @@ font-size: 22px;
 line-height: 27px;
 display: flex;
 align-items: center;
-letter-spacing: 0.003em;
+letter-spacing: 0.001em;
+word-spacing: 0.1em;
 
 color: #000000;
 

@@ -1,9 +1,17 @@
-import React from "react";
+import React, {useCallback} from "react";
 import "./Login.css"
 import gatito from '../../assets/logo.png';
 import { Rectangulo } from "../FondoLogin/FondoLogin";
+import BotonRegistrarse from "../BotonRegistrarse/BotonRegistrarse";
+import { useNavigate } from "react-router-dom";
+
+
+
+
 
 const Login = () => {
+  const navigate = useNavigate();
+  const handleOnClick = useCallback(() => navigate("/Registrarse", {}, [navigate]));
   return (
     <div className="divPrincipal">
       <Rectangulo/>
@@ -37,7 +45,7 @@ const Login = () => {
             <button type="button" class="btn btn-warning btn-lg"> <h7 class="h7">Ingresar</h7></button>
           </center>
           <div class="diseñoH8">
-            ¿No tienes una cuenta?  Regístrate
+            ¿No tienes una cuenta?<BotonRegistrarse infoBoton={"Registrate"} handleOnClick={handleOnClick}/>
           </div>
 
           </div>

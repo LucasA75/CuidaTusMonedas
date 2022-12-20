@@ -13,6 +13,7 @@ import FooterPerso from "./FooterPerso/FooterPerso";
 import ModuloProtege from "./ModulosIndex/ModuloProtege";
 import { Rectangulo,FondoLogin } from "./FondoLogin/FondoLogin";
 import FondoVideo from "./FondoLogin/FondoVideo";
+import BotonRegistrarse from "./BotonRegistrarse/BotonRegistrarse";
 
 
 export{
@@ -30,5 +31,6 @@ export{
     FooterPerso,
     ModuloProtege,
     Rectangulo,
-    FondoVideo
+    FondoVideo,
+    BotonRegistrarse
 };
