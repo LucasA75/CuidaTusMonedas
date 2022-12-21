@@ -48,6 +48,5 @@ export{
     ConfirmacionExitosa,
     BotonRegistrarse,
     Perfil,
-    BotonRegistrarse, 
     HeaderGenerico
 };

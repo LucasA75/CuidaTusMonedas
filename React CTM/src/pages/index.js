@@ -10,9 +10,10 @@ import Encuesta4 from "./Encuesta4"
 import ModuloP from "./ModuloP"
 import IndexFraudesPiramidales from "./IndexFraudesPiramidales"
 import PerfilPage from "./PerfilPage"
-
-export {Home, Conocenos, Registrarse, AdminPage, IniciarSesion, Encuesta1, Encuesta2, Encuesta3, Encuesta4, ModuloP,IndexFraudesPiramidales,PerfilPage}
 import EsquemaPiramidalPage from "./EsquemaPiramidalPage"
-export {Home, Conocenos, Registrarse, AdminPage, IniciarSesion, Encuesta1, Encuesta2, Encuesta3, Encuesta4, ModuloP,IndexFraudesPiramidales, EsquemaPiramidalPage}
+
+
+
+export {Home, Conocenos, Registrarse, AdminPage, IniciarSesion, Encuesta1, Encuesta2, Encuesta3, Encuesta4, ModuloP,IndexFraudesPiramidales, EsquemaPiramidalPage, PerfilPage}
 
 
