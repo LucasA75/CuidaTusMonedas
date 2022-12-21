@@ -126,7 +126,7 @@ const FormularioLogin = ({ agregarUsuario }) => {
             <button
               type="button"
               class="btn btn-warning btn-lg"
-              onClick={() => agregarUsuario(usuario)}
+              onClick={() => {agregarUsuario(usuario); handleOnClick()}}
             >
               Confirmar
             </button>
