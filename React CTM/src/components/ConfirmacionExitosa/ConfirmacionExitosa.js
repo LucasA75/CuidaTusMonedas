@@ -9,16 +9,28 @@ const ConfirmacionExitosa = () => {
     const navigate = useNavigate();
 
   return (
-    <div>
+    
+    <center>
+      <br></br>
+          <div className="divSecundario">
       {" "}
-      <h1 class="tituloConfirmacionH1">Tu usuario se ha creado exitosamente</h1>
-      <div class="gatitoCorazon23">
-        <img src={gatitoCorazon} alt="nuestro logo" width={"400px"} />
+      <br></br>
+      <h1 className="tituloConfirmacionH1">Tu usuario se ha creado exitosamente</h1>
+      
+      <div>
+        <img src={gatitoCorazon} alt="nuestro logo" width={"300px"} />
       </div>
-      <div class="botonIniciarSesionConfirm">
+      <br></br>
+      <div>
             <button type="button" class="btn btn-warning btn-lg" onClick={()=>{ handleOnClick();}} > <h7 class="h7">Ingresar</h7></button>
       </div>
+      <br></br>
+      <br></br>
+      <h2 className="subtituloConfirmacion">Comienza tus lecciones ahora!</h2>
     </div>
+
+    </center>
+
   );
 };
 

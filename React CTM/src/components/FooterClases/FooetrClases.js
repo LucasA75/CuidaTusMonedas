@@ -5,7 +5,7 @@ import "./FooterClases.css"
 const FooetrClases = () => {
   return (
     <div className='ContenedorFooter'>
-        <img src={footerimg} />
+        <img src={footerimg} /> 
       </div>
   )
 }

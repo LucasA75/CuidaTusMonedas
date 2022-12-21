@@ -7,7 +7,6 @@ const ConfirmacionRegistro = () =>{
     return(
         <main>
        <FondoLogin/>
-       <RectanguloRegistro/>
        <ConfirmacionExitosa/>
        
         </main>

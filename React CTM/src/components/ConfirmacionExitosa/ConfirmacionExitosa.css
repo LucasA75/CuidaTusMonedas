@@ -1,9 +1,4 @@
 .tituloConfirmacionH1{
-    position: absolute;
-width: 796px;
-height: 112px;
-left: 362px;
-top: 125px;
 
 font-family: 'Maven Pro';
 font-style: normal;
@@ -34,4 +29,19 @@ color: #000000;
     height: 40px;
     right: 540px;
     top: 540px;  
+}
+
+.subtituloConfirmacion{
+    
+    font-family: 'Maven Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.017em;
+    
+    color: #000000;
+
 }

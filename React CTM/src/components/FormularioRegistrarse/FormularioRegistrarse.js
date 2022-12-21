@@ -34,8 +34,10 @@ const FormularioLogin = ({ agregarUsuario }) => {
     <div>
       <div></div>
       <div class="container-lg formulario">
+        <center>
+          <div className="divSecundario">
         <div class="gato2">
-          <img src={gatito} alt="nuestro logo" width={"250px"} />
+          <img src={gatito} alt="nuestro logo" width={"300px"} />
         </div>
         <h1 class="txtUsuario">Crea tu usuario</h1>
         <div>
@@ -124,12 +126,17 @@ const FormularioLogin = ({ agregarUsuario }) => {
             <button
               type="button"
               class="btn btn-warning btn-lg"
-              onClick={() => agregarUsuario(usuario)}
+              onClick={() => {agregarUsuario(usuario); handleOnClick()}}
             >
               Confirmar
             </button>
           </center>
         </div>
+        </div>
+
+          
+        </center>
+ 
       </div>
     </div>
   );
