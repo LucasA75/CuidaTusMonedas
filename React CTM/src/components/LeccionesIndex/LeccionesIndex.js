@@ -2,6 +2,7 @@ import React from 'react'
 import "./LeccionesIndex.css"
 import linea from "../../assets/Linea.png"
 import elipse from "../../assets/Elipse.png"
+import { CheckCircle } from '@mui/icons-material'
 
 
 const LeccionesIndex = () => {
@@ -30,28 +31,52 @@ const LeccionesIndex = () => {
         </div>
         <div className='LineaDeProgreso1'>
           <div className='Elipse1'>
-            <img src={elipse} alt="Elipse"/>
+            <div className='Check'>
+              <CheckCircle color="success" sx={{ fontSize: 49 }} />
+            </div>
+            <img src={elipse} alt="Elipse" />
           </div>
           <div className='Elipse2'>
-            <img src={elipse} alt="Elipse"/>
+            <div className='Check'>
+              <CheckCircle color="success" sx={{ fontSize: 49 }} />
+            </div>
+            <img src={elipse} alt="Elipse" />
           </div>
           <div className='Elipse3'>
-            <img src={elipse} alt="Elipse"/>
+            <div className='Check'>
+              <CheckCircle color="success" sx={{ fontSize: 49 }} />
+            </div>
+            <img src={elipse} alt="Elipse" />
           </div>
           <div className='Elipse4'>
-            <img src={elipse} alt="Elipse"/>
+            <div className='Check'>
+              <CheckCircle color="success" sx={{ fontSize: 49 }} />
+            </div>
+            <img src={elipse} alt="Elipse" />
           </div>
           <div className='Elipse5'>
-            <img src={elipse} alt="Elipse"/>
+            <div className='Check'>
+              <CheckCircle color="success" sx={{ fontSize: 49 }} />
+            </div>
+            <img src={elipse} alt="Elipse" />
           </div>
           <div className='Elipse6'>
-            <img src={elipse} alt="Elipse"/>
+            <div className='Check'>
+              <CheckCircle color="success" sx={{ fontSize: 49 }} />
+            </div>
+            <img src={elipse} alt="Elipse" />
           </div>
           <div className='Elipse7'>
-            <img src={elipse} alt="Elipse"/>
+            <div className='Check'>
+              <CheckCircle color="success" sx={{ fontSize: 49 }} />
+            </div>
+            <img src={elipse} alt="Elipse" />
           </div>
           <div className='Elipse8'>
-            <img src={elipse} alt="Elipse"/>
+            <div className='Check'>
+              <CheckCircle color="success" sx={{ fontSize: 49 }} />
+            </div>
+            <img src={elipse} alt="Elipse" />
           </div>
           <div className='Linea1'>
             <img src={linea} alt="linea" />
