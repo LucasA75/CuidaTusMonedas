@@ -37,7 +37,7 @@ const FormularioLogin = ({ agregarUsuario }) => {
         <center>
           <div className="divSecundario">
         <div class="gato2">
-          <img src={gatito} alt="nuestro logo" width={"250px"} />
+          <img src={gatito} alt="nuestro logo" width={"300px"} />
         </div>
         <h1 class="txtUsuario">Crea tu usuario</h1>
         <div>
