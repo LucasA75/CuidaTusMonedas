@@ -1,6 +1,6 @@
 import React, {useCallback} from 'react'
 import { useNavigate } from 'react-router'
-import { HeaderIndex, Headermain, LeccionesIndex } from '../components'
+import { FooetrClases, HeaderIndex, Headermain, LeccionesIndex } from '../components'
 import regresar1 from '../assets/regresar.png'
 
 const IndexFraudesPiramidales = () => {
