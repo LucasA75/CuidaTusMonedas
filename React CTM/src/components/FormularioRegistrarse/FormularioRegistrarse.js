@@ -34,6 +34,8 @@ const FormularioLogin = ({ agregarUsuario }) => {
     <div>
       <div></div>
       <div class="container-lg formulario">
+        <center>
+          <div className="divSecundario">
         <div class="gato2">
           <img src={gatito} alt="nuestro logo" width={"250px"} />
         </div>
@@ -130,6 +132,11 @@ const FormularioLogin = ({ agregarUsuario }) => {
             </button>
           </center>
         </div>
+        </div>
+
+          
+        </center>
+ 
       </div>
     </div>
   );

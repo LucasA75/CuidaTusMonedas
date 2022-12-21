@@ -28,7 +28,6 @@ const Registrarse = () => {
 
       <main>
       <FondoLogin/>
-      <Rectangulo/>
       <div><FormularioRegistrarse agregarUsuario = {agregarUsuario}/></div>
       </main>
      
