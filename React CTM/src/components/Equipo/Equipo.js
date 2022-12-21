@@ -86,7 +86,7 @@ const Equipo = () => {
             {/* DIV */}
 
             <center>
-                <div class="rectangulo">
+                <div class="rectangulomision">
                     <div>
                         <div><h4>Nuestra Misión</h4></div>
                         <p> Nuestra Misión es dar las herramientas y conocimientos necesarios <br></br>
@@ -96,7 +96,7 @@ const Equipo = () => {
             </center>
             <br></br>
             <center>
-                <div class="rectangulo1">
+                <div class="rectangulovision">
                     <div>
                         <div><h4>Nuestra Visión</h4></div>
                         <p> Que jóvenes adquieran los conocimientos necesarios para tomar control sobre su futuro financiero. </p>
