@@ -8,8 +8,10 @@ const IniciarSesion = () =>{
     const handleOnClick = useCallback(() => navigate("/Registrarse", {}, [navigate]));
     return(
         <main>
-       <FondoLogin/>
+
+        <FondoLogin/>
         <Login/>
+
         </main>
 
     )

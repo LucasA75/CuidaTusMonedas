@@ -1,96 +1,66 @@
-
-.login{
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  background-color:rgba(248, 248, 250, 1);
-  margin-top: 51px;
-/*   margin: 100px; */
-  padding-bottom: 330px;
-  margin-bottom: 110px;
-  width: 600px;
-  height: 750px;
-  top: 10%;
-  right: 25%;
-  left: 25%;
+.divPrincipal {
+/*   background-color: #00A3FF; */
 }
 
+
+.divSecundario {
+  padding: 10px;
+  top: 4vh;
+  left: 30vh;
+  margin-top: 40px;
+
+  background: #F9F9FB;
+  padding-bottom: 100px;
+  height: 680px;
+  width: 540px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 25px #222;
+}
+
+.gato{
+  margin-top: -30px;
+}
+
+
+
 .tituloLogin{
-  position: absolute;
-  top: 300px;
-  right: 500px;
-  transform: translate(6%, -50%);
+  margin-top: -30px;
+  margin-bottom: 5px;
 }
 
 .diseñoLogin{
  font-weight: 700;
-
-}
-
-.gato{
-  position: relative;
-  text-align: center;
-  top: 30px;
-  right: -10px;
-}
-
-.SubtituloLogin{
-  position: absolute;
-  top: 320px;
-  left: 425px;
-  width: max-content;
-  display: flex;
-  transform: translate(20%, -5%);
 }
 
 .SubtituloLogin h2{
   font-size: 20px;
   font-weight: 450;
-  
-  
+  font-style: oblique;
 }
 
-.Credenciales{
-  position: relative;
-  top: 100px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
 
 .Credenciales form{
-  margin: 5px;
+  margin-top: 25px;
   padding: 10px;
 }
 
-.nombre,.contraseña{
-  margin: 10px;
-}
 
 .cuadroNameLogin1{
   box-sizing: border-box;
-
-  position: absolute;
   width: 400px;
   height: 35px;
-  right: 510px;
-  top: 10px;
+  margin-bottom: 13px;
 
   background: #ffffff;
   mix-blend-mode: normal;
   border: 1px solid #000000;
-  /* filter: blur(2px); */
   border-radius: 38px;
 
 }
 
 .nameLogin1{
-  position: absolute;
-  width: 200px;
-  height: 20px;
-  left: 520px;
-  top: -13px;
   
+  margin: 3px;
   font-family: 'Maven Pro';
   font-style: normal;
   font-weight: 700;
@@ -101,32 +71,20 @@
   letter-spacing: -0.017em;
   
   color: #000000;
-}
+} 
 
 .cuadroContraseñaLogin1{
-
-  box-sizing: border-box;
-
-  position: absolute;
-  width: 400px;
   height: 35px;
-  right: 510px;
-  top: 90px;
-
+  width: 400px;
+  box-sizing: border-box;
   background: #ffffff;
   mix-blend-mode: normal;
   border: 1px solid #000000;
-  /* filter: blur(2px); */
   border-radius: 38px;
 
-}
+} 
 
 .contraseñaLogin1{
-  position: absolute;
-  width: 200px;
-  height: 20px;
-  left: 520px;
-  top: 66px;
   
   font-family: 'Maven Pro';
   font-style: normal;
@@ -139,14 +97,16 @@
   
   color: #000000;
 
-}
+} 
 
 .diseñoH6{
-  position: absolute;
-width: 301px;
+  position: relative;
+width: 300px;
 height: 19px;
-left: 685px;
-top: 133px;
+left: 13vh;
+top: 0px;
+margin-top: 6px;
+margin-bottom: 15px;
 
 font-family: 'Maven Pro';
 font-style: normal;
@@ -163,16 +123,17 @@ color: #00A3FF;
 
 .botonIniciarSesion{
   box-sizing: border-box;
-  position: absolute;
-  width: 258px;
+/*   width: 258px;
   height: 41px;
   right: 580px;
-  top: 200px;
+  top: 200px; */
 
 }
+
+
 .h7{
   
-  font-family: 'Maven Pro';
+  font-family: sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -184,17 +145,12 @@ color: #00A3FF;
   
   color: #000000;
 }
-.contraseña{
-  position: relative;
-  transform: translate(-23%, -5%);
-}
+
 
 .diseñoH8{
-  position: absolute;
+position: relative;
 width: 320px;
 height: 28px;
-left: 560px;
-top: 300px;
 
 font-family: 'Inter';
 font-style: italic;
@@ -209,4 +165,3 @@ word-spacing: 0.1em;
 color: #000000;
 
 }
-

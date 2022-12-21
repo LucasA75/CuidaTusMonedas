@@ -1,4 +1,4 @@
-import React , {useCallback}from "react";
+import React, { useCallback } from "react";
 import "./Login.css"
 import { useNavigate } from "react-router-dom";
 import gatito from '../../assets/logo.png';
@@ -14,26 +14,25 @@ const Login = () => {
 
   const navigate = useNavigate();
 
-  const handleOnClick = useCallback(()=> navigate("/Perso",{},[navigate]));
+  const handleOnClick = useCallback(() => navigate("/Perso", {}, [navigate]));
 
 
   return (
-    <div className="divPrincipal">
-      <Rectangulo/>
-      <div>
-        <div >
-          <div className="gato">
-            <a href="/">
-            <img src={gatito}  alt="nuestro logo" width={"280px"} />
-            </a>
-          </div>
-          <div className="tituloLogin">
-            <h1 class="diseñoLogin">Bienvenido Nuevamente!</h1>
-          </div>
-          <div className="SubtituloLogin">
+    <div className="container-lg divPrincipal">
+    <center>
+      <div className="divSecundario">
+        <div className="gato">
+          <a href="/">
+            <img src={gatito} alt="nuestro logo" width={"280px"} />
+          </a>
+        </div>
+        <div className="tituloLogin">
+          <h1 class="diseñoLogin">Bienvenido Nuevamente!</h1>
+        </div>
+        <div className="SubtituloLogin">
           <h2>Ingresa tu cuenta de usuario para iniciar sesion</h2>
-          </div>
-          <div className="Credenciales">
+        </div>
+        <div className="Credenciales">
           <form>
             <label class="nameLogin1" for="name"> Nombre de usuario</label>
             <input
@@ -49,17 +48,15 @@ const Login = () => {
           <h6 class="diseñoH6">¿Olvidaste tu contraseña?</h6>
 
           <center class="botonIniciarSesion">
-            <button type="button" class="btn btn-warning btn-lg" onClick={()=>{ handleOnClick();}} > <h7 class="h7">Ingresar</h7></button>
+            <button type="button" class="btn btn-warning btn-lg" onClick={() => { handleOnClick(); }} > <h7 class="h7">Ingresar</h7></button>
           </center>
           <div class="diseñoH8">
-            ¿No tienes una cuenta?<BotonRegistrarse infoBoton={"Registrate"} handleOnClick={handleOnClickR}/>
-          </div>
-
+            ¿No tienes una cuenta?<BotonRegistrarse infoBoton={"Registrate"} handleOnClick={handleOnClickR} />
           </div>
 
         </div>
-
-      </div>
+        </div>
+        </center>
     </div>
   );
 
