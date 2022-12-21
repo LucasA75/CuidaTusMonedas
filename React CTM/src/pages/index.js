@@ -14,6 +14,6 @@ import EsquemaPiramidalPage from "./EsquemaPiramidalPage"
 
 
 
-export {Home, Conocenos, Registrarse, AdminPage, IniciarSesion, Encuesta1, Encuesta2, Encuesta3, Encuesta4, ModuloP,IndexFraudesPiramidales, EsquemaPiramidalPage,PerfilPage}
+export {Home, Conocenos, Registrarse, AdminPage, IniciarSesion, Encuesta1, Encuesta2, Encuesta3, Encuesta4, ModuloP,IndexFraudesPiramidales, EsquemaPiramidalPage, PerfilPage}
 
 
