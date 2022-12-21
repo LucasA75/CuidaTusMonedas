@@ -10,20 +10,21 @@ import lucas from "../../assets/lucasprofile.png"
 const Equipo = () => {
     return (
         <div>
-            <center><h1 class="h1">Conócenos</h1></center>
+            <center><b><h1 class="h1">Conócenos</h1></b></center>
             <center><h2 class="h2">Sobre nosotros</h2></center>
 
             <div class="row row-cols-5">
+                
 
                 <div class="col0">
-                    <div class="card h-300"  >
+                    <div class="card h-300">
                         <img src={abril} class="Abril Bracamonte Perfil" alt="..." />
                         <div class="card-body">
                             <h4 class="card-title">Abril Bracamonte</h4>
                             <p class="card-text">Desarrolladora Full Stack.</p>
                         </div>
                         <div class="card-footer">
-                            <small class="text-muted">LinkedIn</small>
+                            <a href="https://www.linkedin.com/in/abril-bracamonte-torrez-a9750a185/">LinkedIn</a> 
                         </div>
                     </div>
                 </div>
@@ -36,7 +37,7 @@ const Equipo = () => {
                             <p class="card-text">Desarrollador Full Stack.</p>
                         </div>
                         <div class="card-footer">
-                            <small class="text-muted">LinkedIn</small>
+                            <a href="https://www.linkedin.com/in/nicolas-noimann-97503b258/">LinkedIn</a> 
                         </div>
                     </div>
                 </div>
@@ -49,7 +50,7 @@ const Equipo = () => {
                             <p class="card-text">Desarrolladora Full Stack.</p>
                         </div>
                         <div class="card-footer">
-                            <small class="text-muted">LinkedIn</small>
+                            <a href="https://www.linkedin.com/in/alin-burgos-olivero-b48b7813b/">LinkedIn</a> 
                         </div>
                     </div>
                 </div>
@@ -62,27 +63,30 @@ const Equipo = () => {
                             <p class="card-text">Desarrollador Full Stack.</p>
                         </div>
                         <div class="card-footer">
-                            <small class="text-muted">LinkedIn</small>
+                            <a href="https://www.linkedin.com/in/diegogatica369/">LinkedIn</a> 
                         </div>
                     </div>
                 </div>
 
-                <div class="col1">
+                <div class="col4">
                     <div class="card h-300">
-                        <img src={lucas} class="Lucas Acevedo perfil" alt="..." />
+                        <img src={lucas} class="Diego Gatica perfil" alt="..." />
                         <div class="card-body">
                             <h4 class="card-title">Lucas Acevedo</h4>
                             <p class="card-text">Desarrollador Full Stack.</p>
                         </div>
                         <div class="card-footer">
-                            <small class="text-muted">LinkedIn</small>
+                            <a href="https://www.linkedin.com/in/lucas-acevedo-castro/">LinkedIn</a> 
                         </div>
                     </div>
                 </div>
 
             </div>
+
+            {/* DIV */}
+
             <center>
-                <div class="rectangulo">
+                <div class="rectangulomision">
                     <div>
                         <div><h4>Nuestra Misión</h4></div>
                         <p> Nuestra Misión es dar las herramientas y conocimientos necesarios <br></br>
@@ -92,7 +96,7 @@ const Equipo = () => {
             </center>
             <br></br>
             <center>
-                <div class="rectangulo1">
+                <div class="rectangulovision">
                     <div>
                         <div><h4>Nuestra Visión</h4></div>
                         <p> Que jóvenes adquieran los conocimientos necesarios para tomar control sobre su futuro financiero. </p>
