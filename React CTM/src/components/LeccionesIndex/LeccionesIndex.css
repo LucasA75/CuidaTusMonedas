@@ -4,7 +4,7 @@
     display: flex;
     justify-content: flex-start;
     padding-right: 30px;
-    margin-top: 108px;
+    margin-top: 0px;
     
 }
 
@@ -54,32 +54,92 @@ height: 50px;
 
 .colum1I{
 
-
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    justify-content: space-around;
-    
+    justify-content: space-between;
 }
 
 .colum3I{
     position: relative;
-    top: 50px;
+    top: 62px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
+.LineaDeProgreso1{
+    position: absolute;
+    background-color: rgba(36, 111, 168, 0.4);
+    padding-top: 400px;
+    left: 51vw;
+    /* Cambiando este bottom puedes moverlo en el eje y */
+    bottom: 40vh;
+}
 .Linea1{
     width: fit-content;
     position: absolute;
-    right: 49.1%;
-    top: 70%;
+    right: 49.2%;
+    top: 0;
+    z-index: -3;
 }
+
 
 .Linea1 img{
     object-fit: cover;
     width:2vh ;
-    height: 30vh;
+    height: 33vh;
+}
+
+.Elipse1,.Elipse2,.Elipse3,.Elipse4,.Elipse5,.Elipse6,.Elipse7,.Elipse8{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+}
+
+.Elipse1 img,.Elipse2 img,.Elipse3 img,.Elipse4 img,.Elipse5 img,.Elipse6 img,.Elipse7 img,.Elipse8 img{
+    background-size: cover;
+    width: 50px;
+}
+
+.Elipse1{
+    top: -2.5vh;
+    right: -1vh;
+}
+
+.Elipse2{
+    top: 2.1vh;
+    right: -1vh;
+}
+.Elipse3{
+    top: 7.2vh;
+    right: -1vh;
+}
+.Elipse4{
+    top: 11.9vh;
+    right: -1vh;
+}
+.Elipse5{
+    top: 16.8vh;
+    right: -1vh;
+}
+.Elipse6{
+    top: 21.6vh;
+    right: -1vh;
+}
+.Elipse7{
+    top: 26.6vh;
+    right: -1vh;
+}
+.Elipse8{
+    top: 31.2vh;
+    right: -1vh;
+}
+
+.Check{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
 }

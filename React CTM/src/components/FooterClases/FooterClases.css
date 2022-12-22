@@ -6,3 +6,8 @@
     background-size: cover;
     width:100%;
 }
+
+.FooterIndice{
+    position: absolute;
+    bottom: 0;
+}

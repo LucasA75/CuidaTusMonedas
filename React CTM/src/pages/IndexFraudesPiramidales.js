@@ -1,7 +1,8 @@
 import React, {useCallback} from 'react'
 import { useNavigate } from 'react-router'
-import { HeaderIndex, Headermain, LeccionesIndex } from '../components'
+import { FooetrClases, HeaderIndex, Headermain, LeccionesIndex } from '../components'
 import regresar1 from '../assets/regresar.png'
+
 
 const IndexFraudesPiramidales = () => {
   const navigate = useNavigate();
@@ -19,6 +20,9 @@ const IndexFraudesPiramidales = () => {
       handleOnClick();
   }}> 
     <img src={regresar1} width="30"/>Regresar</button>
+    </div>
+    <div className='FooterIndice'>
+      <FooetrClases/>
     </div>
     </div>
   )
