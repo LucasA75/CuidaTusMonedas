@@ -18,10 +18,6 @@ import FooetrClases from "./FooterClases/FooetrClases";
 import LeccionesIndex from "./LeccionesIndex/LeccionesIndex";
 import HeaderIndex from "./LeccionesIndex/HeaderIndex";
 import OrigenEstafas from "./OrigenEstafas/OrigenEstafas";
-import BotonRegistrarse from "./BotonRegistrarse/BotonRegistrarse";
-import ConfirmacionExitosa from "./ConfirmacionExitosa/ConfirmacionExitosa";
-import Perfil from "./Perfil/Perfil";
-import HeaderGenerico from "./HeaderGenerico/HeaderGenerico";
 
 
 export{
@@ -44,9 +40,5 @@ export{
     FooetrClases,
     LeccionesIndex,
     HeaderIndex,
-    OrigenEstafas,
-    ConfirmacionExitosa,
-    BotonRegistrarse,
-    Perfil,
-    HeaderGenerico
+    OrigenEstafas
 };

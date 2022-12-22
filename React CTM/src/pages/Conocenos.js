@@ -1,5 +1,5 @@
 import React from "react";
-import {Headermain,Equipo, FooterMain} from "../components";
+import {Headermain,Equipo, FooterMain,MisionVision} from "../components";
 import "../components/Equipo/Equipo.css"
 
 const Conocenos = () => {
@@ -7,6 +7,7 @@ const Conocenos = () => {
         <><Headermain></Headermain>
         <div>
             <Equipo></Equipo>
+            <MisionVision/>
             <FooterMain></FooterMain>
         
         </div></>
