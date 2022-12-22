@@ -12,7 +12,7 @@ const Main = () => {
         <div class="container text-center principal" >
             <div class="row align-items-start row1">
                 <div class="col col1">
-                    <h1 className="h1">Aprender sobre finanzas es divertido</h1>
+                    <h1 className="caption1">Aprender sobre finanzas es divertido</h1>
                 </div>
                 <div class="col col2">
                     <img src={fotomain} alt="foto gatito jugando" className="gatitojugando" />

@@ -2,8 +2,8 @@ import React from "react";
 import { Headermain,Main,MenuModulos,FooterMain,MisionVision, FraseMoti, LoginBoton, CerrarSesion, Profile } from "../components";
 
 
-const Home =() =>{
-    return(
+const Home = () => {
+    return (
         <>
         <Headermain />
         <Main />
