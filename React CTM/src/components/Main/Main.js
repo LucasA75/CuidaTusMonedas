@@ -19,12 +19,33 @@ const Main = () => {
                 </div>
             </div>
             <div>
-                <button type="btn" class="btn botonMain"
+                <button type="btn" class="btn-abrir-popup"
                     onClick={() => {
                         handleOnClick();
                     }}> Comenzar a aprender</button>
             </div>
+
+                    {/* implementacion de popup */}
+            
+            <div class="overlay">
+                <div class="popup">
+                    <a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+                    <h2 class="tituloregistrate">REGISTRATE</h2>
+                    <h4>y empieza a aprender</h4>
+                    <form action="">
+                        <div class="contenedor-inputs">
+                            <input type="text" placeholder="Nombre"/>
+						    <input type="email" placeholder="Correo"/>                           
+                        </div>
+                        <input type="submit" class="btn-submit" value="Registrarse"></input>
+                    </form>
+                </div>
+
+            </div>
+
+
         </div>
+
 
     )
 }

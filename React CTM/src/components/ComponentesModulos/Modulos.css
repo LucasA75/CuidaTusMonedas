@@ -11,5 +11,11 @@
     border-radius: 15px;
 }
 .fondoModulo{
+    font-family: 'Maven Pro';
     background-color: aliceblue;
+}
+
+h3{
+    
+    font-size: 500px;
 }

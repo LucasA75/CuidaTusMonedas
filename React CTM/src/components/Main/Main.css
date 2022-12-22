@@ -1,27 +1,29 @@
-.col1{
+.col1 {
     color: rgb(0, 0, 0);
     margin-top: 100px;
 }
-.caption1{
+
+.caption1 {
     margin-top: 40px;
     font-family: 'Maven Pro';
-font-style: normal;
-font-weight: 400;
-font-size: 95px;
-line-height: 131.5%;
-margin-left: 150px;
-text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 95px;
+    line-height: 131.5%;
+    margin-left: 150px;
+    text-align: left;
 }
 
-.gatitojugando{
+.gatitojugando {
     width: 120%;
     height: 220%;
     margin-top: 6px;
 }
 
-.container{
+.container {
     margin-bottom: 100px;
 }
+
 /* No borrar porfavor  */
 /* body{
     background-image: url("../../assets/img/Tran.gif"); 
@@ -31,7 +33,7 @@ text-align: left;
 }  */
 
 
-.botonMain{
+.btn-abrir-popup {
     background-color: rgb(255, 202, 67);
     font-size: 30px;
     border-radius: 30px;
@@ -39,3 +41,18 @@ text-align: left;
     font-weight: bold;
     margin-top: 100px;
 }
+
+.overlay {
+    background: rgba(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+/* https://www.youtube.com/watch?v=VAkKb8lTd-Q&ab_channel=FalconMasters */
