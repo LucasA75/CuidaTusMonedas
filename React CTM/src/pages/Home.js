@@ -1,5 +1,5 @@
 import React from "react";
-import { Headermain,Main,MenuModulos,FooterMain } from "../components";
+import { Headermain,Main,MenuModulos,FooterMain} from "../components";
 
 const Home =() =>{
     return(
