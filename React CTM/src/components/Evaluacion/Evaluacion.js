@@ -2,6 +2,9 @@ import React from 'react'
 import './Evaluacion.css'
 
 const Evaluacion = () => {
+
+  
+  
   return (
     <div>
         <div class="container tituloClases">
@@ -21,21 +24,31 @@ const Evaluacion = () => {
             
             <div>
             
-            <ul class="list-group list-group-horizontal justify-content-center">
-                <a id="option1" href="" style={{textDecoration:"none"}}> <li class="list-group-item list-group-item-warning">Por supuesto</li></a>
+            <ul class="list-group list-group-horizontal justify-content-around"> 
 
-                <a id="option2" href="" style={{textDecoration:"none"}}><li class="list-group-item list-group-item-warning">Ni de chiste</li> </a>
-            
-                <a id="option3" href="" style={{textDecoration:"none"}}> <li class="list-group-item list-group-item-warning">Lo pensaría</li></a>
-            
+                
+                <a data-toggle="popover" title="Parece que no pusiste mucha atención :c" data-content="Felicidades" data-trigger="hover"><li>
+                <button type="button" class="btn btn-warning">
+                    Por supuesto
+                  </button></li></a>
+
+                <a data-toggle="popover" title="Respuesta correcta!" data-content=":D" data-trigger="hover"><li>
+                <button type="button" class="btn btn-warning">
+                    Ni de chiste
+                  </button></li></a>
+
+                  <a data-toggle="popover" title="Ups, sigue leyendo un poco más :s" data-content="x.x" data-trigger="hover"><li>
+                <button type="button" class="btn btn-warning">
+                    Lo pensaría
+                  </button></li></a>                          
+                              
+                    
             </ul>
            
             </div>
                 
-            
-           
-           
-            
+                      
+                       
          </div>
          <center>
          <div>
@@ -51,12 +64,22 @@ en poco tiempo, ¿Qué haces?
             
             <div>
             
-            <ul class="list-group list-group-horizontal justify-content-center">
-                <a id="option1" href="" style={{textDecoration:"none"}}> <li class="list-group-item list-group-item-warning">Voy de cabeza</li></a>
+            <ul class="list-group list-group-horizontal justify-content-around">
+            <a data-toggle="popover" title="Parece que no pusiste mucha atención :c" data-content="Felicidades" data-trigger="hover"><li>
+                <button type="button" class="btn btn-warning">
+                    Voy de cabeza
+                  </button></li></a>
 
-                <a id="option2" href="" style={{textDecoration:"none"}}><li class="list-group-item list-group-item-warning">Le pido una reunión</li> </a>
-            
-                <a id="option3" href="" style={{textDecoration:"none"}}> <li class="list-group-item list-group-item-warning">No me interesa</li></a>
+                <a data-toggle="popover" title="Ups, sigue leyendo un poco más :s" data-content=":D" data-trigger="hover"><li>
+                <button type="button" class="btn btn-warning">
+                    Le pido una reunión
+                  </button></li></a>
+
+                  <a data-toggle="popover" title="Vale, sí entendiste todo :D" data-content="x.x" data-trigger="hover"><li>
+                <button type="button" class="btn btn-warning">
+                    No me interesa
+                  </button></li></a>  
+                
             
             </ul>
            
