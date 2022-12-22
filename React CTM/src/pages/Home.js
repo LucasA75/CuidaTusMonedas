@@ -1,16 +1,16 @@
 import React from "react";
-import { Headermain,Main,MenuModulos,FooterMain,MisionVision, FraseMoti } from "../components";
+import { Headermain, Main, MenuModulos, FooterMain, MisionVision, FraseMoti } from "../components";
 
 
-const Home =() =>{
-    return(
+const Home = () => {
+    return (
         <>
-        <Headermain />
-        <Main />
-        <MenuModulos />
-        <MisionVision/>
-        <FraseMoti/>
-        <FooterMain />
+            <Headermain />
+            <Main />
+            <MenuModulos />
+            <MisionVision />
+            {/* <FraseMoti /> */}
+            <FooterMain />
         </>
     )
 }

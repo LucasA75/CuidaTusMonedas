@@ -9,11 +9,12 @@ import lucas from "../../assets/lucasprofile.png"
 
 const Equipo = () => {
     return (
+        
         <div>
             <center><b><h1 class="tituloconocenos">Conócenos</h1></b></center>
             <br/>
             <center><h4 class="sobrenosotros">Equipo de Desarrolladores "5codigo"</h4></center>
-
+    
             <div class="row row-cols-5">
 
 
