@@ -1,26 +1,24 @@
 import React, {useCallback} from 'react'
-import { useNavigate } from 'react-router';
-import { FooetrClases, HeaderGenerico } from '../components';
-import EsquemaPiramidal from '../components/EsquemaPiramidal/EsquemaPiramidal';
-import meme2gato from '../assets/meme2gato.png';
-import botonsiguiente1 from '../assets/botonsiguiente.png'
+import { useNavigate } from 'react-router-dom';
+import { FooetrClases, HeaderGenerico} from '../components';
+import EsquemaPonzi from '../components/EsquemaPonzi/EsquemaPonzi';
 import regresar1 from '../assets/regresar.png'
+import botonsiguiente1 from '../assets/botonsiguiente.png'
 
-
-
-const EsquemaPiramidalPage = () => {
+const EsquemaPonziPage = () => {
     const navigate = useNavigate();
     const handleOnClick = useCallback(
-        () => navigate("/OrigenEstafas", {}, [navigate]))
+        () => navigate("/EsquemaPiramidal", {}, [navigate]))
 
     const navigate2 = useNavigate();
     const handleOnClick2 = useCallback(
-        () => navigate2("/EsquemaPonzi", {}, [navigate2]))
+        () => navigate2("/IdentificaEstafa", {}, [navigate2]))
+
   return (
     <div>
         <HeaderGenerico/>
-        <EsquemaPiramidal/>
-        <center> <img src={meme2gato} width="400"/></center>
+        <EsquemaPonzi/>
+
         <div class="container-lg d-flex justify-content-between">
 
         <button type="buttom" class="btn btn-outline-primary" 
@@ -39,4 +37,4 @@ const EsquemaPiramidalPage = () => {
   )
 }
 
-export default EsquemaPiramidalPage;
+export default EsquemaPonziPage

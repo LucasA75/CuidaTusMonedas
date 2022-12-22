@@ -4,6 +4,7 @@ import { Headermain, ModuloProtege } from "../components";
 import FooetrClases from "../components/FooterClases/FooetrClases";
 import regresar1 from '../assets/regresar.png'
 
+
 const ModuloP = () =>{
     const navigate = useNavigate();
     const handleOnClick = useCallback(
@@ -19,6 +20,7 @@ const ModuloP = () =>{
   }}> 
     <img src={regresar1} width="30"/>Regresar</button>
     </div>
+        
         <FooetrClases/>
         </div>
     )
