@@ -1,5 +1,6 @@
 import React from "react";
-import { Headermain,Main,MenuModulos,FooterMain} from "../components";
+import { Headermain,Main,MenuModulos,FooterMain,MisionVision, FraseMoti } from "../components";
+
 
 const Home =() =>{
     return(
@@ -7,6 +8,8 @@ const Home =() =>{
         <Headermain />
         <Main />
         <MenuModulos />
+        <MisionVision/>
+        <FraseMoti/>
         <FooterMain />
         </>
     )
