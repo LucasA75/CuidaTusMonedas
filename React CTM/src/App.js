@@ -13,10 +13,16 @@ import {AdminPage,
     PerfilPage,
     EsquemaPiramidalPage
     } from "./pages";
+import CasosFamososPage from "./pages/CasosFamososPage";
 import ConfirmacionRegistro from "./pages/ConfirmacionRegistro";
+import EsquemaPonziPage from "./pages/EsquemaPonziPage";
+import EvitarEstafaPage from "./pages/EvitarEstafaPage";
 import Home from "./pages/Home"
+import IdentificaEstafaPage from "./pages/IdentificaEstafaPage";
 import OrigenEstafasPage from "./pages/OrigenEstafasPage";
 import PagePerso from "./pages/PagePerso";
+import ProfundizaEstafaPage from "./pages/ProfundizaEstafaPage";
+import PruebaModuloPPage from "./pages/PruebaModuloPPage";
 
 const App =() => {
     return(
@@ -38,6 +44,12 @@ const App =() => {
                 <Route path="/ConfirmacionRegistro" element={<ConfirmacionRegistro/>}></Route>
                 <Route path="/Perfil" element={<PerfilPage/>}></Route>
                 <Route path="/EsquemaPiramidal" element={<EsquemaPiramidalPage/>}></Route>
+                <Route path="/EsquemaPonzi" element={<EsquemaPonziPage/>}></Route>
+                <Route path="/IdentificaEstafa" element={<IdentificaEstafaPage/>}></Route>
+                <Route path="/CasosFamosos" element={<CasosFamososPage/>}></Route>
+                <Route path="/EvitarEstafa" element={<EvitarEstafaPage/>}></Route>
+                <Route path="/EvaluacionEstafa" element={<PruebaModuloPPage/>}></Route>
+                <Route path="/ProfundizaEstafa" element={<ProfundizaEstafaPage/>}></Route>
             </Routes>
         </BrowserRouter>
     )

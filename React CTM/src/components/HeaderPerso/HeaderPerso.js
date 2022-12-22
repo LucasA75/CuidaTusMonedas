@@ -35,7 +35,7 @@ const HeaderPerso =()=>{
             <div class="d-flex align-content-center flex-wrap"> <h2 class="hola">¡Hola Alín!</h2> </div>
             <div class="d-flex align-content-center flex-wrap progreso">
                 <center>
-                <div><h4>Tu progreso actual es de: <br/> <br/>
+                <div><h4>Tu progreso actual es de: 0% <br/> <br/>
                     ¡Sigue así!</h4> </div></center>
             </div>
             <div class="d-flex align-content-center flex-wrap"> <img src={catluna} alt="Logo" width="100" /> </div>
@@ -46,17 +46,7 @@ const HeaderPerso =()=>{
             <div class="d-flex align-content-center flex-wrap"> <h3> Mis modulos</h3> </div>
             <div class="d-flex align-content-center flex-wrap"> <button type="button" class="btn-sm btn-outline-dark"> + Nuevo módulo</button></div>
             </div>
-            <a style={{textDecoration: "none"}} href="/ModuloP">
-            <div class="container-lg d-flex justify-content-around  avance">
-
-                
-                    <div> <img src={gatolente} alt="Gato con Lentes" /> </div>
-                    <div> <h3>Protege tus <br/> modedas</h3></div>
-                    <div> <img src={flecha} alt="Flechita"/></div>
-                
-            </div>
-            </a>
-        
+                   
 
         </div>
          </center>

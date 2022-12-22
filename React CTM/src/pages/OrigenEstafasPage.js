@@ -1,6 +1,6 @@
 import React, {useCallback} from 'react'
 import { useNavigate } from 'react-router'
-import { FooetrClases, Headermain } from '../components'
+import { FooetrClases, HeaderGenerico} from '../components'
 import OrigenEstafas from '../components/OrigenEstafas/OrigenEstafas'
 import ilustracionEstafa from '../assets/ilustracionestafa.png'
 import botonsiguiente1 from '../assets/botonsiguiente.png'
@@ -16,7 +16,7 @@ const OrigenEstafasPage = () => {
       () => navigate2("/EsquemaPiramidal", {}, [navigate2]))
   return (
     <div>
-        <Headermain/>
+        <HeaderGenerico/>
         <OrigenEstafas/>
         <center> <img src={ilustracionEstafa} width="500"/></center>
         <div class="container-lg d-flex justify-content-between">
