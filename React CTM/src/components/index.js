@@ -18,6 +18,8 @@ import FooetrClases from "./FooterClases/FooetrClases";
 import LeccionesIndex from "./LeccionesIndex/LeccionesIndex";
 import HeaderIndex from "./LeccionesIndex/HeaderIndex";
 import OrigenEstafas from "./OrigenEstafas/OrigenEstafas";
+import MisionVision from "./MisionVision/MisionVision";
+import FraseMoti from "./FraseMoti/FraseMoti";
 
 
 export{
@@ -40,5 +42,7 @@ export{
     FooetrClases,
     LeccionesIndex,
     HeaderIndex,
-    OrigenEstafas
+    OrigenEstafas,
+    MisionVision,
+    FraseMoti
 };

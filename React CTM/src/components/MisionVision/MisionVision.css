@@ -1,0 +1,33 @@
+.rectangulomision {
+    color:black;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    width: 800px; 
+    height: 222px; 
+    border: 1px solid #000000;
+    border-radius: 15px;
+    background: #F8F8FA;
+}
+
+#titulomision{
+    font-style: oblique;
+}
+#titulovision{
+    font-style: oblique;
+}
+
+/*  */
+
+
+.rectangulovision {
+    color:black;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+    width: 800px; 
+    height: 170px; 
+    border: 1px solid #000000;
+    border-radius: 15px;
+    background: #F8F8FA;
+}

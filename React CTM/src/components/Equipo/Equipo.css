@@ -1,31 +1,45 @@
-.h1 {   
-    color: #000000;;
+.tituloconocenos {
+    color: #000000;
+    ;
 }
 
-.rectangulomision {
-    align-self: center;
-    align-content: center;
-    text-align: center;
-    width: 800px; 
-    height: 120px; 
-    border: 1px solid #000000;
-    border-radius: 15px;
-    background: #F8F8FA;
+.card-abril {
+    transition: .5s;
 }
 
-.rectangulovision {
-    align-self: center;
-    align-content: center;
-    text-align: center;
-    width: 800px; 
-    height: 100px; 
-    border: 1px solid #000000;
-    border-radius: 15px;
-    background: #F8F8FA;
+.card-abril:hover {
+    transform: translateY(-10px);
 }
 
+.card-diego {
+    transition: .5s;
+}
 
+.card-diego:hover {
+    transform: translateY(-10px);
+}
 
- 
+.card-alin {
+    transition: .5s;
+}
 
- 
+.card-alin:hover {
+    transform: translateY(-10px);
+}
+
+.card-nico {
+    transition: .5s;
+}
+
+.card-nico:hover {
+    transform: translateY(-10px);
+}
+
+.card-lucas {
+    transition: .5s;
+}
+
+.card-lucas:hover {
+    transform: translateY(-10px);
+}
+
