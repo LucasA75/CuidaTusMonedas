@@ -18,6 +18,12 @@ import FooetrClases from "./FooterClases/FooetrClases";
 import LeccionesIndex from "./LeccionesIndex/LeccionesIndex";
 import HeaderIndex from "./LeccionesIndex/HeaderIndex";
 import OrigenEstafas from "./OrigenEstafas/OrigenEstafas";
+import CasosFamosos from "./CasosFamosos/CasosFamosos";
+import HeaderGenerico from "./HeaderGenerico/HeaderGenerico";
+import ConfirmacionExitosa from "./ConfirmacionExitosa/ConfirmacionExitosa";
+import MisionVision from "./MisionVision/MisionVision";
+import FraseMoti from "./FraseMoti/FraseMoti";
+import Perfil from "./Perfil/Perfil";
 
 
 export{
@@ -40,5 +46,11 @@ export{
     FooetrClases,
     LeccionesIndex,
     HeaderIndex,
-    OrigenEstafas
+    OrigenEstafas,
+    CasosFamosos,
+    HeaderGenerico,
+    ConfirmacionExitosa,
+    MisionVision,
+    FraseMoti,
+    Perfil
 };

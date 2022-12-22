@@ -1,7 +1,6 @@
 import React, {useCallback} from 'react'
 import { useNavigate } from 'react-router-dom'
-import { FooetrClases, HeaderGenerico } from '../components'
-import CasosFamosos from '../components/CasosFamosos/CasosFamosos'
+import { FooetrClases, HeaderGenerico,CasosFamosos } from '../components'
 import regresar1 from '../assets/regresar.png'
 import botonsiguiente1 from '../assets/botonsiguiente.png'
 
