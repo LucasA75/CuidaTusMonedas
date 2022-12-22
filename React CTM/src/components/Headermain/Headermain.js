@@ -1,6 +1,6 @@
 import React,{useCallback} from "react";
 import { useNavigate } from "react-router-dom";
-import logo from '../../assets/logo.png'
+import logo from '../../assets/Logo2.png'
 import "./Headermain.css"
 import btninicio from '../../assets/btninicio.png'
 
@@ -10,11 +10,9 @@ const Headermain = () => {
         () => navigate("/IniciarSesion", {}, [navigate]))  
     return (
         <div className="headerMain">
-            <nav class="navbar navbar-expand-lg bg-light" >
-                <div class="container-fluid head">
+            <nav class="navbar fixed-top navbar-expand-lg bg-light navbarMain" >
                     <a class="navbar-brand" href="/#">
-                        {/* <img src={logo} alt="Logo" width="200" height="100" class="align-text-top logo" /> */}
-                        <img src={logo} width="150"/>
+                        <img className="logo" src={logo} style={{ width:110 , height:130}}/>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -32,7 +30,6 @@ const Headermain = () => {
                             </div>
                         </div>
                     </div>
-                </div>
             </nav>
         </div>
 
