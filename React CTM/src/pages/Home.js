@@ -1,5 +1,5 @@
 import React from "react";
-import { Headermain,Main,MenuModulos,FooterMain,MisionVision, FraseMoti } from "../components";
+import { Headermain,Main,MenuModulos,FooterMain,MisionVision, FraseMoti, LoginBoton, CerrarSesion, Profile } from "../components";
 
 
 const Home =() =>{
@@ -11,6 +11,9 @@ const Home =() =>{
         <MisionVision/>
         <FraseMoti/>
         <FooterMain />
+        <LoginBoton/>
+        <CerrarSesion/>
+        <Profile/>
         </>
     )
 }

@@ -24,6 +24,9 @@ import ConfirmacionExitosa from "./ConfirmacionExitosa/ConfirmacionExitosa";
 import MisionVision from "./MisionVision/MisionVision";
 import FraseMoti from "./FraseMoti/FraseMoti";
 import Perfil from "./Perfil/Perfil";
+import { LoginBoton } from "./Autenticacion/Autenticacion";
+import CerrarSesion from "./Autenticacion/CerrarSesion";
+import Profile from "./Autenticacion/Profile";
 
 
 export{
@@ -52,5 +55,8 @@ export{
     ConfirmacionExitosa,
     MisionVision,
     FraseMoti,
-    Perfil
+    Perfil,
+    LoginBoton,
+    CerrarSesion,
+    Profile
 };

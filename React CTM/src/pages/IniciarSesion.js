@@ -1,5 +1,5 @@
 import React, {useCallback} from "react";
-import {Login,FondoVideo, FondoLogin, BotonRegistrarse} from "../components";
+import {Login,FondoVideo, FondoLogin, BotonRegistrarse, LoginBoton, CerrarSesion, Profile} from "../components";
 import "../components/Login/Login.css"
 import { useNavigate } from "react-router-dom";
 
@@ -11,7 +11,6 @@ const IniciarSesion = () =>{
 
         <FondoLogin/>
         <Login/>
-
         </main>
 
     )

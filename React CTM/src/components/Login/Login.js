@@ -34,7 +34,7 @@ const Login = () => {
         </div>
         <div className="Credenciales">
           <form>
-            <label class="nameLogin1" for="name"> Nombre de usuario</label>
+            <label  class="nameLogin1" for="name">{" "} Nombre de usuario {" "}</label>
             <input
               class="cuadroNameLogin1"
               type="text"
