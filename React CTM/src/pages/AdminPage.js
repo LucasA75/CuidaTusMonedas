@@ -1,10 +1,12 @@
 import React, {useState,useEffect} from "react";
 import { TablaUsuario,Headermain } from "../components";
 
-import { todosUsuarios } from "../services/User";
+import { eliminarUsuario, todosUsuarios } from "../services/User";
 
 const usuario1 = [
+
     {
+      id: 1,
       nombre: "Joseph",
       apellido: "Joestar",
       contraseña: "jejejaja",
@@ -13,6 +15,7 @@ const usuario1 = [
       telefono:"964869451"
     },
     {
+      id: 2,
       nombre: "Diego",
       apellido: "Brown",
       contraseña: "1234",
@@ -21,6 +24,7 @@ const usuario1 = [
       telefono:"96489451"
     },
     {
+      id: 3,
       nombre: "Lucas",
       apellido: "Jackson",
       contraseña: "admin",
@@ -28,6 +32,7 @@ const usuario1 = [
       edad:"23",
       telefono:"964834123"
     },  {
+      id: 4,
       nombre: "asdasd",
       apellido: "Papa",
       contraseña: "admin",
@@ -54,10 +59,15 @@ const AdminPage = () =>{
     setUser(usuarioBD);
   } 
 
+  const eliminaUser = async(idUsuario)=>{
+    const usuarioBD = await eliminarUsuario(idUsuario);
+    todoslosUsuarios();
+  }
+
     return(
         <div>
         <Headermain/>
-        <TablaUsuario usuarios={state}/>
+        <TablaUsuario usuarios={state} eliminarUsuario={eliminaUser}/>
         </div>
     )
     

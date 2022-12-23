@@ -32,7 +32,7 @@ const editarUsuario = async (usuario) => {
 };
 
 const eliminarUsuario = async (id) => {
-  const res = await axios.delete(url + "/Usuario/" + id);
+  const res = await axios.delete(url + "/deleteUsuario/" + id);
   console.log(res);
   return res.data;
 };
