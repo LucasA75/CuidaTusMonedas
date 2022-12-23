@@ -27,7 +27,8 @@ import Perfil from "./Perfil/Perfil";
 import { LoginBoton } from "./Autenticacion/Autenticacion";
 import CerrarSesion from "./Autenticacion/CerrarSesion";
 import Profile from "./Autenticacion/Profile";
-
+import MainV2 from "./Main/MainV2";
+import MenuModulosV2 from "./MenuModulos/MenuModulosV2";
 
 export{
     Headermain,
@@ -58,5 +59,7 @@ export{
     Perfil,
     LoginBoton,
     CerrarSesion,
-    Profile
+    Profile,
+    MainV2,
+    MenuModulosV2
 };

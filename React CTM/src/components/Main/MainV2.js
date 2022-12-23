@@ -1,9 +1,12 @@
+import { ArrowForwardIos } from "@mui/icons-material";
 import React, { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
 import fotomain from "../../assets/imagenMain.png"
 import "./Main.css"
 
-const Main = () => {
+
+const MainV2 = () => {
+
     const navigate = useNavigate();
     const handleOnClick = useCallback(
         () => navigate("/Encuesta1", {}, [navigate]))
@@ -22,12 +25,10 @@ const Main = () => {
                 <button type="btn" class="btn botonMain"
                     onClick={() => {
                         handleOnClick();
-                    }}> Comenzar a aprender</button>
+                    }}> Comenzar a aprender &nbsp;  &nbsp;<ArrowForwardIos/></button>
             </div>
         </div>
-
     )
 }
 
-export default Main;
-
+export default MainV2
