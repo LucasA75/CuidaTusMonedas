@@ -3,14 +3,20 @@ import { useNavigate } from "react-router-dom";
 import logo from '../../assets/Logo2.png'
 import "./Headermain.css"
 import btninicio from '../../assets/btninicio.png'
+import { LoginBoton } from "../Autenticacion/Autenticacion";
+import CerrarSesion from "../Autenticacion/CerrarSesion";
+import { useAuth0 } from "@auth0/auth0-react";
+import userEvent from "@testing-library/user-event";
 
 const Headermain = () => {  
+
+    const {user, isAuthenticated, isLoading} = useAuth0();
     const navigate = useNavigate();
     const handleOnClick = useCallback(
         () => navigate("/IniciarSesion", {}, [navigate]))  
     return (
         <div className="headerMain">
-            <nav class="navbar fixed-top navbar-expand-lg bg-light navbarMain" >
+            <nav class="navbar navbar-expand-lg bg-light navbarMain" >
                     <a class="navbar-brand" href="/#">
                         <img className="logo" src={logo} style={{ width:110 , height:130}}/>
                     </a>
@@ -22,11 +28,20 @@ const Headermain = () => {
                         <div class="navbar-nav ms-auto d-flex align-items-center">
                             <a class="nav-link" href="/Conocenos">Conócenos</a>
                             <a class="nav-link" href="/#">Ayuda</a>
-                            <div className="iniciarsesion">
-                            <a class="nav-link" href="/IniciarSesion"> <button typr="btn "class="btn botonMainI" 
-                            onClick={() => {
-                            handleOnClick();
-                            }}> Iniciar sesión <img src={btninicio} width="30"/></button></a>   
+                            
+                            <div className="botonesMain">
+
+                            {/* Si esta authenticado mostrara el cerrar sesion , si no (que es lo que esta en : ) mostrara el iniciar secion*/}
+                            {isAuthenticated ? <>
+                            {user.name}
+                            <br></br>
+                            <CerrarSesion/>
+
+                            </>
+                            :
+                            <LoginBoton/>
+                            }
+                            
                             </div>
                         </div>
                     </div>
