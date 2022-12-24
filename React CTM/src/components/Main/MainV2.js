@@ -25,7 +25,9 @@ const MainV2 = () => {
                 <button type="btn" class="btn botonMain"
                     onClick={() => {
                         handleOnClick();
-                    }}> Comenzar a aprender &nbsp;  &nbsp;<ArrowForwardIos/></button>
+                    }}> Comenzar a aprender &nbsp;  &nbsp;<ArrowForwardIos style={{marginBottom: "4px"}}/></button>
+
+                    
             </div>
         </div>
     )
