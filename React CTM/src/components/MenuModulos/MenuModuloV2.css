@@ -57,10 +57,9 @@
 
 
 .BotonComenzar1 {
-    margin-top: 1vh;
     margin-right: 4vw;
     padding: 8px;
-    padding-left: 3vw;
+    padding-left: 1.5vw;
     padding-right: 1.5vw;
     font-weight: bold;
     border-radius: 20px;
@@ -92,4 +91,20 @@
     font-size: 20px;
     line-height: 34px;
     text-align: center;
+}
+
+@media screen and (max-width:1200px) {
+
+    .recuadroM1 button{
+        margin-top: -1.5vh;
+    }
+    .recuadroM2 button{
+        margin-top: 0.8vh;
+    }
+
+    .recuadroM3 button{
+        margin-top: -1.5vh;
+    }
+
+
 }

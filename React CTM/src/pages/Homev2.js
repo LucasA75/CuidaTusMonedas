@@ -1,5 +1,5 @@
 import React from 'react'
-import { FooterMain, Headermain, MainV2, MenuModulosV2, MisionVision } from '../components'
+import { FooterMain, Headermain, MainV2, MenuModulosV2, MisionVision, MisionVisionV2 } from '../components'
 
 const Homev2 = () => {
   return (
@@ -11,6 +11,7 @@ const Homev2 = () => {
     <MainV2/>
     <MenuModulosV2/>
     <MisionVision/>
+    <MisionVisionV2/>
     <FooterMain/>
     </div>
   )

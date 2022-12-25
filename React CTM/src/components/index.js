@@ -29,6 +29,7 @@ import CerrarSesion from "./Autenticacion/CerrarSesion";
 import Profile from "./Autenticacion/Profile";
 import MainV2 from "./Main/MainV2";
 import MenuModulosV2 from "./MenuModulos/MenuModulosV2";
+import MisionVisionV2 from "./MisionVision/MisionVisionV2";
 
 export{
     Headermain,
@@ -61,5 +62,6 @@ export{
     CerrarSesion,
     Profile,
     MainV2,
-    MenuModulosV2
+    MenuModulosV2,
+    MisionVisionV2
 };
