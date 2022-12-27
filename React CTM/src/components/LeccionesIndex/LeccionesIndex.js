@@ -12,7 +12,7 @@ const LeccionesIndex = () => {
         En estas lecciones aprenderás qué son las estafas piramidales, cuáles son las estafas más famosas, cómo identificar una estafa y consejos sobre cómo evitar caer en una de estas estafas, al finalizar se hará una pequeña evaluación para verificar todo lo aprendido. Que disfrutes aprendiendo!
       </div>
       <br></br>
-      <div class="container-lg">
+      <div class="container-lg ContainerIndexP">
         <div class="row rowindex">
           <div class="col colum1I">
             <a style={{ textDecoration: "none" }} href='/OrigenEstafas'>

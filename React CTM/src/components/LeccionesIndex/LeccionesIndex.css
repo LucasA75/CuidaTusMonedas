@@ -1,50 +1,57 @@
-.HeaderNombre{
+.HeaderNombre {
     background-color: rgba(0, 48, 73, 0.6);
     width: fit-content;
     display: flex;
     justify-content: flex-start;
     padding-right: 30px;
     margin-top: 0px;
-    
+
 }
 
-.Introduccion{
 
-
-font-family: 'Maven Pro';
-font-style: normal;
-font-weight: 50;
-font-size: 20px;
-line-height: 117%;
-/* or 75px */
-
-text-align: center;
-letter-spacing: 0.04em;
+.ContainerIndexP {
+    position: relative;
 }
 
-.rowindex{
+
+
+.Introduccion {
+
+
+    font-family: 'Maven Pro';
+    font-style: normal;
+    font-weight: 50;
+    font-size: 20px;
+    line-height: 117%;
+    /* or 75px */
+
+    text-align: center;
+    letter-spacing: 0.04em;
+}
+
+.rowindex {
     position: relative;
     height: 500px;
 }
 
-.rowindex div{
+.rowindex div {
     margin: 30px;
 }
 
-.rowindex p{
+.rowindex p {
     background: #FCBF49;
-border: 1px solid #000000;
-box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.25);
-border-radius: 85px;
-width: 300px;
-height: 50px;
+    border: 1px solid #000000;
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 85px;
+    width: 300px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 
-.LeccionesTit{
+.LeccionesTit {
     background-color: blanchedalmond;
     width: fit-content;
     padding-right: 30px;
@@ -52,15 +59,15 @@ height: 50px;
 }
 
 
-.colum1I{
-
+.colum1I {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
 }
 
-.colum3I{
+.colum3I {
     position: relative;
     top: 62px;
     display: flex;
@@ -69,15 +76,18 @@ height: 50px;
     justify-content: space-between;
 }
 
-.LineaDeProgreso1{
+.LineaDeProgreso1 {
     position: absolute;
-    background-color: rgba(36, 111, 168, 0.4);
-    padding-top: 400px;
-    left: 51vw;
+    margin: -25px 0 0 -25px;
+    top: 18%;
+    left: 53%;
+    /*     padding-top: 400px;
+    left: 42.5vw; */
     /* Cambiando este bottom puedes moverlo en el eje y */
-    bottom: 40vh;
+    /*     bottom: 3vh; */
 }
-.Linea1{
+
+.Linea1 {
     width: fit-content;
     position: absolute;
     right: 49.2%;
@@ -86,58 +96,78 @@ height: 50px;
 }
 
 
-.Linea1 img{
+.Linea1 img {
     object-fit: cover;
-    width:2vh ;
+    width: 2vh;
     height: 33vh;
 }
 
-.Elipse1,.Elipse2,.Elipse3,.Elipse4,.Elipse5,.Elipse6,.Elipse7,.Elipse8{
+.Elipse1,
+.Elipse2,
+.Elipse3,
+.Elipse4,
+.Elipse5,
+.Elipse6,
+.Elipse7,
+.Elipse8 {
     width: 50px;
     height: 50px;
     position: absolute;
 }
 
-.Elipse1 img,.Elipse2 img,.Elipse3 img,.Elipse4 img,.Elipse5 img,.Elipse6 img,.Elipse7 img,.Elipse8 img{
+.Elipse1 img,
+.Elipse2 img,
+.Elipse3 img,
+.Elipse4 img,
+.Elipse5 img,
+.Elipse6 img,
+.Elipse7 img,
+.Elipse8 img {
     background-size: cover;
     width: 50px;
 }
 
-.Elipse1{
+.Elipse1 {
     top: -2.5vh;
     right: -1vh;
 }
 
-.Elipse2{
+.Elipse2 {
     top: 2.1vh;
     right: -1vh;
 }
-.Elipse3{
+
+.Elipse3 {
     top: 7.2vh;
     right: -1vh;
 }
-.Elipse4{
+
+.Elipse4 {
     top: 11.9vh;
     right: -1vh;
 }
-.Elipse5{
+
+.Elipse5 {
     top: 16.8vh;
     right: -1vh;
 }
-.Elipse6{
+
+.Elipse6 {
     top: 21.6vh;
     right: -1vh;
 }
-.Elipse7{
+
+.Elipse7 {
     top: 26.6vh;
     right: -1vh;
 }
-.Elipse8{
+
+.Elipse8 {
     top: 31.2vh;
     right: -1vh;
 }
 
-.Check{
+.Check {
     position: absolute;
     width: 100%;
     height: 100%;
