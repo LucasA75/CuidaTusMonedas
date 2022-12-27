@@ -1,3 +1,10 @@
+
+.CartasConocenos{
+    min-width: 15vw;
+    height: fit-content;
+    translate: -3.5vw;
+}
+
 .tituloconocenos {
     color: #000000;
     font-family: 'Inter', sans-serif;
