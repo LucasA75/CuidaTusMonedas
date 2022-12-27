@@ -6,7 +6,6 @@ import moneda3 from '../../assets/moneda3.png';
 const MisionVisionV2 = () => {
     return (
         <div>
-            Hlasd
         </div>
 
     )
