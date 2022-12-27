@@ -1,5 +1,5 @@
 import React from 'react'
-import { FooterMain, Headermain, MainV2, MenuModulosV2, MisionVision, MisionVisionV2 } from '../components'
+import { FooterMain, Headermain, MainV2, MenuModulosV2, MisionVisionV2 } from '../components'
 /* Instale 2 dependecias para las animaciones , animate.css y react-on-screen */
 
 
