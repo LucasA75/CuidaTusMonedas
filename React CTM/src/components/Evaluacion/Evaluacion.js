@@ -27,7 +27,7 @@ const Evaluacion = () => {
             <ul class="list-group list-group-horizontal justify-content-around"> 
 
                 
-                <a data-toggle="popover" title="Parece que no pusiste mucha atención :c" data-content="Felicidades" data-trigger="focus"><li>
+                <a data-toggle="popover" title="Parece que no pusiste mucha atención :c" data-content="Felicidades!" data-trigger="focus"><li>
                 <button type="button" class="btn btn-warning">
                     Por supuesto
                   </button></li></a>
