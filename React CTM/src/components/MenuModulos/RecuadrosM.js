@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useCallback } from 'react'
+import { useNavigate } from "react-router-dom";
 import "./MenuModuloV2.css"
 import moneda1 from '../../assets/moneda1.png';
 import moneda2 from '../../assets/moneda2.png';
@@ -7,7 +8,17 @@ import { ArrowForwardIos } from '@mui/icons-material';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 
+
+
+
 const RecuadrosM = () => {
+
+    const navigate = useNavigate();
+    const handleOnClick = useCallback(
+        () => navigate("/Invierte", {}, [navigate]))
+    const handleOnClick2 = useCallback(
+        () => navigate("/ModuloP", {}, [navigate]))
+
     return (
         <div class="TodosLosRecuadrosM">
             <TrackVisibility>
@@ -38,7 +49,9 @@ const RecuadrosM = () => {
                                 <div class="col ContenidoM1">
                                     <h3>Protege tus monedas</h3>
                                     <p>En este modulo aprenderas sobre como proteger tu dinero de distintas estafas, ciber-ataques y tener buenos metodos de seguridad</p>
-                                    <button className='BotonComenzar1'>Comenzar &nbsp; <ArrowForwardIos className='ArrowM1' fontSize='small' /></button>
+                                    <button className='BotonComenzar1' onClick={() => {
+                                        handleOnClick2();
+                                    }}>Comenzar &nbsp; <ArrowForwardIos className='ArrowM1' fontSize='small' /></button>
                                 </div>
                             </div>
                         </div>
@@ -55,7 +68,9 @@ const RecuadrosM = () => {
                                 <div class="col ContenidoM1">
                                     <h3>Invierte tus monedas</h3>
                                     <p>En este modulo aprenderas sobre como invertir tu dinero para que pueda crecer con el tiempo y los diferentes tipos de herramientas que hay para invertir </p>
-                                    <button className='BotonComenzar1'>Comenzar &nbsp; <ArrowForwardIos className='ArrowM1' fontSize='small' /></button>
+                                    <button className='BotonComenzar1' onClick={() => {
+                                        handleOnClick();
+                                    }}>Comenzar &nbsp; <ArrowForwardIos className='ArrowM1' fontSize='small' /></button>
                                 </div>
                             </div>
                         </div>

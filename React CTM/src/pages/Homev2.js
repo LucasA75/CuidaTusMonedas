@@ -6,9 +6,6 @@ import { FooterMain, Headermain, MainV2, MenuModulosV2, MisionVision, MisionVisi
 const Homev2 = () => {
   return (
     <div>
-    <center>
-    Homev2
-    </center>
     <Headermain/>
     <MainV2/> 
     <MenuModulosV2/>

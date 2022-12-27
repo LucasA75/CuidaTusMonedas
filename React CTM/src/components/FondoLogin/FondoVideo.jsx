@@ -8,6 +8,7 @@ const FondoVideo = () => {
   return (
     <div className='MainVideo'>
         <video src={videoBG} autoPlay loop muted />
+        <div className="capa"></div>
     </div>
   )
 }
