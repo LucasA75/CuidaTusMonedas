@@ -12,7 +12,6 @@ const Homev2 = () => {
     <Headermain/>
     <MainV2/> 
     <MenuModulosV2/>
-    <MisionVision/>
     <MisionVisionV2/>
     <FooterMain/>
     </div>
