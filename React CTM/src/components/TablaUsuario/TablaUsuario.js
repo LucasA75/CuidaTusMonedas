@@ -1,17 +1,18 @@
 import React from "react";
 
-const TablaUsuario = ({usuarios}) => {
+const TablaUsuario = ({usuarios, eliminarUsuario}) => {
   return (
     <div class="card container mb-2">
       <h2>Tabla Usuarios</h2>
       <table class="table">
         <thead>
           <tr>
+            <th>Id</th>
             <th>Nombre</th>
             <th>Apellido</th>
             <th>Contraseña</th>
             <th>Año de nacimiento</th>
-            <th>Telefono</th>
+            <th>Teléfono</th>
           </tr>
         </thead>
         <tbody>
@@ -20,11 +21,24 @@ const TablaUsuario = ({usuarios}) => {
         }
           {usuarios.map((usuario) => (
             <tr>
+              <td>{usuario.id}</td>
               <td>{usuario.nombre}</td>
               <td>{usuario.apellido}</td>
               <td>{usuario.password}</td>
               <td>{usuario.ano}</td>
               <td>{usuario.telefono}</td>
+              <td>
+                  <button
+                  type="button"
+                  class="btn btn-danger"
+                  
+                  onClick={() => {
+                    eliminarUsuario(usuario.id);
+                  }}
+                > {/** el onClick para que funcione la función que se coloque en el cuerpo*/}
+                 Eliminar
+                </button>
+                  </td>
 {/*               <td>
               <button
                   type="button"

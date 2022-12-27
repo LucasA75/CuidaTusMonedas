@@ -11,7 +11,8 @@ import {AdminPage,
      ModuloP, 
      IndexFraudesPiramidales,
     PerfilPage,
-    EsquemaPiramidalPage
+    EsquemaPiramidalPage,
+    Homev2
     } from "./pages";
 import CasosFamososPage from "./pages/CasosFamososPage";
 import ConfirmacionRegistro from "./pages/ConfirmacionRegistro";
@@ -28,7 +29,7 @@ const App =() => {
     return(
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<Home/>}></Route>
+                <Route path="/" element={<Homev2/>}></Route>
                 <Route path="/Registrarse" element={<Registrarse/>}></Route>
                 <Route path="/Admin" element={<AdminPage/>}></Route>
                 <Route path="/IniciarSesion" element={<IniciarSesion/>}></Route>
@@ -50,6 +51,7 @@ const App =() => {
                 <Route path="/EvitarEstafa" element={<EvitarEstafaPage/>}></Route>
                 <Route path="/EvaluacionEstafa" element={<PruebaModuloPPage/>}></Route>
                 <Route path="/ProfundizaEstafa" element={<ProfundizaEstafaPage/>}></Route>
+                <Route path="/Home" element={<Home/>}></Route>
             </Routes>
         </BrowserRouter>
     )

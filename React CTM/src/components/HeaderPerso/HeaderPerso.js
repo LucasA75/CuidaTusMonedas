@@ -5,11 +5,14 @@ import './HeaderPerso.css'
 import catluna from '../../assets/catluna.png'
 import gatolente from '../../assets/gatolente.png'
 import flecha from '../../assets/flecha.png'
-
+import { useAuth0 } from '@auth0/auth0-react'
 
 
 const HeaderPerso =()=>{
-    return(
+
+    const {user, isAuthenticated, isLoading} = useAuth0();
+    
+    return(isAuthenticated&&(
         <div>
         <nav class="navbar navbar-expand-lg bg-light" >
             <div class="container-fluid">
@@ -32,7 +35,7 @@ const HeaderPerso =()=>{
             </div>
         </nav>
         <div class=" d-flex justify-content-around saludo">
-            <div class="d-flex align-content-center flex-wrap"> <h2 class="hola">¡Hola Alín!</h2> </div>
+            <div class="d-flex align-content-center flex-wrap"> <h2 class="hola">¡Hola {user.name}!</h2> </div>
             <div class="d-flex align-content-center flex-wrap progreso">
                 <center>
                 <div><h4>Tu progreso actual es de: 0% <br/> <br/>
@@ -53,6 +56,7 @@ const HeaderPerso =()=>{
 
     </div>
 
+    )
     )
 }
 export default HeaderPerso;

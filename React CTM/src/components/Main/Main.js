@@ -6,12 +6,12 @@ import "./Popup.js";
 const Main = () => {
    
     return (
-        <div class="container text-center principal" >
-            <div class="row align-items-start row1">
-                <div class="col col1">
+        <div class="container-fluid text-center principal" >
+            <div class="row align-items-start row1M">
+                <div class="col col1M">
                     <h1 className="caption1">Aprender sobre finanzas es divertido</h1>
                 </div>
-                <div class="col col2">
+                <div class="col col2M">
                     <img src={fotomain} alt="foto gatito jugando" className="gatitojugando" />
                 </div>
             </div>

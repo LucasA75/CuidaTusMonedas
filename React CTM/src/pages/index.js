@@ -11,9 +11,9 @@ import ModuloP from "./ModuloP"
 import IndexFraudesPiramidales from "./IndexFraudesPiramidales"
 import PerfilPage from "./PerfilPage"
 import EsquemaPiramidalPage from "./EsquemaPiramidalPage"
+import Homev2 from "./Homev2"
 
 
-
-export {Home, Conocenos, Registrarse, AdminPage, IniciarSesion, Encuesta1, Encuesta2, Encuesta3, Encuesta4, ModuloP,IndexFraudesPiramidales, EsquemaPiramidalPage, PerfilPage}
+export {Home, Conocenos, Registrarse, AdminPage, IniciarSesion, Encuesta1, Encuesta2, Encuesta3, Encuesta4, ModuloP,IndexFraudesPiramidales, EsquemaPiramidalPage, PerfilPage,Homev2}
 
 

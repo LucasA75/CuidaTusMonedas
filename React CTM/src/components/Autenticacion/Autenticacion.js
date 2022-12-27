@@ -9,9 +9,23 @@ const Autenticacion = () => {
 }
 
 const LoginBoton = () =>{
+
     const {loginWithRedirect} = useAuth0();
+
     return(
-        <button onClick={() => loginWithRedirect()}>Login</button>
+        <button
+        style={{ 
+          backgroundColor:' rgb(255, 202, 67)',
+          borderRadius: "25px",
+          fontSize: "20px",
+          paddingTop: "10px",
+          paddingBottom:"10px",
+          paddingLeft: "30px",
+          paddingRight:"30px"
+        }}
+         onClick={() => loginWithRedirect()}>
+         Iniciar Sesion
+         </button>
     )
 }
 
