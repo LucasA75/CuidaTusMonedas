@@ -36,12 +36,24 @@
 
 .MainVideo{
     width: 100%;
-    height: 100vh;
-
+    height: 90%;
+    position: absolute;
 }
 
 .MainVideo video{
+    position: absolute;
     width: 100%;
     height: 100%;
     object-fit:cover ;
+}
+
+/* Para darle una capa de oscurecimiento se ocupa un div para oscurecer el video -> ver el componente FondoVideo */
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.6;
 }
