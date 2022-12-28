@@ -28,7 +28,9 @@ onClick={()=> {
         handleOnClick2();
     }}> <img src={botonsiguiente1} width="30" />Siguiente</button>
 </div>
+        <div className='FooterIndice'>
         <FooetrClases/>
+        </div>
     </div>
   )
 }
