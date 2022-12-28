@@ -27,17 +27,17 @@ const Evaluacion = () => {
             <ul class="list-group list-group-horizontal justify-content-around"> 
 
                 
-                <a data-toggle="popover" title="Parece que no pusiste mucha atención :c" data-content="Felicidades!" data-trigger="focus"><li>
+                <a data-toggle="popover" title="Parece que no pusiste mucha atención :c" data-content="Felicidades!" data-placement="top" data-trigger="focus"><li>
                 <button type="button" class="btn btn-warning">
                     Por supuesto
                   </button></li></a>
 
-                <a data-toggle="popover" title="Respuesta correcta!" data-content=":D" data-trigger="focus"><li>
+                <a data-toggle="popover" title="Respuesta correcta!" data-content=":D" data-placement="top" data-trigger="focus"><li>
                 <button type="button" class="btn btn-warning">
                     Ni de chiste
                   </button></li></a>
 
-                  <a data-toggle="popover" title="Ups, sigue leyendo un poco más :s" data-content="x.x" data-trigger="focus"><li>
+                  <a data-toggle="popover" title="Ups, sigue leyendo un poco más :s" data-content="x.x" data-placement="top" ><li>
                 <button type="button" class="btn btn-warning">
                     Lo pensaría
                   </button></li></a>                          
@@ -65,17 +65,17 @@ en poco tiempo, ¿Qué haces?
             <div>
             
             <ul class="list-group list-group-horizontal justify-content-around">
-            <a data-toggle="popover" title="Parece que no pusiste mucha atención :c" data-content="Felicidades" data-trigger="focus"><li>
+            <a data-toggle="popover" title="Parece que no pusiste mucha atención :c" data-content="Felicidades" data-placement="top" data-trigger="focus"><li>
                 <button type="button" class="btn btn-warning">
                     Voy de cabeza
                   </button></li></a>
 
-                <a data-toggle="popover" title="Ups, sigue leyendo un poco más :s" data-content=":D" data-trigger="focus"><li>
+                <a data-toggle="popover" title="Ups, sigue leyendo un poco más :s" data-content=":D" data-placement="top" data-trigger="focus"><li>
                 <button type="button" class="btn btn-warning">
                     Le pido una reunión
                   </button></li></a>
 
-                  <a data-toggle="popover" title="Vale, sí entendiste todo :D" data-content="x.x" data-trigger="focus"><li>
+                  <a data-toggle="popover" title="Vale, sí entendiste todo :D" data-content="x.x" data-placement="top" data-trigger="focus"><li>
                 <button type="button" class="btn btn-warning">
                     No me interesa
                   </button></li></a>  
