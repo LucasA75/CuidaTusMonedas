@@ -2,7 +2,6 @@ import React,{useCallback} from "react";
 import { useNavigate } from "react-router-dom";
 import logo from '../../assets/Logo2.png'
 import "./Headermain.css"
-import btninicio from '../../assets/btninicio.png'
 import { LoginBoton } from "../Autenticacion/Autenticacion";
 import CerrarSesion from "../Autenticacion/CerrarSesion";
 import { useAuth0 } from "@auth0/auth0-react";

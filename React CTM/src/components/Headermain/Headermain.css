@@ -34,11 +34,12 @@ en este caso el ancho de la pantalla */
 
 } */
 
-@media screen and (max-width:800px) {
-    .headerMain{
-        background-color: rgb(62, 104, 104);
-    }
+@media screen and (max-width:1000px) {
 
+    .headerMain img{
+        position: relative;
+        top: -17px;
+    }
 }
 
 
