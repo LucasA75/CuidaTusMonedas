@@ -63,5 +63,6 @@ export{
     Profile,
     MainV2,
     MenuModulosV2,
-    MisionVisionV2
+    MisionVisionV2, 
+    
 };

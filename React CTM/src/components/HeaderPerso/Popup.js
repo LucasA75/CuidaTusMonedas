@@ -1,7 +1,7 @@
- /*    import React from "react";
-    import "./Main.css";
+import React from "react";
 
-    var btnAbrirPopup = document.getElementById('btn-abrir-popup'),
+
+/* var btnAbrirPopup = document.getElementById('btn-abrir-popup'),
         overlay = document.getElementById('overlay'),
         popup = document.getElementById('popup'),
         btnCerrarPopup = document.getElementById('btn-cerrar-popup');
@@ -15,5 +15,4 @@
         e.preventDefault();
         overlay.classList.remove('active');
         popup.classList.remove('active');
-    }); */
-
+    });  */
