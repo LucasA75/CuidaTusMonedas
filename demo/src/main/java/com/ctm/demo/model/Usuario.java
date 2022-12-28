@@ -4,6 +4,7 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.GenerationType;
 
 import java.util.List;
 
@@ -11,15 +12,15 @@ import javax.persistence.*;
 
 @Entity(name = "usuario")
 public class Usuario {
-    @Id
-    @GeneratedValue
-    private Long id;
+    @Id @GeneratedValue(strategy=GenerationType.IDENTITY)
+
+    private Integer id;
     private String nombre;
-    private String username;
+    private String nickname;
     private String apellido;
     private Integer ano;
     @Column(unique = true)
-    private String correo;
+    private String email;
     private String pais;
     private String region;
     private Integer telefono;
@@ -42,25 +43,18 @@ public class Usuario {
     )
     private List<Leccion> leccion;
 
-        //La relacion entre las tablas user y authority -> Authority no recibe la FK
-   /*  @ManyToMany(fetch = FetchType.EAGER)
-    @JoinTable(name = "authority_usuario", joinColumns = @JoinColumn(name = "usuario_id"), inverseJoinColumns = @JoinColumn(name = "authority_id"))
-    private List<Authority> authority;
- */
-
-
     public Usuario() {
     }
 
-    public Usuario(Long id, String nombre, String username, String apellido, Integer ano, String correo, String pais,
+    public Usuario(Integer id, String nombre, String nickname, String apellido, Integer ano, String email, String pais,
             String region, Integer telefono, String password, Monedero monedero, Encuesta encuesta,
             List<Leccion> leccion) {
         this.id = id;
         this.nombre = nombre;
-        this.username = username;
+        this.nickname = nickname;
         this.apellido = apellido;
         this.ano = ano;
-        this.correo = correo;
+        this.email = email;
         this.pais = pais;
         this.region = region;
         this.telefono = telefono;
@@ -70,11 +64,11 @@ public class Usuario {
         this.leccion = leccion;
     }
 
-    public Long getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -86,12 +80,12 @@ public class Usuario {
         this.nombre = nombre;
     }
 
-    public String getUsername() {
-        return username;
+    public String getNickname() {
+        return nickname;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
     }
 
     public String getApellido() {
@@ -110,12 +104,12 @@ public class Usuario {
         this.ano = ano;
     }
 
-    public String getCorreo() {
-        return correo;
+    public String getEmail() {
+        return email;
     }
 
-    public void setCorreo(String correo) {
-        this.correo = correo;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
     public String getPais() {
@@ -173,6 +167,15 @@ public class Usuario {
     public void setLeccion(List<Leccion> leccion) {
         this.leccion = leccion;
     }
+
+
+
+        //La relacion entre las tablas user y authority -> Authority no recibe la FK
+   /*  @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(name = "authority_usuario", joinColumns = @JoinColumn(name = "usuario_id"), inverseJoinColumns = @JoinColumn(name = "authority_id"))
+    private List<Authority> authority;
+ */
+
 
     
 
