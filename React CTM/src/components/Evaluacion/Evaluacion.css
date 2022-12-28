@@ -19,7 +19,6 @@
     --bs-popover-body-padding-y: .5rem;
   }
 
-
 /*   body {
     margin: 0;
     color: #fff;
@@ -30,20 +29,20 @@
     min-height: 100vh; 
     }*/
   
-  
   .app {
     background-color: rgba(252, 191, 73, 1);
     color: black;
-    max-width: 650px;
+    max-width: 850px;
     min-width: 450px;
-    height: min-content;
+    max-height: 800px;
     min-height: 200px;
     border-radius: 15px;
     padding: 20px;
     box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
     display: flex;
     justify-content: space-evenly;
-    margin-left: 300px;
+    margin: auto;
+    margin-top: 10vh;
   } 
 /*   .app1{
     background-color: rgba(252, 191, 73, 1);
@@ -138,12 +137,12 @@
     justify-content: space-evenly;
   }
   
-  button:hover {
-    background-color: rgba(0, 48, 73, 0.8);
+  .button1:hover {
+    background-color: rgba(172, 226, 255, 0.8);
     color: black;
   }
   
-  button[disabled] {
+  .button1[disabled] {
     background-color: rgba(0, 48, 73, 0.8);
     color: black;
     cursor: not-allowed;
@@ -153,7 +152,7 @@
     border: 2px rgba(0, 48, 73, 0.8);
   }
   
-  button:focus {
+  .button1:focus {
     outline: none;
     color: black;
   }

@@ -6,7 +6,7 @@ const Evaluacion = () => {
   
   
   return (
-    <div>
+    <div className='ContenedorEvalua'>
         <div class="container tituloClases">
             <h3> Prueba</h3>
          </div>      
