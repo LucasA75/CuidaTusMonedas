@@ -138,12 +138,12 @@
     justify-content: space-evenly;
   }
   
-  button:hover {
+  .button1:hover {
     background-color: rgba(0, 48, 73, 0.8);
     color: black;
   }
   
-  button[disabled] {
+  .button1[disabled] {
     background-color: rgba(0, 48, 73, 0.8);
     color: black;
     cursor: not-allowed;
@@ -153,12 +153,12 @@
     border: 2px rgba(0, 48, 73, 0.8);
   }
   
-  button:focus {
+  .button1:focus {
     outline: none;
     color: black;
   }
   
-  button svg {
+  .button1 svg {
     margin-right: 5px;
     color: black;
   }

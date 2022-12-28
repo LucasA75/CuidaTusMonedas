@@ -18,7 +18,8 @@ const PruebaModuloPPage = () => {
   return (
     <div>
         <HeaderGenerico/>
-     {/*    <Evaluacion/>
+        <center><AppEvaluacion/> </center>
+     {/*    <Evaluacion/>*/}
         <div class="container-lg d-flex justify-content-between">
 
         <button type="buttom" class="btn btn-outline-primary" 
@@ -30,9 +31,9 @@ const PruebaModuloPPage = () => {
         onClick={()=> {
                 handleOnClick2();
             }}> <img src={botonsiguiente1} width="30" />Siguiente</button>
-        </div> */}
+        </div> 
 
-        <AppEvaluacion/>
+        
         <FooetrClases/>
     </div>
   )
