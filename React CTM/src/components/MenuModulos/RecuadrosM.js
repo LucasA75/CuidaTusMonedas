@@ -15,13 +15,18 @@ const RecuadrosM = () => {
 
     const navigate = useNavigate();
     const handleOnClick = useCallback(
-        () => navigate("/Invierte", {}, [navigate]))
+        () => navigate("/ModuloI", {}, [navigate]))
     const handleOnClick2 = useCallback(
         () => navigate("/ModuloP", {}, [navigate]))
+        const handleOnClick3 = useCallback(
+            () => navigate("/ModuloA", {}, [navigate]))
 
     return (
         <div class="TodosLosRecuadrosM">
-            <TrackVisibility>
+        {/* Esto ve lo que esta mostrandose en pantalla y lo muestra cuando es visible */}
+        {/* once = solo una vez */}
+        {/* offset={el campo de vision} */}
+            <TrackVisibility once offset={300}>
                 {({ isVisible }) =>
                     <div className={isVisible ? "animate__animated animate__backInLeft" : ""}>
                         <div class="container-lg recuadroM1">
@@ -32,13 +37,15 @@ const RecuadrosM = () => {
                                 <div class="col ContenidoM1">
                                     <h3>Administra tus monedas</h3>
                                     <p>En este modulo aprenderas sobre administracion de finanzas personales, sobre el ahorro y sobre las tarjetas de credito y otros temas relacionados</p>
-                                    <button className='BotonComenzar1'>Comenzar &nbsp; <ArrowForwardIos className='ArrowM1' fontSize='small' /></button>
+                                    <button className='BotonComenzar1' onClick={() => {
+                                        handleOnClick3();
+                                        }}>Comenzar &nbsp; <ArrowForwardIos className='ArrowM1' fontSize='small' /></button>
                                 </div>
                             </div>
                         </div>
                     </div>}
             </TrackVisibility>
-            <TrackVisibility>
+            <TrackVisibility once offset={300}>
                 {({ isVisible }) =>
                     <div className={isVisible ? "animate__animated animate__backInRight" : ""}>
                         <div class="container recuadroM2">
@@ -57,7 +64,7 @@ const RecuadrosM = () => {
                         </div>
                     </div>}
             </TrackVisibility>
-            <TrackVisibility>
+            <TrackVisibility once offset={300}>
                 {({ isVisible }) =>
                     <div className={isVisible ? "animate__animated animate__backInLeft" : ""}>
                         <div class="container recuadroM3">
