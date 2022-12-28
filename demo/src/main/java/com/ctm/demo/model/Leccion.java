@@ -13,8 +13,7 @@ import javax.persistence.ManyToMany;
 
 @Entity(name = "leccion")
 public class Leccion {
-    @Id
-    @GeneratedValue
+    @Id @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
     private String nombre;
 

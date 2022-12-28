@@ -10,8 +10,7 @@ import javax.persistence.*;
 
 @Entity(name = "modulo")
 public class Modulo {
-    @Id
-    @GeneratedValue
+    @Id @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
     private String nombre;
 

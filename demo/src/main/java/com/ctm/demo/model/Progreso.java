@@ -10,8 +10,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 @Entity(name = "progreso")
 public class Progreso {
-    @Id
-    @GeneratedValue
+    @Id @GeneratedValue(strategy=GenerationType.IDENTITY)
     private Integer id;
     private String condicion; // quiero colocar un bit aqui , como 1 completado y 0 incompleto
     @DateTimeFormat(pattern = "yyyy-MM-dd")
