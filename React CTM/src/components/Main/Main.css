@@ -4,6 +4,10 @@
     padding-bottom: 10vh;
 }
 
+/* *{
+    border: 2px solid black;
+}  */
+
 .caption1 {
     margin-top: 40px;
     font-family: 'Maven Pro';
@@ -21,8 +25,12 @@
     margin-top: 6px;
 }
 
-.container {
-    margin-bottom: 100px;
+.principal {
+    margin-bottom: 50px;
+    margin-top: 10px;
+    /* Este gradiente tiene primero el angulo , el color , el porcentage de relleno -> el otro color que en este caso el porcentaje se rellena auto */
+    background: linear-gradient(45deg, rgba(255, 234, 0, 0.45)40%, rgba(255, 128, 11, 0.65));
+    padding-bottom: 10vh;
 }
 
 /* No borrar porfavor  */

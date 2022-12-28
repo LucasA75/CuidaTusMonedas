@@ -4,6 +4,7 @@ import { FooetrClases, HeaderGenerico } from '../components'
 import Evaluacion from '../components/Evaluacion/Evaluacion'
 import regresar1 from '../assets/regresar.png'
 import botonsiguiente1 from '../assets/botonsiguiente.png'
+import AppEvaluacion from '../components/Evaluacion/AppEvaluacion'
 
 const PruebaModuloPPage = () => {
    
@@ -17,7 +18,8 @@ const PruebaModuloPPage = () => {
   return (
     <div>
         <HeaderGenerico/>
-        <Evaluacion/>
+        <center><AppEvaluacion/> </center>
+     {/*    <Evaluacion/>*/}
         <div class="container-lg d-flex justify-content-between">
 
         <button type="buttom" class="btn btn-outline-primary" 
@@ -29,7 +31,9 @@ const PruebaModuloPPage = () => {
         onClick={()=> {
                 handleOnClick2();
             }}> <img src={botonsiguiente1} width="30" />Siguiente</button>
-        </div>
+        </div> 
+
+        
         <FooetrClases/>
     </div>
   )
