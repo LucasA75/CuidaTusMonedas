@@ -1,16 +1,18 @@
 import { ArrowForwardIos } from "@mui/icons-material";
-import React, { useCallback } from "react";
 import { useNavigate } from "react-router-dom";
+import React,{useCallback} from "react";
+import { useAuth0 } from '@auth0/auth0-react';
 import fotomain from "../../assets/imagenMain.png"
 import "./Main.css"
 
 
 const MainV2 = () => {
 
+    const {user, isAuthenticated, isLoading} = useAuth0();
+    const {loginWithRedirect} = useAuth0();
     const navigate = useNavigate();
     const handleOnClick = useCallback(
-        () => navigate("/Encuesta1", {}, [navigate]))
-        
+        () => navigate("/Perso", {}, [navigate]))
     return (
         <div class="container-fluid text-center principal" >
             <div class="row align-items-start row1M">
@@ -22,10 +24,20 @@ const MainV2 = () => {
                 </div>
             </div>
             <div>
+                {isAuthenticated ? <>
+                    <button type="btn" class="btn botonMain"
+                    onClick={() => {{ handleOnClick();}}}
+                    
+                    > Comenzar a aprender &nbsp;  &nbsp;<ArrowForwardIos style={{marginBottom: "4px"}}/></button>
+
+                </>
+                :
                 <button type="btn" class="btn botonMain"
-                    onClick={() => {
-                        handleOnClick();
-                    }}> Comenzar a aprender &nbsp;  &nbsp;<ArrowForwardIos style={{marginBottom: "4px"}}/></button>
+                    onClick={() => {{ loginWithRedirect();}}}
+                    
+                    > Comenzar a aprender &nbsp;  &nbsp;<ArrowForwardIos style={{marginBottom: "4px"}}/></button>
+                }
+                
 
                     
             </div>

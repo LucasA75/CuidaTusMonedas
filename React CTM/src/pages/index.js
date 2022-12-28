@@ -1,12 +1,7 @@
-import Home from "./Home"
 import Conocenos from "./Conocenos"
 import Registrarse from "./Registrarse"
 import AdminPage from "./AdminPage"
 import IniciarSesion from "./IniciarSesion"
-import Encuesta1 from "./Encuesta1"
-import Encuesta2 from "./Encuesta2"
-import Encuesta3 from "./Encuesta3"
-import Encuesta4 from "./Encuesta4"
 import ModuloP from "./ModuloP"
 import IndexFraudesPiramidales from "./IndexFraudesPiramidales"
 import PerfilPage from "./PerfilPage"
@@ -14,6 +9,6 @@ import EsquemaPiramidalPage from "./EsquemaPiramidalPage"
 import Homev2 from "./Homev2"
 
 
-export {Home, Conocenos, Registrarse, AdminPage, IniciarSesion, Encuesta1, Encuesta2, Encuesta3, Encuesta4, ModuloP,IndexFraudesPiramidales, EsquemaPiramidalPage, PerfilPage,Homev2}
+export {Conocenos, Registrarse, AdminPage, IniciarSesion, ModuloP,IndexFraudesPiramidales, EsquemaPiramidalPage, PerfilPage,Homev2}
 
 
