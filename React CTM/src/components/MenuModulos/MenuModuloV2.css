@@ -1,3 +1,25 @@
+.Titulo h2 {
+    font-family: 'Maven Pro';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 56px;
+    line-height: 66px;
+
+    color: #030100;
+}
+
+.SubtituloM h5{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 25px;
+    line-height: 35px;
+    text-align: center;
+    
+    color: #000000;
+}
+
+
 .SubtituloM {
     font-style: normal;
     font-weight: 300;
@@ -37,14 +59,6 @@
     margin-bottom: 0vh;
     border-radius: 45px;
     height: 22vh;
-}
-
-.moneda1 {
-    /* background-color: azure; */
-}
-
-.FotoGato1 {
-    /* background-color: antiquewhite; */
 }
 
 .ContenidoM1 {
@@ -95,14 +109,15 @@
 
 @media screen and (max-width:1200px) {
 
-    .recuadroM1 button{
+    .recuadroM1 button {
         margin-top: -2vh;
     }
-    .recuadroM2 button{
+
+    .recuadroM2 button {
         margin-top: 0.8vh;
     }
 
-    .recuadroM3 button{
+    .recuadroM3 button {
         margin-top: -2vh;
     }
 
