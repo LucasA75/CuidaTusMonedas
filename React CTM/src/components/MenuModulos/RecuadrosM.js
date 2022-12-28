@@ -10,7 +10,6 @@ import TrackVisibility from 'react-on-screen';
 
 
 
-
 const RecuadrosM = () => {
 
     const navigate = useNavigate();
@@ -20,6 +19,7 @@ const RecuadrosM = () => {
         () => navigate("/ModuloP", {}, [navigate]))
         const handleOnClick3 = useCallback(
             () => navigate("/ModuloA", {}, [navigate]))
+
 
     return (
         <div class="TodosLosRecuadrosM">
