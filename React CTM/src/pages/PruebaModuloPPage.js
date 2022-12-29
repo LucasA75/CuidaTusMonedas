@@ -15,6 +15,7 @@ const PruebaModuloPPage = () => {
     const navigate2 = useNavigate();
     const handleOnClick2 = useCallback(
         () => navigate2("/ProfundizaEstafa", {}, [navigate2]))
+        
     return (
         <div>
             <HeaderGenerico />
