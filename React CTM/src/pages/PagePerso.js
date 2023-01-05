@@ -1,5 +1,5 @@
 import React from "react";
-import { FooterPerso, HeaderPerso } from "../components/";
+import { FooterPerso, HeaderPerso, MyModal } from "../components/";
 import ProtejeMoneda from "../components/ComponentesModulos/ProtejeMoneda";
 
 const PagePerso =()=>{
