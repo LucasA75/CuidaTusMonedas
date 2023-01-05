@@ -20,7 +20,7 @@ const ProfundizaEstafa = () => {
 
             <div class="container casosEstafa"> 
             <a id="ponzifdx" href="https://elceo.com/mercados/sam-bankman-fried-recurrio-a-un-esquema-ponzi-en-desfalco-de-ftx/" style={{textDecoration:"none"}}> 
-            <h4>Esquema Ponzi en FDX</h4></a>
+            <h4>Esquema Ponzi en FTX</h4></a>
             </div>
 
             <div class="container-lg contenidoClase">
