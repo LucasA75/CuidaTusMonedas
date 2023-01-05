@@ -15,7 +15,7 @@ const MenuModulosV2 = () => {
                 <br></br>
                 <div className="SubtituloM">
                     <center>
-                        <h5>Dividimos los temas mas importantes en tres modulos, para que puedas aprender de manera focalizada y lo que te guste</h5>
+                        <h5>Dividimos los temas más importantes en tres módulos para que puedas aprender de manera sencilla.</h5>
                     </center>
                 </div>
             </div>
