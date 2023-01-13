@@ -36,7 +36,7 @@ const RecuadrosM = () => {
                                 </div>
                                 <div class="col ContenidoM1">
                                     <h3>Administra tus monedas</h3>
-                                    <p>En este modulo aprenderas sobre administracion de finanzas personales, sobre el ahorro y sobre las tarjetas de credito y otros temas relacionados</p>
+                                    <p>En este módulo aprenderás sobre administración de finanzas personales, ahorro, tarjetas de crédito y otros temas relacionados</p>
                                     <button className='BotonComenzar1' onClick={() => {
                                         handleOnClick3();
                                         }}>Comenzar &nbsp; <ArrowForwardIos className='ArrowM1' fontSize='small' /></button>
@@ -55,7 +55,7 @@ const RecuadrosM = () => {
                                 </div>
                                 <div class="col ContenidoM1">
                                     <h3>Protege tus monedas</h3>
-                                    <p>En este modulo aprenderas sobre como proteger tu dinero de distintas estafas, ciber-ataques y tener buenos metodos de seguridad</p>
+                                    <p>En este módulo aprenderás sobre cómo proteger tu dinero de distintas estafas, ciber-ataques y tener buenos métodos de seguridad</p>
                                     <button className='BotonComenzar1' onClick={() => {
                                         handleOnClick2();
                                     }}>Comenzar &nbsp; <ArrowForwardIos className='ArrowM1' fontSize='small' /></button>
@@ -74,7 +74,7 @@ const RecuadrosM = () => {
                                 </div>
                                 <div class="col ContenidoM1">
                                     <h3>Invierte tus monedas</h3>
-                                    <p>En este modulo aprenderas sobre como invertir tu dinero para que pueda crecer con el tiempo y los diferentes tipos de herramientas que hay para invertir </p>
+                                    <p>En este módulo aprenderás sobre cómo invertir tu dinero para que pueda crecer con el tiempo y los diferentes tipos de herramientas que hay disponibles </p>
                                     <button className='BotonComenzar1' onClick={() => {
                                         handleOnClick();
                                     }}>Comenzar &nbsp; <ArrowForwardIos className='ArrowM1' fontSize='small' /></button>
