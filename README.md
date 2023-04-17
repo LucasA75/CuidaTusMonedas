@@ -1,8 +1,26 @@
-# CuidaTusMonedas
-Repositorio de la pagina web - CuidaTusMonedas
-Este proyecto es una pagina de educacion financiera para jovenes entre 15 a 19 años que quieran entrar en el mundo financiero de una manera facil y muy didactica
-Aun esta en proceso... Tiene gatitos 
+<h1 align="center"> Cuida Tus Monedas </h1>
 
-Tecnologias ocupadas en este proyecto
+Plataforma web de educación financiera dirigida a adolescentes. Aquí les entregamos las herramientas yconocimientos básicos para que puedan tomar acción sobre su futuro económico.
+<h3>Tecnologias Utilizadas<h3/>
+<h4>Front End<h4/>
+HTML5 / CSS3<br>
+React<br>
+Material UI<br>
+Bootstrap<br>
+Javascript<br>
+<br>
+<h4>Back End<h4/>
+Instalacion de paquetes utilizando Node.js<br>
+Java<br>
+Junit<br>
+Rest Api con Spring Boot<br>
+Integración de DB usando JPA<br>
+MySQL DB<br>
 
-Spring boot || React.js || Figma || Jira || Visual Studio Code
+<h4>Otras<h4/>
+Metodologia de trabajo: SCRUM<br>
+Jira<br>
+PostMan<br>
+Figma<br>
+Slack<br>
+
